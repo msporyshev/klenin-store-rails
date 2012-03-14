@@ -1,0 +1,365 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"path"
+			],
+			[
+				"categor",
+				"category"
+			],
+			[
+				"catego",
+				"category"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"categorie",
+				"categories"
+			],
+			[
+				"categories",
+				"categories_url"
+			],
+			[
+				"categ",
+				"category"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"prod",
+				"products"
+			],
+			[
+				"cl",
+				"cla	class .. end"
+			],
+			[
+				"search",
+				"searchOptions"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 516.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/max/study/projects/rails_apps/klenin_store/config/klenin-store-rails.sublime-project",
+		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/products_controller.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120313070737_create_products.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/_users.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/index.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/assets/javascripts/application.js",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/layouts/application.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/application_controller.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/users_controller.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/helpers/application_helper.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/index.js.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/categories_controller.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/assets/javascripts/tree_grid_products.js",
+		"/home/max/study/projects/rails_apps/klenin_store/app/models/user.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/_form.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/index.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/models/product.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/assets/javascripts/grid.js",
+		"/home/max/study/projects/rails_apps/klenin_store/config/routes.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/models/category.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/show.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/new.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120313070736_create_categories.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/products/new.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120309075552_create_products.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/helpers/sessions_helper.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120311060022_create_categories.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/sessions_controller.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/config/application.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120310045409_create_warehouses.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120309072023_create_categories.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/Gemfile",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/home/index.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/config/database.yml",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/show.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120307082148_create_users.rb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/edit.html.erb",
+		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/new.html.erb",
+		"/home/max/study/projects/rails_apps/store/config/application.rb",
+		"/home/max/study/projects/rails_apps/store/lol.rb",
+		"/home/max/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/max/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/max/study/projects/rails_apps/store/db/migrate/bla.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120301071408_create_users.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120301065816_create_users.rb",
+		"/home/max/study/projects/ruby/untitled"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"# ",
+			"#",
+			"self",
+			"@category",
+			"category",
+			"product",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"/users/",
+			"      ",
+			":direction",
+			":sort",
+			"'",
+			"'users.json'",
+			"POST",
+			" ",
+			"name",
+			"    <",
+			"name",
+			"    // ",
+			"Theme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			":sord",
+			":sidx"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"prod",
+				"app/controllers/products_controller.rb"
+			],
+			[
+				"pr",
+				"app/models/product.rb"
+			],
+			[
+				"pro",
+				"app/models/product.rb"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"cate",
+				"app/models/category.rb"
+			],
+			[
+				"tree",
+				"app/assets/javascripts/tree_grid_products.js"
+			],
+			[
+				"grid_",
+				"app/assets/javascripts/tree_grid_products.js"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"grid",
+				"app/assets/javascripts/grid.js"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"create",
+				"db/migrate/20120313070736_create_categories.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"create_pr",
+				"db/migrate/20120309075552_create_products.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"sessio",
+				"app/helpers/sessions_helper.rb"
+			],
+			[
+				"sess",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"da",
+				"config/database.yml"
+			],
+			[
+				"lol",
+				"lol.rb"
+			],
+			[
+				"applica",
+				"config/application.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true
+}
