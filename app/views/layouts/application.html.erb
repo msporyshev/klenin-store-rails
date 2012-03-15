@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+  <% flash.each do |name, msg| %>
+    <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+      <%= msg  %>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="span7">
+      <%= yield %>
+    </div>
+    <div class="span4">
+      <h2>Filters</h2>
+    </div>
+  </div>
+</div>
 
-<%= yield %>
 
 </body>
 </html>
