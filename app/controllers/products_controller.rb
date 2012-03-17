@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.js
+      format.js { render partial: "products", :content_type => "application/html"}
       format.json { render json: @products }
     end
   end

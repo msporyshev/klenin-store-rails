@@ -19,8 +19,8 @@ $(function() {
       onSelectRow: function(row_id) {
         node_id = $("#tree_grid_categories").getCell(row_id, "id");
         $.get("products.js", {"nodeid": node_id}, function(data) {
-          eval(data);
-        });
+          $("#table_products").html(data);
+        }, "text html");
       },
       caption: 'Categories'
     });
