@@ -2,10 +2,13 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @category = Category.find_by_id(params[:nodeid])
+    @products = Product.where("path LIKE ?", "#{@category.nil? ? nil : @category.path}%")
+
 
     respond_to do |format|
       format.html # index.html.erb
+      format.js
       format.json { render json: @products }
     end
   end

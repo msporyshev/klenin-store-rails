@@ -6,7 +6,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @categories }
+      format.json { render json: tree_grid_json( @categories, [:id, :name]) }
     end
   end
 

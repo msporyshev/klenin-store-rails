@@ -7,12 +7,12 @@
 
 <p>
   <b>Category</b><br>
-  <%= @product.category_id %>
+  <%= product.category.nil? ? nil : product.category.name %>
 </p>
 
 <p>
   <b>Price</b><br>
-  <%= @product.price %>
+  <%= number_to_currency @product.price %>
 </p>
 
 <p>
