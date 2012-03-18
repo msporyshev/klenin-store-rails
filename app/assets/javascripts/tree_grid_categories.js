@@ -20,7 +20,7 @@ $(function() {
         node_id = $("#tree_grid_categories").getCell(row_id, "id");
         $.get("products.js", {"nodeid": node_id}, function(data) {
           $("#table_products").html(data);
-        }, "text html");
+        }, "html");
       },
       caption: 'Categories'
     });

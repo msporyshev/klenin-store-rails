@@ -1,14 +1,18 @@
 class ProductsController < ApplicationController
+
+  helper_method :sort_column, :sort_direction
   # GET /products
   # GET /products.json
   def index
     @category = Category.find_by_id(params[:nodeid])
-    @products = Product.where("path LIKE ?", "#{@category.nil? ? nil : @category.path}%")
+    @products = Product.order(sort_column + " " + sort_direction).
+                  paginate(:per_page => params[:rows] || 5, :page => params[:page]).
+                  where("path LIKE ?", "#{@category.nil? ? nil : @category.path}%")
 
 
     respond_to do |format|
       format.html # index.html.erb
-      format.js { render partial: "products", :content_type => "application/html"}
+      format.js { render partial: "products", :content_type => "text/html"}
       format.json { render json: @products }
     end
   end
@@ -83,4 +87,15 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+    def sort_column
+      Product.column_names.include?(params[:sort_col]) ?  params[:sort_col] : "id"
+    end
+
+    def sort_direction
+      %w[asc desc].include?(params[:sort_dir]) ?  params[:sort_dir] : "asc"
+    end
+
 end

@@ -1,10 +1,14 @@
+
+<%= hidden_field_tag :sort_dir, params[:sort_dir] %>
+<%= hidden_field_tag :sort_col, params[:sort_col] %>
+
 <h1>Products</h1>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Description</th>
+      <th><%= sortable "description" %></th>
       <th>Category</th>
-      <th>Price</th>
+      <th><%= sortable "price" %></th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -22,5 +26,7 @@
     <% end %>
   </tbody>
 </table>
+
+<%= will_paginate @products %>
 
 <%= link_to 'New', new_product_path, :class => 'btn btn-primary' %>
