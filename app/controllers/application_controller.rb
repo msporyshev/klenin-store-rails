@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
       page = params[:page]
       row_count = params[:rows]
       page_count = (table_content.count.to_f / row_count.to_f).ceil
+      n_level = (params[:n_level] || -1).to_i + 1
       json = {}
       json[:page] = page
       json[:total] = page_count
@@ -13,9 +14,10 @@ class ApplicationController < ActionController::Base
       json[:rows] = []
       table_content.each do |elem|
         json[:rows] << {
+          :id => elem.id,
           :cell => Array.new(column_names.count) { |i| elem[column_names[i]]}
         }
-        json[:rows][-1][:cell].push(elem.path.scan(/\./).count, elem.category_id, elem.categories.blank?, false)
+        json[:rows][-1][:cell].push(n_level, elem.category_id, elem.categories.blank?, false)
       end
       json
 

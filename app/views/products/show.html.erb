@@ -1,27 +1,29 @@
-<h1>Product</h1>
+<div class="thumbnail span4">
+  <h2>Product</h2>
+  <%=  image_tag @product.image_url %>
 
-<p>
-  <b>Description</b><br>
-  <%= @product.description %>
-</p>
+  <p>
+    <h5>Description</h5>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <b>Category</b><br>
-  <%= product.category.nil? ? nil : product.category.name %>
-</p>
+  <p>
+    <h5>Category</h5>
+    <%= @product.category.nil? ? nil : @product.category.name %>
+  </p>
 
-<p>
-  <b>Price</b><br>
-  <%= number_to_currency @product.price %>
-</p>
+  <p>
+    <h5>Price</h5>
+    <%= number_to_currency @product.price %>
+  </p>
 
-<p>
-  <b>Path</b><br>
-  <%= @product.path %>
-</p>
-
-<div class="form-actions">
-  <%= link_to 'Back', products_path, :class => 'btn'  %>
-  <%= link_to 'Edit', edit_product_path(@product), :class => 'btn' %>
-  <%= link_to 'Delete', product_path(@product), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+  <p>
+    <h5>Path</h5>
+    <%= @product.path %>
+  </p>
+  <div class="form-actions">
+    <%= link_to 'Back', products_path, :class => 'btn'  %>
+    <%= link_to 'Edit', edit_product_path(@product), :class => 'btn' %>
+    <%= link_to 'Delete', product_path(@product), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+  </div>
 </div>

@@ -12,14 +12,15 @@
  *= require_tree .
 */
 
-/*th .current {
-  padding-right: 12px;
+th .cur {
+  padding-right: 17px;
   background-repeat: no-repeat;
   background-position: right center;
 }
-*/
+
 th .asc {
   background-image: url(/images/up_arrow.gif);
+
 }
 
 th .desc {

@@ -12,7 +12,7 @@
     <div class="control-group">
       <%= f.label :category, :class => 'control-label' %>
       <div class="controls">
-        <%= select :product, :category_id, Category.all.collect{ |c| c.name, c.id}, {:include_blank => true}, :class => 'number_field' %>
+        <%= select :product, :category_id, Category.all.collect{ |c| [c.name, c.id] }, {:include_blank => true}, :class => 'number_field' %>
       </div>
     </div>
 

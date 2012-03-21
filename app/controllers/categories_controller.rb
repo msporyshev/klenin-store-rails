@@ -2,11 +2,12 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
+    @categories = Category.where(:category_id => params[:nodeid])
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: tree_grid_json( @categories, [:id, :name]) }
+      format.js { render partial: "categories_list", :content_type => "text/html" }
+      format.json { render json: tree_grid_json( @categories, [:id, :name, :category_id]) }
     end
   end
 

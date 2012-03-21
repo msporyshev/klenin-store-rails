@@ -5,8 +5,9 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @category = Category.find_by_id(params[:nodeid])
+
     @products = Product.order(sort_column + " " + sort_direction).
-                  paginate(:per_page => params[:rows] || 5, :page => params[:page]).
+                  paginate(:per_page => params[:rows] || 20, :page => params[:page]).
                   where("path LIKE ?", "#{@category.nil? ? nil : @category.path}%")
 
 
