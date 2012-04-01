@@ -11,12 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120330110522) do
+ActiveRecord::Schema.define(:version => 20120401062316) do
+
+  create_table "carts", :force => true do |t|
+  end
 
   create_table "categories", :force => true do |t|
     t.string  "name"
     t.integer "category_id"
     t.string  "path"
+  end
+
+  create_table "product_carts", :force => true do |t|
+    t.integer "product_id"
+    t.integer "quantity",   :default => 1
+    t.integer "cart_id"
   end
 
   create_table "products", :force => true do |t|
@@ -25,6 +34,12 @@ ActiveRecord::Schema.define(:version => 20120330110522) do
     t.decimal "price",       :precision => 10, :scale => 2
     t.string  "path"
     t.string  "image_url"
+  end
+
+  create_table "sessions", :force => true do |t|
+    t.string   "secure_id"
+    t.datetime "expires_at"
+    t.integer  "cart_id"
   end
 
   create_table "users", :force => true do |t|
@@ -37,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20120330110522) do
     t.string   "secure_id"
     t.datetime "expired_at"
     t.string   "role"
+    t.integer  "session_id"
   end
 
 end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  secure_id: MyString
+  expires_at: 2012-04-01 16:01:52
+  cart_id: 1
+
+two:
+  secure_id: MyString
+  expires_at: 2012-04-01 16:01:52
+  cart_id: 1

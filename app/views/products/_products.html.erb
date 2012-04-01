@@ -20,6 +20,9 @@
         <td><%= link_to product.description, product_path(product) %></td>
         <td><%= product.category.nil? ? nil : product.category.name %></td>
         <td><%= number_to_currency product.price %></td>
+        <td>
+          <%= link_to 'Add to Cart', product_carts_path(product_id: product.id), :method => :post, :class => 'btn' %>
+        </td>
       </tr>
     <% end %>
   </tbody>

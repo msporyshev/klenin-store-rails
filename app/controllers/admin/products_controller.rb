@@ -1,4 +1,4 @@
-class Admin::ProductsController < ApplicationController
+class Admin::ProductsController < Admin::ApplicationController
 
   helper_method :sort_column, :sort_direction
   # GET /admin/products

@@ -2,8 +2,22 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   helper_method :current_user
+  helper_method :current_cart
 
-  private
+  protected
+
+    def current_session=(session)
+      @current_session = session
+    end
+
+    def current_session
+      @current_session ||= Session.authenticate_with_sid(cookies[:s_id].to_s)
+      if !@current_session
+        @current_session = Session.create
+        cookies[:s_id] = {:value => @current_session.secure_id, :expires => @current_session.expires_at}
+      end
+      @current_session
+    end
 
     def current_user=(user)
       @current_user = user
@@ -13,7 +27,19 @@ class ApplicationController < ActionController::Base
       @current_user ||= User.authenticate_with_sid(cookies[:s_id].to_s)
     end
 
-  protected
+    def current_cart=(cart)
+      @current_cart = cart
+    end
+
+    def current_cart
+      @current_cart ||= current_session.cart
+      if !@current_cart
+        @current_cart = @current_session.build_cart
+        @current_session.save
+      end
+      @current_cart
+    end
+
     def tree_grid_json(table_content, column_names)
       page = params[:page]
       row_count = params[:rows]

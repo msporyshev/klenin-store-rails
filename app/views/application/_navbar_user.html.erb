@@ -1,5 +1,5 @@
 <ul class="nav">
   <li><%= link_to "Browse Products", products_path %></li>
   <li><%= link_to "Profile", user_path(current_user) %></li>
-  <li><%= link_to "Cart" %></li>
+  <li><%= link_to "Cart", cart_path(current_cart) %></li>
 </ul>

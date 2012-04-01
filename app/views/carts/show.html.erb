@@ -1,0 +1,17 @@
+<h1>Cart</h1>
+
+<table class="table table-striped">
+  <% @cart.product_carts.each do |item| %>
+    <tr>
+      <td><%= item.quantity %> &times;</td>
+      <td><%= item.product.description %></td>
+      <td class="item_price"><%= number_to_currency item.total_price %></td>
+    </tr>
+  <% end %>
+  <tr class="total_line">
+    <td colspan="2">Total</td>
+    <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+  </tr>
+
+</table>
+<%= link_to 'Empty Cart', @cart, :method => :delete, :class => 'btn btn-danger', :confirm => "Are ou sure?" %>

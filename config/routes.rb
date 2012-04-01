@@ -1,5 +1,11 @@
 Store::Application.routes.draw do
 
+  resources :orders
+
+  resources :product_carts
+
+  resources :carts
+
   controller :sessions do
     get "sessions/new" => :new
     post "sessions" => :create

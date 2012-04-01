@@ -1,12 +1,12 @@
 class User < ActiveRecord::Base
 
-  SESSION_TIME_SEC = 1000
-
   validates :login, :presence => true, :uniqueness => true
   validates :email, :presence => true, :uniqueness => true
   validates :password, :presence => true,
                        :confirmation => true,
                        :length => { :within => 6..40 }
+
+  belongs_to :session
 
   attr_accessor :password_confirmation
   attr_reader :password
@@ -22,12 +22,11 @@ class User < ActiveRecord::Base
   def User.authenticate(login, password)
     return nil if not user = find_by_login(login)
     return nil if user.hashed_pass != encrypt_password(password, user.salt)
-
-    s_id = generate_secure_id
-    user.secure_id = s_id
-    user.expired_at = Time.now + SESSION_TIME_SEC
-    user.save!(:validate => false)
-
+    if user.session
+      user.session.destroy
+    end
+    user.build_session
+    user.save(:validate => false)
     user
   end
 
@@ -36,17 +35,13 @@ class User < ActiveRecord::Base
   end
 
   def User.authenticate_with_sid(secure_id)
-    user = User.find_by_secure_id(secure_id.to_s)
-    (user && user.expired_at > Time.now) ? user : nil
+    session = Session.authenticate_with_sid(secure_id)
+    session ? session.user : nil
   end
 
 
 
   private
-
-    def User.generate_secure_id
-      Digest::SHA2.hexdigest(Time.now.to_s + rand(1000000).to_s)
-    end
 
     def generate_salt
       self.object_id.to_s + rand(255).to_s
