@@ -1,7 +1,20 @@
 Store::Application.routes.draw do
+
+  controller :sessions do
+    get "sessions/new" => :new
+    post "sessions" => :create
+    delete "sessions" => :destroy
+  end
+
+  resources :users
+
   resources :categories
 
   resources :products
+
+  namespace :admin do
+    resources :users, :categories, :products
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -53,7 +66,7 @@ Store::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-
+  root to: 'products#index'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

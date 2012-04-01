@@ -8,11 +8,45 @@
 </head>
 <body>
 <div class="container">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#">My Store</a>
+        <% if current_user %>
+          <% if current_user.role == "admin" %>
+            <%= render :partial => "navbar_admin" %>
+          <% else %>
+            <%= render :partial => "navbar_user" %>
+          <% end %>
+          <ul id="user_header" class="nav pull-right">
+            <li>
+              <a>Signed in as <%= current_user.login %>. </a>
+            </li>
+            <li>
+              <%= link_to "Sign Out", sessions_path, method: "delete" %>
+            </li>
+          </ul>
+        <% else %>
+          <ul id="user_header" class="nav pull-right">
+            <li>
+              <%= link_to "Sign Up", new_user_path %>
+            </li>
+            <li><a>or</a></li>
+            <li>
+              <%= link_to "Sign In", sessions_new_path %>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
   <% flash.each do |name, msg| %>
     <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
       <%= msg  %>
     </div>
   <% end %>
+
   <div class="row">
     <%= yield %>
   </div>

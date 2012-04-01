@@ -1,0 +1,29 @@
+<div class="thumbnail span4">
+  <h2>Product</h2>
+  <%=  image_tag @product.image_url %>
+
+  <p>
+    <h5>Description</h5>
+    <%= @product.description %>
+  </p>
+
+  <p>
+    <h5>Category</h5>
+    <%= @product.category.nil? ? nil : @product.category.name %>
+  </p>
+
+  <p>
+    <h5>Price</h5>
+    <%= number_to_currency @product.price %>
+  </p>
+
+  <p>
+    <h5>Path</h5>
+    <%= @product.path %>
+  </p>
+  <div class="form-actions">
+    <%= link_to 'Back', admin_products_path, :class => 'btn'  %>
+    <%= link_to 'Edit', edit_admin_product_path(@product), :class => 'btn' %>
+    <%= link_to 'Delete', admin_product_path(@product), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+  </div>
+</div>

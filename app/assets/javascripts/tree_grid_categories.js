@@ -40,6 +40,8 @@ $(function() {
 
   var delOptions = {
       onclickSubmit: function(params, postdata) {
+        postdata = postdata.toString();
+
         params.url = URL + '/' + postdata + ".json";
       }
     };

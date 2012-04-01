@@ -1,6 +1,18 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  helper_method :current_user
+
+  private
+
+    def current_user=(user)
+      @current_user = user
+    end
+
+    def current_user
+      @current_user ||= User.authenticate_with_sid(cookies[:s_id].to_s)
+    end
+
   protected
     def tree_grid_json(table_content, column_names)
       page = params[:page]

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120320093715) do
+ActiveRecord::Schema.define(:version => 20120330110522) do
 
   create_table "categories", :force => true do |t|
     t.string  "name"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(:version => 20120320093715) do
     t.decimal "price",       :precision => 10, :scale => 2
     t.string  "path"
     t.string  "image_url"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "login"
+    t.string   "name"
+    t.string   "email"
+    t.date     "burthday"
+    t.string   "hashed_pass"
+    t.string   "salt"
+    t.string   "secure_id"
+    t.datetime "expired_at"
+    t.string   "role"
   end
 
 end

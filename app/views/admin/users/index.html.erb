@@ -1,0 +1,30 @@
+<h1>Users</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Login</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Burthday</th>
+      <th>Role</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= link_to user.login, admin_user_path(user) %></td>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.burthday %></td>
+        <td><%= user.role %></td>
+        <td>
+          <%= link_to 'Edit', edit_admin_user_path(user), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', admin_user_path(user), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New', new_admin_user_path, :class => 'btn btn-primary' %>

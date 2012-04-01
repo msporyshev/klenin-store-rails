@@ -1,0 +1,18 @@
+<%= form_tag sessions_path, :class => "form-horizontal" do %>
+  <fieldset>
+    <legend>Sign In</legend>
+    <div class="control-group">
+      <%= label_tag :login, :class => 'control-label' %>
+      <div class="controls">
+        <%= text_field_tag :login, params[:login], :class => "text_field" %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= label_tag :password, :class => "control-label" %>
+      <div class="controls">
+        <%= password_field_tag :password, :class => "text_field" %>
+      </div>
+    </div>
+    <div class="form-actions"><%= submit_tag "Sign In", :class => "brn btn-primary" %>
+  </fieldset>
+<% end %>

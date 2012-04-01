@@ -48,6 +48,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    upload_image_and_set_its_url
     @product = Product.new(params[:product])
 
     respond_to do |format|
@@ -64,6 +65,7 @@ class ProductsController < ApplicationController
   # PUT /products/1
   # PUT /products/1.json
   def update
+    upload_image_and_set_its_url
     @product = Product.find(params[:id])
 
     respond_to do |format|
@@ -90,6 +92,16 @@ class ProductsController < ApplicationController
   end
 
   private
+
+    def upload_image_and_set_its_url
+      uploaded_io = params[:product][:image]
+      params[:product].delete("image")
+      ext = File.extname(uploaded_io.original_filename)
+      params[:product][:image_url] = '/product_images/' + params[:product][:id].to_s + ext
+      File.open(Rails.root.join('public', 'product_images', params[:product][:id].to_s + ext), 'w') do |file|
+        file.write(uploaded_io.read.force_encoding("utf-8"))
+      end
+    end
 
     def sort_column
       Product.column_names.include?(params[:sort_col]) ?  params[:sort_col] : "id"

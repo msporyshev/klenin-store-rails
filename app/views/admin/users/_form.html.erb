@@ -1,0 +1,66 @@
+<%= form_for [:admin, @user], :html => { :class => 'form-horizontal' } do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation" class="alert alert-error alert-block">
+      <h2 class="alert-heading">
+        <%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:
+      </h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> User</legend>
+
+    <div class="control-group">
+      <%= f.label :login, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :login, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :password, :class => "control-label" %>
+      <div class="controls">
+        <%= f.password_field :password %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :password_confirmation, "Confirmation", :class => "control-label" %>
+      <div class="controls">
+        <%= f.password_field :password_confirmation %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :name, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :name, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :email, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :email, :class => 'text_field' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :burthday, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.date_select :burthday, :class => 'date_select' %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', admin_users_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>

@@ -8,5 +8,5 @@ class Category < ActiveRecord::Base
   after_save lambda { |category|
       category.path = category.category.nil? ? "#{category.id}." : category.category.path + "#{category.id}."
       category.save!
-      }, :if => lambda{ |category| category.path.nil? }
+      }
 end
