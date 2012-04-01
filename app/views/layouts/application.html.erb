@@ -27,6 +27,7 @@
             </li>
           </ul>
         <% else %>
+          <%= render :partial => "navbar_guest" %>
           <ul id="user_header" class="nav pull-right">
             <li>
               <%= link_to "Sign Up", new_user_path %>
