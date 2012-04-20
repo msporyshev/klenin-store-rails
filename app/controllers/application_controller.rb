@@ -6,25 +6,16 @@ class ApplicationController < ActionController::Base
 
   protected
 
-    def current_session=(session)
-      @current_session = session
-    end
-
-    def current_session
-      @current_session ||= Session.authenticate_with_sid(cookies[:s_id].to_s)
-      if !@current_session
-        @current_session = Session.create
-        cookies[:s_id] = {:value => @current_session.secure_id, :expires => @current_session.expires_at}
-      end
-      @current_session
-    end
-
     def current_user=(user)
       @current_user = user
     end
 
     def current_user
       @current_user ||= User.authenticate_with_sid(cookies[:s_id].to_s)
+      if !@current_user
+        sign_in(User.create_guest)
+      end
+      @current_user
     end
 
     def current_cart=(cart)
@@ -32,12 +23,21 @@ class ApplicationController < ActionController::Base
     end
 
     def current_cart
-      @current_cart ||= current_session.cart
+      @current_cart ||= Cart.where(:user_id => current_user.id, :purchased_at => nil).last
       if !@current_cart
-        @current_cart = @current_session.build_cart
-        @current_session.save
+        @current_cart = @current_user.carts.build
+        @current_user.save(:validate => false)
       end
       @current_cart
+    end
+
+    def sign_in(user)
+      cookies.permanent[:s_id] = user.secure_id
+      self.current_user = user
+    end
+
+    def sign_up_if_not_signed_in
+      redirect_to edit_user_url(current_user) if current_user.name.nil?
     end
 
     def tree_grid_json(table_content, column_names)

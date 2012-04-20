@@ -1,0 +1,1 @@
+$(".compare-buttons.<%= @product.id.to_s %>").html("<%=j render( :partial => "products/compare_buttons", :locals => {product: @product}) %>")

@@ -1,0 +1,31 @@
+<h1>Compares</h1>
+<table class="table table-striped table-bordered compares-table">
+  <tbody>
+      <tr>
+        <td></td>
+        <% @compares.each do |compare| %>
+          <td><%= image_tag compare.product.image_url %></td>
+        <% end %>
+      </tr>
+      <tr>
+        <td>Description</td>
+        <% @compares.each do |compare| %>
+          <td><%= link_to compare.product.description, product_path(compare.product) %></td>
+        <% end %>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <% @compares.each do |compare| %>
+          <td><%= number_to_currency compare.product.price %></td>
+        <% end %>
+      </tr>
+      <tr>
+        <td></td>
+        <% @compares.each do |compare| %>
+          <td>
+            <%= link_to "Remove", compare_path(compare), :method => :delete, :class => 'btn btn-mini btn-danger' %>
+          </td>
+        <% end %>
+      </tr>
+  </tbody>
+</table>

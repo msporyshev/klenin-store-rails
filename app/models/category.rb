@@ -5,7 +5,7 @@ class Category < ActiveRecord::Base
   has_many :categories, :dependent => :destroy
   has_many :products, :dependent => :destroy
 
-  after_save lambda { |category|
+  after_create lambda { |category|
       category.path = category.category.nil? ? "#{category.id}." : category.category.path + "#{category.id}."
       category.save!
       }

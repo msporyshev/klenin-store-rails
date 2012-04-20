@@ -12,7 +12,7 @@
     <div class="navbar-inner">
       <div class="container">
         <%= link_to "My Store", root_url, :class => "brand" %>
-        <% if current_user %>
+        <% if current_user.name %>
           <% if current_user.role == "admin" %>
             <%= render :partial => "navbar_admin" %>
           <% else %>
@@ -20,7 +20,7 @@
           <% end %>
           <ul id="user_header" class="nav pull-right">
             <li>
-              <a>Signed in as <%= current_user.login %>. </a>
+              <%= link_to "Signed in as #{current_user.login}", user_path(current_user) %>
             </li>
             <li>
               <%= link_to "Sign Out", sessions_path, method: "delete" %>
@@ -30,7 +30,7 @@
           <%= render :partial => "navbar_guest" %>
           <ul id="user_header" class="nav pull-right">
             <li>
-              <%= link_to "Sign Up", new_user_path %>
+              <%= link_to "Sign Up", edit_user_path(current_user) %>
             </li>
             <li><a>or</a></li>
             <li>
@@ -38,6 +38,10 @@
             </li>
           </ul>
         <% end %>
+          <ul class="nav">
+            <li><%= link_to "Compare", compares_url %></li>
+            <li id="cart"><%= render :partial => "carts/cart" %></li>
+          </ul>
       </div>
     </div>
   </div>

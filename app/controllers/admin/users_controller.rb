@@ -1,9 +1,7 @@
 class Admin::UsersController < Admin::ApplicationController
 
-  # GET /admin/users
-  # GET /admin/users.json
   def index
-    @users = User.all
+    @users = User.where("name IS NOT NULL")
 
     respond_to do |format|
       format.html # index.html.erb

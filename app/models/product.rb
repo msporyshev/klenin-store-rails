@@ -2,14 +2,24 @@ class Product < ActiveRecord::Base
   validates :description, presence: true
 
   belongs_to :category
+  has_many :images
   has_many :product_carts
+  has_many :compares, :dependent => :destroy
 
-  after_save lambda { |product|
+  after_create lambda { |product|
       product.path = product.category.nil? ? "#{product.id}" : product.category.path + "#{product.id}"
       product.save!
       }
 
   before_destroy :ensure_not_referenced_by_any_product_cart
+
+  def compare(user)
+    user.compares.where(:product_id => id).first
+  end
+
+  def is_in_compares(user)
+    !compare(user).nil?
+  end
 
   private
 

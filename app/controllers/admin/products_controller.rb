@@ -48,7 +48,10 @@ class Admin::ProductsController < Admin::ApplicationController
   # POST /admin/products
   # POST /admin/products.json
   def create
-    upload_image_and_set_its_url
+    # if !upload_image_and_set_its_url
+    #   redirect_to :back, notice: "File is too big or has wrong extension"
+    #   return
+    # end
     @product = Product.new(params[:product])
 
     respond_to do |format|
@@ -65,7 +68,10 @@ class Admin::ProductsController < Admin::ApplicationController
   # PUT /admin/products/1
   # PUT /admin/products/1.json
   def update
-    upload_image_and_set_its_url
+    # if !upload_image_and_set_its_url
+    #   redirect_to :back, notice: "File is too big or has wrong extension"
+    #   return
+    # end
     @product = Product.find(params[:id])
 
     respond_to do |format|
@@ -97,10 +103,14 @@ class Admin::ProductsController < Admin::ApplicationController
       uploaded_io = params[:product][:image]
       params[:product].delete("image")
       ext = File.extname(uploaded_io.original_filename)
-      params[:product][:image_url] = '/admin/product_images/' + params[:product][:id].to_s + ext
-      File.open(Rails.root.join('public', 'product_images', params[:product][:id].to_s + ext), 'w') do |file|
+      return nil if uploaded_io.size > 1.megabytes
+      return nil if !%w[.jpg .jpeg .png .gif].include?(ext)
+      image_name = params[:product][:id] || rand(1000000)
+      params[:product][:image_url] = '/product_images/' + params[:product][:id].to_s + ext
+      File.open(Rails.root.join('public', 'product_images', image_name.to_s + ext), 'w') do |file|
         file.write(uploaded_io.read.force_encoding("utf-8"))
       end
+      true
     end
 
     def sort_column

@@ -1,5 +1,13 @@
 Store::Application.routes.draw do
 
+  resources :images
+
+  resources :compares
+
+  controller :paypal_notifications do
+    post "paypal_notifications" => :create
+  end
+
   resources :orders
 
   resources :product_carts
@@ -19,7 +27,7 @@ Store::Application.routes.draw do
   resources :products
 
   namespace :admin do
-    resources :users, :categories, :products
+    resources :users, :categories, :products, :orders, :images, :reports
   end
 
   # The priority is based upon order of creation:

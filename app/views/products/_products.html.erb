@@ -16,12 +16,15 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= image_tag product.image_url %></td>
+        <td><%= image_tag product.images.first.image_path_url(:preview).to_s %></td>
         <td><%= link_to product.description, product_path(product) %></td>
         <td><%= product.category.nil? ? nil : product.category.name %></td>
         <td><%= number_to_currency product.price %></td>
         <td>
-          <%= link_to 'Add to Cart', product_carts_path(product_id: product.id), :method => :post, :class => 'btn' %>
+          <%= link_to 'Add to Cart', product_carts_path(product_id: product.id), :method => :post, :remote => true, :class => 'btn btn-mini' %>
+          <div class="compare-buttons <%= product.id.to_s %>">
+            <%= render :partial => "compare_buttons", :locals => { :product => product } %>
+          </div>
         </td>
       </tr>
     <% end %>

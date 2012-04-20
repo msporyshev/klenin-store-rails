@@ -1,0 +1,46 @@
+<div class="span5">
+
+  <h2>Order</h2>
+
+  <p>
+    <b>User name</b><br>
+    <%= @order.user.name %>
+  </p>
+
+  <p>
+    <b>User address</b><br>
+    <%= @order.user.address %>
+  </p>
+
+  <p>
+    <b>User e-mail</b><br>
+    <%= @order.user.email %>
+  </p>
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit price</th>
+      </tr>
+      <% @order.product_carts.each do |item| %>
+        <tr>
+          <td><%= item.product.description %></td>
+          <td><%= item.quantity %> &times;</td>
+          <td class="item_price"><%= number_to_currency item.price %></td>
+        </tr>
+      <% end %>
+      <tr class="total_line">
+        <td colspan="2">Total price:</td>
+        <td class="total_cell"><%= number_to_currency(@order.total_price) %></td>
+      </tr>
+    </table>
+
+  <p>
+    <b>Purchased at</b><br>
+    <%= @order.purchased_at %>
+  </p>
+
+  <div class="form-actions">
+    <%= link_to 'Back', orders_path, :class => 'btn'  %>
+  </div>
+</div>

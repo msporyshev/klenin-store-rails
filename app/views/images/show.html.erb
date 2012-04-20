@@ -1,0 +1,13 @@
+<p>
+  <b>Product</b><br>
+  <%= link_to @image.product.description.to_s, product_path(@image.product) %>
+</p>
+
+<p>
+  <b>Name</b><br>
+  <%= @image.name %>
+</p>
+
+<p>
+  <%= image_tag @image.image_path_url.to_s %>
+</p>

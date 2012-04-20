@@ -1,0 +1,29 @@
+<%= form_for([:admin, @image], :html => {multipart: true}) do |f| %>
+  <fieldset>
+    <%= f.hidden_field :product_id %>
+
+    <div class="control-group">
+      <%= f.label :name, class: "control-label" %>
+      <div class="controls">
+        <%= f.text_field :name %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :image, class: "control-label" %>
+      <div class="controls">
+        <%= f.file_field :image_path %>
+      </div>
+    </div>
+
+    <div class="control-group">
+        <%= f.label :remote_image_path_url, "or image URL" %>
+      <div class="controls">
+        <%= f.text_field :remote_image_path_url %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.submit nil, class: "btn btn-primary" %>
+    </div>
+  </fieldset>
+<% end %>

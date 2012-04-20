@@ -1,0 +1,20 @@
+
+<p>
+  <b>Product:</b>
+  <%= link_to @image.product.description.to_s, admin_product_path(@image.product) %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @image.name %>
+</p>
+
+<p>
+  <%= image_tag @image.image_path_url.to_s %>
+</p>
+
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_admin_image_path(@image), :class => 'btn' %>
+  <%= link_to 'Delete', admin_image_path(@image), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

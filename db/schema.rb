@@ -11,9 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120401062316) do
+ActiveRecord::Schema.define(:version => 20120417064643) do
 
   create_table "carts", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "purchased_at"
   end
 
   create_table "categories", :force => true do |t|
@@ -22,9 +24,28 @@ ActiveRecord::Schema.define(:version => 20120401062316) do
     t.string  "path"
   end
 
+  create_table "compares", :force => true do |t|
+    t.integer "user_id"
+    t.integer "product_id"
+  end
+
+  create_table "images", :force => true do |t|
+    t.integer "product_id"
+    t.string  "name"
+    t.string  "image_path"
+  end
+
+  create_table "paypal_notifications", :force => true do |t|
+    t.text    "params"
+    t.integer "cart_id"
+    t.string  "status"
+    t.string  "transaction_id"
+  end
+
   create_table "product_carts", :force => true do |t|
     t.integer "product_id"
-    t.integer "quantity",   :default => 1
+    t.decimal "price",      :precision => 10, :scale => 2
+    t.integer "quantity",                                  :default => 1
     t.integer "cart_id"
   end
 
@@ -36,23 +57,19 @@ ActiveRecord::Schema.define(:version => 20120401062316) do
     t.string  "image_url"
   end
 
-  create_table "sessions", :force => true do |t|
-    t.string   "secure_id"
-    t.datetime "expires_at"
-    t.integer  "cart_id"
-  end
-
   create_table "users", :force => true do |t|
     t.string   "login"
     t.string   "name"
     t.string   "email"
+    t.string   "address"
     t.date     "burthday"
     t.string   "hashed_pass"
     t.string   "salt"
     t.string   "secure_id"
-    t.datetime "expired_at"
+    t.datetime "expires_at"
     t.string   "role"
-    t.integer  "session_id"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

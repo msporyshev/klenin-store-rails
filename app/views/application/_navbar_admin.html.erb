@@ -1,7 +1,24 @@
 <ul class="nav">
-  <li><%= link_to "Edit Products", admin_products_path %></li>
-  <li><%= link_to "Buy Products", products_path %></li>
-  <li><%= link_to "View Users", admin_users_path %></li>
-  <li><%= link_to "Profile", admin_user_path(current_user) %></li>
-  <li><%= link_to "Cart", cart_path(current_cart) %></li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Store
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><%= link_to "Go Shopping", products_path %></li>
+      <li><%= link_to "My Profile", admin_user_path(current_user) %></li>
+      <li><%= link_to "My Orders", orders_path %></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Administer
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><%= link_to "Edit Products", admin_products_path %></li>
+      <li><%= link_to "View Orders", admin_orders_path %></li>
+      <li><%= link_to "View Users", admin_users_path %></li>
+    </ul>
+  </li>
 </ul>

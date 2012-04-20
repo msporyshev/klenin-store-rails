@@ -1,0 +1,29 @@
+<h1>Orders</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>User address</th>
+      <th>User e-mail</th>
+      <th>Cart</th>
+      <th>Total price</th>
+      <th>Purchased at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.user.name %></td>
+        <td><%= order.user.address %></td>
+        <td><%= order.user.email %></td>
+        <td><%= link_to "Cart", cart_path(order) %></td>
+        <td><%= number_to_currency order.total_price %></td>
+        <td><%= order.purchased_at %></td>
+        <td>
+          <%= link_to "Show", order_path(order), :class => 'btn btn-mini' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

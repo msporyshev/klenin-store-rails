@@ -1,0 +1,3528 @@
+I, [2012-04-15T23:37:49.597221 #5404]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-15T23:37:49.598355 #5404]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-15T23:37:49.599984 #5404]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-15T23:37:49.601471 #5404]  INFO -- : worker=0 spawning...
+I, [2012-04-15T23:37:49.603227 #5404]  INFO -- : worker=1 spawning...
+I, [2012-04-15T23:37:49.605073 #5407]  INFO -- : worker=0 spawned pid=5407
+I, [2012-04-15T23:37:49.605194 #5404]  INFO -- : worker=2 spawning...
+I, [2012-04-15T23:37:49.605955 #5407]  INFO -- : Refreshing Gem list
+I, [2012-04-15T23:37:49.607262 #5410]  INFO -- : worker=1 spawned pid=5410
+I, [2012-04-15T23:37:49.608244 #5410]  INFO -- : Refreshing Gem list
+I, [2012-04-15T23:37:49.608076 #5404]  INFO -- : worker=3 spawning...
+I, [2012-04-15T23:37:49.611209 #5413]  INFO -- : worker=2 spawned pid=5413
+I, [2012-04-15T23:37:49.611972 #5413]  INFO -- : Refreshing Gem list
+I, [2012-04-15T23:37:49.623887 #5404]  INFO -- : master process ready
+I, [2012-04-15T23:37:49.638586 #5416]  INFO -- : worker=3 spawned pid=5416
+I, [2012-04-15T23:37:49.639514 #5416]  INFO -- : Refreshing Gem list
+I, [2012-04-15T23:38:06.943243 #5410]  INFO -- : worker=1 ready
+I, [2012-04-15T23:38:07.396028 #5416]  INFO -- : worker=3 ready
+I, [2012-04-15T23:38:07.657359 #5407]  INFO -- : worker=0 ready
+I, [2012-04-15T23:38:08.131376 #5413]  INFO -- : worker=2 ready
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /categories.json?_search=false&nd=1334493489191&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+D, [2012-04-16T11:22:18.076200 #5404] DEBUG -- : waiting 16.0s after suspend/hibernation
+cache: [GET /] miss
+cache: [GET /categories.json?_search=false&nd=1334535871858&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+D, [2012-04-16T14:43:12.499451 #5404] DEBUG -- : waiting 16.0s after suspend/hibernation
+I, [2012-04-16T14:49:13.507173 #5404]  INFO -- : reaped #<Process::Status: pid 5407 exit 0> worker=0
+I, [2012-04-16T14:49:13.507622 #5404]  INFO -- : reaped #<Process::Status: pid 5410 exit 0> worker=1
+I, [2012-04-16T14:49:13.508079 #5404]  INFO -- : reaped #<Process::Status: pid 5413 exit 0> worker=2
+I, [2012-04-16T14:49:13.508561 #5404]  INFO -- : reaped #<Process::Status: pid 5416 exit 0> worker=3
+I, [2012-04-16T14:49:13.508975 #5404]  INFO -- : master complete
+I, [2012-04-16T14:56:50.152362 #7219]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-16T14:56:50.153559 #7219]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-16T14:56:50.155367 #7219]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-16T14:56:50.157168 #7219]  INFO -- : worker=0 spawning...
+I, [2012-04-16T14:56:50.159085 #7219]  INFO -- : worker=1 spawning...
+I, [2012-04-16T14:56:50.160464 #7222]  INFO -- : worker=0 spawned pid=7222
+I, [2012-04-16T14:56:50.161163 #7222]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:56:50.161616 #7219]  INFO -- : worker=2 spawning...
+I, [2012-04-16T14:56:50.163657 #7225]  INFO -- : worker=1 spawned pid=7225
+I, [2012-04-16T14:56:50.164242 #7219]  INFO -- : worker=3 spawning...
+I, [2012-04-16T14:56:50.164458 #7225]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:56:50.167455 #7219]  INFO -- : master process ready
+I, [2012-04-16T14:56:50.167394 #7228]  INFO -- : worker=2 spawned pid=7228
+I, [2012-04-16T14:56:50.168027 #7228]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:56:50.173702 #7231]  INFO -- : worker=3 spawned pid=7231
+I, [2012-04-16T14:56:50.174485 #7231]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:57:03.267081 #7222]  INFO -- : worker=0 ready
+I, [2012-04-16T14:57:03.267081 #7225]  INFO -- : worker=1 ready
+I, [2012-04-16T14:57:03.301866 #7231]  INFO -- : worker=3 ready
+I, [2012-04-16T14:57:03.311752 #7228]  INFO -- : worker=2 ready
+127.0.0.1 - - [16/Apr/2012 14:57:08] "GET / HTTP/1.1" 500 26907 5.6707
+127.0.0.1 - - [16/Apr/2012 14:58:23] "GET / HTTP/1.1" 500 23425 5.8615
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET / HTTP/1.1" 200 - 11.6497
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /admin/images.css?body=1 HTTP/1.1" 304 - 0.0417
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /admin/orders.css?body=1 HTTP/1.1" 304 - 0.0303
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /admin/products.css?body=1 HTTP/1.1" 304 - 0.0348
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /admin/users.css?body=1 HTTP/1.1" 304 - 0.0329
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /admin/application.css?body=1 HTTP/1.1" 304 - 0.1523
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /carts.css?body=1 HTTP/1.1" 304 - 0.0390
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /categories.css?body=1 HTTP/1.1" 304 - 0.0321
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.1" 304 - 0.0991
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /compares.css?body=1 HTTP/1.1" 304 - 0.0438
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.1" 304 - 0.0288
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /images.css?body=1 HTTP/1.1" 304 - 0.0263
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /paypal_notifications.css?body=1 HTTP/1.1" 304 - 0.0292
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /orders.css?body=1 HTTP/1.1" 304 - 0.0771
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /product_carts.css?body=1 HTTP/1.1" 304 - 0.0391
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /ui.jqgrid.css?body=1 HTTP/1.1" 304 - 0.0241
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /products.css?body=1 HTTP/1.1" 304 - 0.0525
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /users.css?body=1 HTTP/1.1" 304 - 0.0348
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /jquery_ujs.js?body=1 HTTP/1.1" 304 - 0.0355
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /application.css?body=1 HTTP/1.1" 304 - 0.5418
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.1" 304 - 0.0728
+127.0.0.1 - - [16/Apr/2012 14:58:52] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.1" 304 - 0.0867
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /jquery.js?body=1 HTTP/1.1" 304 - 0.2139
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.1" 304 - 0.0799
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.1" 304 - 0.0530
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.1" 304 - 0.0390
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.1" 304 - 0.0584
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.1" 304 - 0.0667
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.1" 304 - 0.0558
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.1" 304 - 0.0695
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.1" 304 - 0.0456
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.1" 304 - 0.0557
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.1" 304 - 0.1081
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /admin/application.js?body=1 HTTP/1.1" 304 - 0.0370
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /admin/images.js?body=1 HTTP/1.1" 304 - 0.0330
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /admin/categories.js?body=1 HTTP/1.1" 304 - 0.0540
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /admin/products.js?body=1 HTTP/1.1" 304 - 0.0384
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /admin/orders.js?body=1 HTTP/1.1" 304 - 0.0678
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /admin/users.js?body=1 HTTP/1.1" 304 - 0.0270
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /carts.js?body=1 HTTP/1.1" 304 - 0.0363
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /bootstrap.js?body=1 HTTP/1.1" 304 - 0.0556
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /categories.js?body=1 HTTP/1.1" 304 - 0.0435
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /compares.js?body=1 HTTP/1.1" 304 - 0.0355
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.1" 304 - 0.0326
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /twitter/bootstrap.js?body=1 HTTP/1.1" 304 - 0.2883
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.1" 304 - 0.0609
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /images.js?body=1 HTTP/1.1" 304 - 0.0268
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /paypal_notifications.js?body=1 HTTP/1.1" 304 - 0.0239
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /orders.js?body=1 HTTP/1.1" 304 - 0.0267
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /product_carts.js?body=1 HTTP/1.1" 304 - 0.0221
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /products.js?body=1 HTTP/1.1" 304 - 0.0248
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /sessions.js?body=1 HTTP/1.1" 304 - 0.0250
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.1" 304 - 0.1212
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /products_grid.js?body=1 HTTP/1.1" 304 - 0.0411
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /tree_grid_categories.js?body=1 HTTP/1.1" 304 - 0.0276
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /users.js?body=1 HTTP/1.1" 304 - 0.0297
+127.0.0.1 - - [16/Apr/2012 14:58:53] "GET /application.js?body=1 HTTP/1.1" 304 - 0.1870
+127.0.0.1 - - [16/Apr/2012 14:58:56] "GET /admin/categories.css?body=1 HTTP/1.1" 304 - 4.2854
+127.0.0.1 - - [16/Apr/2012 14:58:57] "GET %2Fuploads%2Fimage%2Fimage_path%2F14765%2Fpreview_1407245167534040_1.jpg HTTP/1.1" 304 - 0.1798
+127.0.0.1 - - [16/Apr/2012 14:58:57] "GET %2Fuploads%2Fimage%2Fimage_path%2F14766%2Fpreview_1407216453914040_1.jpg HTTP/1.1" 304 - 0.2082
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14767%2Fpreview_3505472963094040_1.jpg HTTP/1.1" 304 - 0.2523
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14768%2Fpreview_1808408728174040_1.jpg HTTP/1.1" 304 - 0.2066
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14769%2Fpreview_2808435892874040_1.jpg HTTP/1.1" 304 - 0.1702
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /categories.json?_search=false&nd=1334548737601&rows=10000&page=1&sidx=&sord=asc HTTP/1.1" 200 - 0.5378
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14770%2Fpreview_3006782038184040_1.jpg HTTP/1.1" 304 - 0.1557
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14771%2Fpreview_1507751120204040_1.jpg HTTP/1.1" 304 - 0.0416
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14772%2Fpreview_3006820599684040_1.jpg HTTP/1.1" 304 - 0.0425
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14773%2Fpreview_1708077890574040_1.jpg HTTP/1.1" 304 - 0.0276
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14774%2Fpreview_2906753292634040_1.jpg HTTP/1.1" 304 - 0.0166
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14775%2Fpreview_1906525455214040_1.jpg HTTP/1.1" 304 - 0.0121
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14776%2Fpreview_2808483034194040_1.jpg HTTP/1.1" 304 - 0.0135
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14777%2Fpreview_1708027877704040_1.jpg HTTP/1.1" 304 - 0.0105
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14778%2Fpreview_2906670194364040_1.jpg HTTP/1.1" 304 - 0.0054
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14779%2Fpreview_4002801973804040_1.jpg HTTP/1.1" 304 - 0.0094
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14781%2Fpreview_2510198967254040_1.jpg HTTP/1.1" 304 - 0.0058
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14780%2Fpreview_2609815677794040_1.jpg HTTP/1.1" 304 - 0.0082
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14782%2Fpreview_1906553294314040_2.jpg HTTP/1.1" 304 - 0.0079
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14783%2Fpreview_2510199142154040_1.jpg HTTP/1.1" 304 - 0.0051
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET %2Fuploads%2Fimage%2Fimage_path%2F14784%2Fpreview_3208496421564040_1.jpg HTTP/1.1" 304 - 0.0053
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-bg_flat_75_ffffff_40x100.png HTTP/1.1" 304 - 0.0480
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png HTTP/1.1" 304 - 0.0951
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-bg_glass_65_ffffff_1x400.png HTTP/1.1" 304 - 0.1012
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-bg_flat_0_eeeeee_40x100.png HTTP/1.1" 304 - 0.1238
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-bg_highlight-hard_50_dddddd_1x100.png HTTP/1.1" 304 - 0.0788
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-icons_666666_256x240.png HTTP/1.1" 304 - 0.0499
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-icons_0073ea_256x240.png HTTP/1.1" 304 - 0.0788
+127.0.0.1 - - [16/Apr/2012 14:58:58] "GET /custom-theme/images/ui-icons_ff0084_256x240.png HTTP/1.1" 304 - 0.0793
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET /products.js?sort_col=description&sort_dir=asc HTTP/1.1" 200 - 1.4560
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F17732%2Fpreview_2906832783474040_1.jpg HTTP/1.1" 200 4775 0.0431
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F17517%2Fpreview_2007283452774040_1.jpg HTTP/1.1" 200 4415 0.0895
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F8665%2Fpreview_2510194028274040_1.jpg HTTP/1.1" 200 9129 0.1060
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F5101%2Fpreview_1808456299324040_1.jpg HTTP/1.1" 200 7765 0.1258
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F7116%2Fpreview_1906254919134040_1.jpg HTTP/1.1" 200 6284 0.1256
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F8812%2Fpreview_2510220764724040_1.jpg HTTP/1.1" 200 5492 0.0766
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F11833%2Fpreview_1707663725504040_2.jpg HTTP/1.1" 200 11945 0.0719
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F12209%2Fpreview_1708028156114040_1.jpg HTTP/1.1" 200 7648 0.0413
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F7175%2Fpreview_2207516673044040001_13.jpg HTTP/1.1" 200 12690 0.0258
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F12731%2Fpreview_2209788141254040_1.jpg HTTP/1.1" 200 3071 0.0287
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F9689%2Fpreview_2609793213414040_1.jpg HTTP/1.1" 200 3592 0.1269
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F15161%2Fpreview_2709345809944040_1.jpg HTTP/1.1" 200 8022 0.1201
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F5320%2Fpreview_2906784757094040_1.jpg HTTP/1.1" 200 1642 0.0431
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F16319%2Fpreview_2808433000124040_1.jpg HTTP/1.1" 200 7146 0.2671
+127.0.0.1 - - [16/Apr/2012 14:59:03] "GET %2Fuploads%2Fimage%2Fimage_path%2F15821%2Fpreview_2209776503764040_1.jpg HTTP/1.1" 200 5506 0.0676
+127.0.0.1 - - [16/Apr/2012 14:59:04] "GET %2Fuploads%2Fimage%2Fimage_path%2F7897%2Fpreview_1707744984944040_1.jpg HTTP/1.1" 200 3873 0.0345
+127.0.0.1 - - [16/Apr/2012 14:59:04] "GET %2Fuploads%2Fimage%2Fimage_path%2F12725%2Fpreview_1808458354874040_1.jpg HTTP/1.1" 200 9370 0.0343
+127.0.0.1 - - [16/Apr/2012 14:59:04] "GET %2Fuploads%2Fimage%2Fimage_path%2F12802%2Fpreview_1503878567374040_4.jpg HTTP/1.1" 200 3622 0.1066
+127.0.0.1 - - [16/Apr/2012 14:59:04] "GET %2Fuploads%2Fimage%2Fimage_path%2F11543%2Fpreview_3208493804964040_1.jpg HTTP/1.1" 200 6766 0.0848
+127.0.0.1 - - [16/Apr/2012 14:59:04] "GET %2Fimages%2Fup_arrow.gif HTTP/1.1" 200 95 0.0269
+127.0.0.1 - - [16/Apr/2012 14:59:04] "GET %2Fuploads%2Fimage%2Fimage_path%2F6713%2Fpreview_1808426498214040_1.jpg HTTP/1.1" 200 4101 0.1531
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET /products.js?sort_col=description&sort_dir=desc HTTP/1.1" 200 - 1.4742
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F13152%2Fpreview_2609786747954040_1.jpg HTTP/1.1" 200 5164 0.0161
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F13148%2Fpreview_2510169851414040_1.jpg HTTP/1.1" 200 5031 0.0692
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F13150%2Fpreview_2510169851464040_1.jpg HTTP/1.1" 200 5684 0.0740
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F7406%2Fpreview_2709359228214040_2.jpg HTTP/1.1" 200 8673 0.0899
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F11383%2Fpreview_2906797224974040_7.jpg HTTP/1.1" 200 3790 0.0605
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F13831%2Fpreview_3006744597154040_3.jpg HTTP/1.1" 200 5096 0.0616
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F11539%2Fpreview_2007269864884040_1.jpg HTTP/1.1" 200 6240 0.0839
+127.0.0.1 - - [16/Apr/2012 14:59:11] "GET %2Fuploads%2Fimage%2Fimage_path%2F9318%2Fpreview_3208663438014040_1.jpg HTTP/1.1" 200 5547 0.0734
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F8737%2Fpreview_1208806877674040_1.jpg HTTP/1.1" 200 5563 0.0595
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F8475%2Fpreview_2209802108844040_1.jpg HTTP/1.1" 200 3342 0.0612
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F6179%2Fpreview_2510211817754040_1.jpg HTTP/1.1" 200 9375 0.1209
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F4959%2Fpreview_2808436183974040_1.jpg HTTP/1.1" 200 6169 0.1117
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F8676%2Fpreview_3804212968974040_1.jpg HTTP/1.1" 200 6053 0.1142
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F9506%2Fpreview_3103878503314040_1.jpg HTTP/1.1" 200 5793 0.0355
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F8663%2Fpreview_3103878503294040_1.jpg HTTP/1.1" 200 9990 0.1257
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F9502%2Fpreview_3103751371294040_1.jpg HTTP/1.1" 200 3660 0.0347
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F9503%2Fpreview_3103878503304040_1.jpg HTTP/1.1" 200 7291 0.0456
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fimages%2Fdown_arrow.gif HTTP/1.1" 200 526 0.0342
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F8413%2Fpreview_1108451048954040_1.jpg HTTP/1.1" 200 2886 0.0685
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F8416%2Fpreview_1208804534464040_1.jpg HTTP/1.1" 200 6764 0.0832
+127.0.0.1 - - [16/Apr/2012 14:59:12] "GET %2Fuploads%2Fimage%2Fimage_path%2F9247%2Fpreview_3804212968944040_1.jpg HTTP/1.1" 200 5542 0.1394
+127.0.0.1 - - [16/Apr/2012 14:59:14] "GET /products.js?sort_col=description&sort_dir=asc HTTP/1.1" 304 - 1.5053
+127.0.0.1 - - [16/Apr/2012 14:59:15] "GET /products.js?sort_col=description&sort_dir=desc HTTP/1.1" 304 - 0.4315
+127.0.0.1 - - [16/Apr/2012 14:59:16] "GET /products.js?sort_col=description&sort_dir=asc HTTP/1.1" 304 - 0.5050
+127.0.0.1 - - [16/Apr/2012 14:59:17] "GET /products.js?sort_col=description&sort_dir=desc HTTP/1.1" 304 - 0.4962
+I, [2012-04-16T14:59:35.858944 #7219]  INFO -- : reaped #<Process::Status: pid 7222 exit 0> worker=0
+I, [2012-04-16T14:59:35.859384 #7219]  INFO -- : reaped #<Process::Status: pid 7225 exit 0> worker=1
+I, [2012-04-16T14:59:35.859780 #7219]  INFO -- : reaped #<Process::Status: pid 7228 exit 0> worker=2
+I, [2012-04-16T14:59:36.060476 #7219]  INFO -- : reaped #<Process::Status: pid 7231 exit 0> worker=3
+I, [2012-04-16T14:59:36.060901 #7219]  INFO -- : master complete
+I, [2012-04-16T14:59:40.346711 #7258]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-16T14:59:40.347784 #7258]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-16T14:59:40.349534 #7258]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-16T14:59:40.351091 #7258]  INFO -- : worker=0 spawning...
+I, [2012-04-16T14:59:40.352922 #7258]  INFO -- : worker=1 spawning...
+I, [2012-04-16T14:59:40.354499 #7261]  INFO -- : worker=0 spawned pid=7261
+I, [2012-04-16T14:59:40.355410 #7261]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:59:40.355303 #7258]  INFO -- : worker=2 spawning...
+I, [2012-04-16T14:59:40.357365 #7264]  INFO -- : worker=1 spawned pid=7264
+I, [2012-04-16T14:59:40.358306 #7264]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:59:40.358327 #7258]  INFO -- : worker=3 spawning...
+I, [2012-04-16T14:59:40.361866 #7267]  INFO -- : worker=2 spawned pid=7267
+I, [2012-04-16T14:59:40.362814 #7267]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:59:40.382920 #7258]  INFO -- : master process ready
+I, [2012-04-16T14:59:40.411683 #7270]  INFO -- : worker=3 spawned pid=7270
+I, [2012-04-16T14:59:40.437559 #7270]  INFO -- : Refreshing Gem list
+I, [2012-04-16T14:59:58.576447 #7270]  INFO -- : worker=3 ready
+I, [2012-04-16T14:59:58.642728 #7264]  INFO -- : worker=1 ready
+I, [2012-04-16T14:59:58.728493 #7267]  INFO -- : worker=2 ready
+I, [2012-04-16T14:59:58.921175 #7261]  INFO -- : worker=0 ready
+E, [2012-04-16T15:00:29.439316 #7258] ERROR -- : worker=1 PID:7264 timeout (31s > 30s), killing
+E, [2012-04-16T15:00:29.440667 #7258] ERROR -- : worker=3 PID:7270 timeout (31s > 30s), killing
+E, [2012-04-16T15:00:29.537041 #7258] ERROR -- : reaped #<Process::Status: pid 7270 SIGKILL (signal 9)> worker=3
+E, [2012-04-16T15:00:29.537462 #7258] ERROR -- : worker=1 PID:7264 timeout (31s > 30s), killing
+I, [2012-04-16T15:00:29.537792 #7258]  INFO -- : worker=3 spawning...
+I, [2012-04-16T15:00:29.540433 #7291]  INFO -- : worker=3 spawned pid=7291
+I, [2012-04-16T15:00:29.541125 #7291]  INFO -- : Refreshing Gem list
+E, [2012-04-16T15:00:29.541462 #7258] ERROR -- : reaped #<Process::Status: pid 7264 SIGKILL (signal 9)> worker=1
+I, [2012-04-16T15:00:29.541987 #7258]  INFO -- : worker=1 spawning...
+I, [2012-04-16T15:00:29.544569 #7294]  INFO -- : worker=1 spawned pid=7294
+I, [2012-04-16T15:00:29.545130 #7294]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:00:47.490144 #7291]  INFO -- : worker=3 ready
+I, [2012-04-16T15:00:47.509074 #7294]  INFO -- : worker=1 ready
+E, [2012-04-16T15:01:04.552807 #7258] ERROR -- : worker=2 PID:7267 timeout (31s > 30s), killing
+E, [2012-04-16T15:01:04.644686 #7258] ERROR -- : reaped #<Process::Status: pid 7267 SIGKILL (signal 9)> worker=2
+I, [2012-04-16T15:01:04.645260 #7258]  INFO -- : worker=2 spawning...
+I, [2012-04-16T15:01:04.649304 #7301]  INFO -- : worker=2 spawned pid=7301
+I, [2012-04-16T15:01:04.650471 #7301]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:01:10.996323 #7258]  INFO -- : reaped #<Process::Status: pid 7301 exit 0> worker=2
+I, [2012-04-16T15:01:11.197396 #7258]  INFO -- : reaped #<Process::Status: pid 7261 exit 0> worker=0
+I, [2012-04-16T15:01:11.197768 #7258]  INFO -- : reaped #<Process::Status: pid 7291 exit 0> worker=3
+I, [2012-04-16T15:01:11.198149 #7258]  INFO -- : reaped #<Process::Status: pid 7294 exit 0> worker=1
+I, [2012-04-16T15:01:11.198535 #7258]  INFO -- : master complete
+I, [2012-04-16T15:14:58.083825 #7548]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-16T15:14:58.085029 #7548]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-16T15:14:58.087021 #7548]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-16T15:14:58.088686 #7548]  INFO -- : worker=0 spawning...
+I, [2012-04-16T15:14:58.090586 #7548]  INFO -- : worker=1 spawning...
+I, [2012-04-16T15:14:58.092556 #7548]  INFO -- : worker=2 spawning...
+I, [2012-04-16T15:14:58.092488 #7551]  INFO -- : worker=0 spawned pid=7551
+I, [2012-04-16T15:14:58.093455 #7551]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:14:58.094348 #7554]  INFO -- : worker=1 spawned pid=7554
+I, [2012-04-16T15:14:58.095049 #7554]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:14:58.096208 #7548]  INFO -- : worker=3 spawning...
+I, [2012-04-16T15:14:58.104445 #7557]  INFO -- : worker=2 spawned pid=7557
+I, [2012-04-16T15:14:58.105476 #7557]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:14:58.109809 #7548]  INFO -- : master process ready
+I, [2012-04-16T15:14:58.126665 #7560]  INFO -- : worker=3 spawned pid=7560
+I, [2012-04-16T15:14:58.127334 #7560]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:15:15.136689 #7560]  INFO -- : worker=3 ready
+I, [2012-04-16T15:15:16.281052 #7557]  INFO -- : worker=2 ready
+I, [2012-04-16T15:15:17.450525 #7551]  INFO -- : worker=0 ready
+I, [2012-04-16T15:15:17.608223 #7554]  INFO -- : worker=1 ready
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /uploads/image/image_path/14765/preview_1407245167534040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14768/preview_1808408728174040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14769/preview_2808435892874040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14770/preview_3006782038184040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14771/preview_1507751120204040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14772/preview_3006820599684040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14773/preview_1708077890574040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14774/preview_2906753292634040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14775/preview_1906525455214040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14776/preview_2808483034194040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14777/preview_1708027877704040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14778/preview_2906670194364040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14779/preview_4002801973804040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14766/preview_1407216453914040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14780/preview_2609815677794040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14782/preview_1906553294314040_2.jpg] miss
+cache: [GET /uploads/image/image_path/14783/preview_2510199142154040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14781/preview_2510198967254040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14784/preview_3208496421564040_1.jpg] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /uploads/image/image_path/14767/preview_3505472963094040_1.jpg] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334549718770&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /products.js?nodeid=267] miss
+cache: [GET /uploads/image/image_path/14765/preview_1407245167534040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14766/preview_1407216453914040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14770/preview_3006782038184040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14767/preview_3505472963094040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14768/preview_1808408728174040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14771/preview_1507751120204040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14769/preview_2808435892874040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14772/preview_3006820599684040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14773/preview_1708077890574040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14774/preview_2906753292634040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14775/preview_1906525455214040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14776/preview_2808483034194040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14777/preview_1708027877704040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14778/preview_2906670194364040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14779/preview_4002801973804040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14780/preview_2609815677794040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14781/preview_2510198967254040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14782/preview_1906553294314040_2.jpg] miss
+cache: [GET /uploads/image/image_path/14783/preview_2510199142154040_1.jpg] miss
+cache: [GET /uploads/image/image_path/14784/preview_3208496421564040_1.jpg] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /categories.json?_search=false&nd=1334549746131&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+I, [2012-04-16T15:17:07.842462 #7548]  INFO -- : reaped #<Process::Status: pid 7551 exit 0> worker=0
+I, [2012-04-16T15:17:07.842901 #7548]  INFO -- : reaped #<Process::Status: pid 7554 exit 0> worker=1
+I, [2012-04-16T15:17:07.843234 #7548]  INFO -- : reaped #<Process::Status: pid 7560 exit 0> worker=3
+I, [2012-04-16T15:17:07.943847 #7548]  INFO -- : reaped #<Process::Status: pid 7557 exit 0> worker=2
+I, [2012-04-16T15:17:07.944278 #7548]  INFO -- : master complete
+I, [2012-04-16T15:17:54.893251 #7604]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-16T15:17:54.894346 #7604]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-16T15:17:54.895961 #7604]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-16T15:17:54.897549 #7604]  INFO -- : worker=0 spawning...
+I, [2012-04-16T15:17:54.899453 #7604]  INFO -- : worker=1 spawning...
+I, [2012-04-16T15:17:54.900907 #7607]  INFO -- : worker=0 spawned pid=7607
+I, [2012-04-16T15:17:54.901800 #7607]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:17:54.901789 #7604]  INFO -- : worker=2 spawning...
+I, [2012-04-16T15:17:54.903734 #7610]  INFO -- : worker=1 spawned pid=7610
+I, [2012-04-16T15:17:54.904618 #7610]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:17:54.904993 #7604]  INFO -- : worker=3 spawning...
+I, [2012-04-16T15:17:54.908883 #7604]  INFO -- : master process ready
+I, [2012-04-16T15:17:54.918528 #7613]  INFO -- : worker=2 spawned pid=7613
+I, [2012-04-16T15:17:54.918606 #7616]  INFO -- : worker=3 spawned pid=7616
+I, [2012-04-16T15:17:54.919268 #7616]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:17:54.919246 #7613]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:18:12.402547 #7607]  INFO -- : worker=0 ready
+I, [2012-04-16T15:18:13.277195 #7610]  INFO -- : worker=1 ready
+I, [2012-04-16T15:18:13.495577 #7613]  INFO -- : worker=2 ready
+I, [2012-04-16T15:18:14.096244 #7616]  INFO -- : worker=3 ready
+cache: [GET /] miss
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /categories.json?_search=false&nd=1334549894990&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+I, [2012-04-16T15:20:38.293035 #7604]  INFO -- : reaped #<Process::Status: pid 7607 exit 0> worker=0
+I, [2012-04-16T15:20:38.293397 #7604]  INFO -- : reaped #<Process::Status: pid 7610 exit 0> worker=1
+I, [2012-04-16T15:20:38.293663 #7604]  INFO -- : reaped #<Process::Status: pid 7613 exit 0> worker=2
+I, [2012-04-16T15:20:38.293910 #7604]  INFO -- : reaped #<Process::Status: pid 7616 exit 0> worker=3
+I, [2012-04-16T15:20:38.294205 #7604]  INFO -- : master complete
+I, [2012-04-16T15:28:37.556799 #2287]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-16T15:28:37.583812 #2287]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-16T15:28:37.602985 #2287]  INFO -- : worker=0 spawning...
+I, [2012-04-16T15:28:37.604224 #2287]  INFO -- : worker=1 spawning...
+I, [2012-04-16T15:28:37.605575 #2290]  INFO -- : worker=0 spawned pid=2290
+I, [2012-04-16T15:28:37.605835 #2287]  INFO -- : worker=2 spawning...
+I, [2012-04-16T15:28:37.606243 #2290]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:28:37.607384 #2287]  INFO -- : worker=3 spawning...
+I, [2012-04-16T15:28:37.609715 #2293]  INFO -- : worker=1 spawned pid=2293
+I, [2012-04-16T15:28:37.610315 #2293]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:28:37.610938 #2295]  INFO -- : worker=2 spawned pid=2295
+I, [2012-04-16T15:28:37.611586 #2295]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:28:37.614346 #2287]  INFO -- : master process ready
+I, [2012-04-16T15:28:37.616237 #2299]  INFO -- : worker=3 spawned pid=2299
+I, [2012-04-16T15:28:37.622782 #2299]  INFO -- : Refreshing Gem list
+I, [2012-04-16T15:29:01.263430 #2299]  INFO -- : worker=3 ready
+I, [2012-04-16T15:29:01.264918 #2290]  INFO -- : worker=0 ready
+I, [2012-04-16T15:29:01.264918 #2293]  INFO -- : worker=1 ready
+I, [2012-04-16T15:29:01.269112 #2295]  INFO -- : worker=2 ready
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /categories.json?_search=false&nd=1334550546963&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /categories.json?_search=false&nd=1334550557924&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334550560962&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=price&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=price&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=price&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=price&sort_dir=desc] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /products.js?nodeid=11232] miss
+cache: [GET /assets/] miss
+cache: [GET /products.js?nodeid=173634] miss
+cache: [GET /products/18926] miss
+cache: [GET /images/17867] miss
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334551262355&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [POST /compares?product_id=6029] invalidate, pass
+cache: [POST /compares?product_id=6031] invalidate, pass
+cache: [DELETE /compares/2] invalidate, pass
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334551280227&rows=10000&page=1&sidx=&sord=asc&nodeid=11450&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=11450] miss
+cache: [POST /compares?product_id=7135] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/3] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/1] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /categories.json?_search=false&nd=1334551316184&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [POST /product_carts?product_id=6029] invalidate, pass
+cache: [GET /carts/2721] miss
+cache: [POST /product_carts?product_id=6030] invalidate, pass
+cache: [GET /carts/2721] miss
+cache: [GET /carts/2721] miss
+cache: [POST /orders] invalidate, pass
+cache: [GET /users/2774/edit] miss
+cache: [GET /sessions/new] miss
+cache: [POST /sessions] invalidate, pass
+cache: [GET /] miss
+cache: [GET /categories.json?_search=false&nd=1334551380239&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /carts/2721] miss
+cache: [POST /orders] invalidate, pass
+cache: [GET /orders/2721?notice=Order+was+successfully+created.] miss
+cache: [GET /admin/orders] miss
+cache: [GET /orders/9] miss
+cache: [GET /admin/products] miss
+cache: [GET /admin/categories.json?_search=false&nd=1334551507014&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_flat_0_eeeeee_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /admin/products/6029/edit] miss
+cache: [GET /admin/categories.json?_search=false&nd=1334551566841&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /admin/products/6029] miss
+cache: [GET /admin/images/new?product_id=6029] miss
+cache: [POST /admin/images] invalidate, pass
+cache: [GET /admin/products/6029?notice=Image+was+successfully+created.] miss
+I, [2012-04-16T16:13:22.924073 #2287]  INFO -- : reaped #<Process::Status: pid 2290 exit 0> worker=0
+I, [2012-04-16T16:13:22.924437 #2287]  INFO -- : reaped #<Process::Status: pid 2293 exit 0> worker=1
+I, [2012-04-16T16:13:22.924733 #2287]  INFO -- : reaped #<Process::Status: pid 2295 exit 0> worker=2
+I, [2012-04-16T16:13:22.925071 #2287]  INFO -- : reaped #<Process::Status: pid 2299 exit 0> worker=3
+I, [2012-04-16T16:13:22.925522 #2287]  INFO -- : master complete
+I, [2012-04-17T21:45:25.582127 #4963]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-17T21:45:25.624444 #4963]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-17T21:45:25.626103 #4963]  INFO -- : worker=0 spawning...
+I, [2012-04-17T21:45:25.627682 #4963]  INFO -- : worker=1 spawning...
+I, [2012-04-17T21:45:25.628849 #4966]  INFO -- : worker=0 spawned pid=4966
+I, [2012-04-17T21:45:25.629417 #4966]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:45:25.629499 #4963]  INFO -- : worker=2 spawning...
+I, [2012-04-17T21:45:25.631114 #4969]  INFO -- : worker=1 spawned pid=4969
+I, [2012-04-17T21:45:25.631869 #4969]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:45:25.632177 #4963]  INFO -- : worker=3 spawning...
+I, [2012-04-17T21:45:25.633948 #4972]  INFO -- : worker=2 spawned pid=4972
+I, [2012-04-17T21:45:25.634546 #4963]  INFO -- : master process ready
+I, [2012-04-17T21:45:25.634831 #4972]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:45:25.637893 #4975]  INFO -- : worker=3 spawned pid=4975
+I, [2012-04-17T21:45:25.638609 #4975]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:45:41.216451 #4966]  INFO -- : worker=0 ready
+I, [2012-04-17T21:45:41.259158 #4975]  INFO -- : worker=3 ready
+I, [2012-04-17T21:45:41.265346 #4972]  INFO -- : worker=2 ready
+I, [2012-04-17T21:45:41.321377 #4969]  INFO -- : worker=1 ready
+E, [2012-04-17T21:46:21.653381 #4963] ERROR -- : worker=0 PID:4966 timeout (31s > 30s), killing
+E, [2012-04-17T21:46:21.719055 #4963] ERROR -- : reaped #<Process::Status: pid 4966 SIGKILL (signal 9)> worker=0
+I, [2012-04-17T21:46:21.719450 #4963]  INFO -- : worker=0 spawning...
+I, [2012-04-17T21:46:21.721837 #4991]  INFO -- : worker=0 spawned pid=4991
+I, [2012-04-17T21:46:21.722468 #4991]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:46:32.471583 #4991]  INFO -- : worker=0 ready
+I, [2012-04-17T21:46:52.624651 #4963]  INFO -- : reaped #<Process::Status: pid 4972 exit 0> worker=2
+I, [2012-04-17T21:46:52.625137 #4963]  INFO -- : reaped #<Process::Status: pid 4991 exit 0> worker=0
+I, [2012-04-17T21:46:52.826153 #4963]  INFO -- : reaped #<Process::Status: pid 4969 exit 0> worker=1
+I, [2012-04-17T21:46:52.826535 #4963]  INFO -- : reaped #<Process::Status: pid 4975 exit 0> worker=3
+I, [2012-04-17T21:46:52.827008 #4963]  INFO -- : master complete
+I, [2012-04-17T21:46:55.303236 #5002]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-17T21:46:55.304530 #5002]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-17T21:46:55.306402 #5002]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-17T21:46:55.308286 #5002]  INFO -- : worker=0 spawning...
+I, [2012-04-17T21:46:55.310152 #5002]  INFO -- : worker=1 spawning...
+I, [2012-04-17T21:46:55.311967 #5005]  INFO -- : worker=0 spawned pid=5005
+I, [2012-04-17T21:46:55.312192 #5002]  INFO -- : worker=2 spawning...
+I, [2012-04-17T21:46:55.312951 #5005]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:46:55.313932 #5008]  INFO -- : worker=1 spawned pid=5008
+I, [2012-04-17T21:46:55.315095 #5008]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:46:55.315286 #5002]  INFO -- : worker=3 spawning...
+I, [2012-04-17T21:46:55.318256 #5002]  INFO -- : master process ready
+I, [2012-04-17T21:46:55.322165 #5013]  INFO -- : worker=3 spawned pid=5013
+I, [2012-04-17T21:46:55.323369 #5013]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:46:55.328724 #5011]  INFO -- : worker=2 spawned pid=5011
+I, [2012-04-17T21:46:55.329341 #5011]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:47:11.363338 #5013]  INFO -- : worker=3 ready
+I, [2012-04-17T21:47:11.673529 #5011]  INFO -- : worker=2 ready
+I, [2012-04-17T21:47:12.778861 #5008]  INFO -- : worker=1 ready
+I, [2012-04-17T21:47:13.126970 #5005]  INFO -- : worker=0 ready
+E, [2012-04-17T21:47:42.356280 #5002] ERROR -- : worker=3 PID:5013 timeout (31s > 30s), killing
+E, [2012-04-17T21:47:42.401791 #5002] ERROR -- : reaped #<Process::Status: pid 5013 SIGKILL (signal 9)> worker=3
+I, [2012-04-17T21:47:42.402459 #5002]  INFO -- : worker=3 spawning...
+I, [2012-04-17T21:47:42.406657 #5029]  INFO -- : worker=3 spawned pid=5029
+I, [2012-04-17T21:47:42.407829 #5029]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:47:45.632194 #5002]  INFO -- : reaped #<Process::Status: pid 5029 exit 0> worker=3
+I, [2012-04-17T21:47:45.732946 #5002]  INFO -- : reaped #<Process::Status: pid 5005 exit 0> worker=0
+I, [2012-04-17T21:47:45.733341 #5002]  INFO -- : reaped #<Process::Status: pid 5008 exit 0> worker=1
+I, [2012-04-17T21:47:45.733592 #5002]  INFO -- : reaped #<Process::Status: pid 5011 exit 0> worker=2
+I, [2012-04-17T21:47:45.733923 #5002]  INFO -- : master complete
+I, [2012-04-17T21:52:02.395916 #5078]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-17T21:52:02.397028 #5078]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-17T21:52:02.398798 #5078]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-17T21:52:02.400563 #5078]  INFO -- : worker=0 spawning...
+I, [2012-04-17T21:52:02.402412 #5078]  INFO -- : worker=1 spawning...
+I, [2012-04-17T21:52:02.403893 #5081]  INFO -- : worker=0 spawned pid=5081
+I, [2012-04-17T21:52:02.404858 #5081]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:52:02.404731 #5078]  INFO -- : worker=2 spawning...
+I, [2012-04-17T21:52:02.406849 #5084]  INFO -- : worker=1 spawned pid=5084
+I, [2012-04-17T21:52:02.407353 #5078]  INFO -- : worker=3 spawning...
+I, [2012-04-17T21:52:02.407690 #5084]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:52:02.410123 #5078]  INFO -- : master process ready
+I, [2012-04-17T21:52:02.421046 #5087]  INFO -- : worker=2 spawned pid=5087
+I, [2012-04-17T21:52:02.421902 #5087]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:52:02.428908 #5089]  INFO -- : worker=3 spawned pid=5089
+I, [2012-04-17T21:52:02.429853 #5089]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:52:17.995218 #5087]  INFO -- : worker=2 ready
+I, [2012-04-17T21:52:18.180930 #5089]  INFO -- : worker=3 ready
+I, [2012-04-17T21:52:18.324097 #5084]  INFO -- : worker=1 ready
+I, [2012-04-17T21:52:18.408335 #5081]  INFO -- : worker=0 ready
+cache: [GET /] miss
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334659945411&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+I, [2012-04-17T21:53:23.921283 #5078]  INFO -- : reaped #<Process::Status: pid 5081 exit 0> worker=0
+I, [2012-04-17T21:53:23.921673 #5078]  INFO -- : reaped #<Process::Status: pid 5084 exit 0> worker=1
+I, [2012-04-17T21:53:23.922044 #5078]  INFO -- : reaped #<Process::Status: pid 5087 exit 0> worker=2
+I, [2012-04-17T21:53:23.922368 #5078]  INFO -- : reaped #<Process::Status: pid 5089 exit 0> worker=3
+I, [2012-04-17T21:53:23.922807 #5078]  INFO -- : master complete
+I, [2012-04-17T21:53:39.922088 #5111]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-17T21:53:39.923270 #5111]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-17T21:53:39.925002 #5111]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-17T21:53:39.926708 #5111]  INFO -- : worker=0 spawning...
+I, [2012-04-17T21:53:39.928706 #5111]  INFO -- : worker=1 spawning...
+I, [2012-04-17T21:53:39.929937 #5114]  INFO -- : worker=0 spawned pid=5114
+I, [2012-04-17T21:53:39.930994 #5114]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:53:39.931010 #5111]  INFO -- : worker=2 spawning...
+I, [2012-04-17T21:53:39.933046 #5117]  INFO -- : worker=1 spawned pid=5117
+I, [2012-04-17T21:53:39.933402 #5111]  INFO -- : worker=3 spawning...
+I, [2012-04-17T21:53:39.933877 #5117]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:53:39.936195 #5120]  INFO -- : worker=2 spawned pid=5120
+I, [2012-04-17T21:53:39.936948 #5120]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:53:39.948694 #5111]  INFO -- : master process ready
+I, [2012-04-17T21:53:39.967086 #5123]  INFO -- : worker=3 spawned pid=5123
+I, [2012-04-17T21:53:39.967911 #5123]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:53:57.091025 #5114]  INFO -- : worker=0 ready
+I, [2012-04-17T21:53:57.194994 #5120]  INFO -- : worker=2 ready
+I, [2012-04-17T21:53:57.196256 #5123]  INFO -- : worker=3 ready
+I, [2012-04-17T21:53:57.237842 #5117]  INFO -- : worker=1 ready
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334660041875&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+I, [2012-04-17T21:55:43.400338 #5111]  INFO -- : reaped #<Process::Status: pid 5114 exit 0> worker=0
+I, [2012-04-17T21:55:43.400692 #5111]  INFO -- : reaped #<Process::Status: pid 5117 exit 0> worker=1
+I, [2012-04-17T21:55:43.400949 #5111]  INFO -- : reaped #<Process::Status: pid 5120 exit 0> worker=2
+I, [2012-04-17T21:55:43.401203 #5111]  INFO -- : reaped #<Process::Status: pid 5123 exit 0> worker=3
+I, [2012-04-17T21:55:43.401522 #5111]  INFO -- : master complete
+I, [2012-04-17T21:55:55.076449 #5147]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-17T21:55:55.077524 #5147]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-17T21:55:55.079510 #5147]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-17T21:55:55.081278 #5147]  INFO -- : worker=0 spawning...
+I, [2012-04-17T21:55:55.083158 #5147]  INFO -- : worker=1 spawning...
+I, [2012-04-17T21:55:55.084487 #5150]  INFO -- : worker=0 spawned pid=5150
+I, [2012-04-17T21:55:55.085439 #5150]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:55:55.085491 #5147]  INFO -- : worker=2 spawning...
+I, [2012-04-17T21:55:55.087381 #5153]  INFO -- : worker=1 spawned pid=5153
+I, [2012-04-17T21:55:55.087966 #5147]  INFO -- : worker=3 spawning...
+I, [2012-04-17T21:55:55.088254 #5153]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:55:55.090859 #5147]  INFO -- : master process ready
+I, [2012-04-17T21:55:55.100986 #5156]  INFO -- : worker=2 spawned pid=5156
+I, [2012-04-17T21:55:55.101849 #5156]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:55:55.108790 #5158]  INFO -- : worker=3 spawned pid=5158
+I, [2012-04-17T21:55:55.109677 #5158]  INFO -- : Refreshing Gem list
+I, [2012-04-17T21:56:10.303333 #5153]  INFO -- : worker=1 ready
+I, [2012-04-17T21:56:10.425870 #5156]  INFO -- : worker=2 ready
+I, [2012-04-17T21:56:10.444545 #5150]  INFO -- : worker=0 ready
+I, [2012-04-17T21:56:10.519750 #5158]  INFO -- : worker=3 ready
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334660195601&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662096238&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /admin/orders] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662109898&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /users/3736/edit] miss
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662261218&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [POST /compares?product_id=6029] invalidate, pass
+cache: [POST /compares?product_id=6030] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/2] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/1] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662291362&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [POST /compares?product_id=6029] invalidate, pass
+cache: [POST /compares?product_id=6030] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662328630&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [DELETE /compares/3] invalidate, pass
+cache: [DELETE /compares/4] invalidate, pass
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /products.js?nodeid=267] miss
+cache: [GET /categories.json?_search=false&nd=1334662420575&rows=10000&page=1&sidx=&sord=asc&nodeid=267&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=267] miss
+cache: [GET /products.js?nodeid=377] miss
+cache: [GET /products.js?nodeid=377&sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?nodeid=377&sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=asc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=desc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=asc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=desc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=asc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=desc] miss
+cache: [GET /products.js?nodeid=377&sort_col=price&sort_dir=asc] miss
+cache: [POST /compares?product_id=6163] invalidate, pass
+cache: [POST /compares?product_id=6139] invalidate, pass
+cache: [POST /compares?product_id=6140] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /products/6163] miss
+cache: [GET /images/4952] miss
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662640164&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334662661291&rows=10000&page=1&sidx=&sord=asc&nodeid=267&parentid=null&n_level=0] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /products.js?nodeid=619] miss
+cache: [GET /categories.json?_search=false&nd=1334662664547&rows=10000&page=1&sidx=&sord=asc&nodeid=619&parentid=null&n_level=0] miss
+D, [2012-04-18T11:18:27.898158 #5147] DEBUG -- : waiting 16.0s after suspend/hibernation
+I, [2012-04-18T11:21:04.240445 #5147]  INFO -- : reaped #<Process::Status: pid 5150 exit 0> worker=0
+I, [2012-04-18T11:21:04.240946 #5147]  INFO -- : reaped #<Process::Status: pid 5153 exit 0> worker=1
+I, [2012-04-18T11:21:04.241416 #5147]  INFO -- : reaped #<Process::Status: pid 5156 exit 0> worker=2
+I, [2012-04-18T11:21:04.241936 #5147]  INFO -- : reaped #<Process::Status: pid 5158 exit 0> worker=3
+I, [2012-04-18T11:21:04.242413 #5147]  INFO -- : master complete
+I, [2012-04-18T11:40:57.657384 #6809]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-18T11:40:57.658691 #6809]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-18T11:40:57.660666 #6809]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-18T11:40:57.662587 #6809]  INFO -- : worker=0 spawning...
+I, [2012-04-18T11:40:57.664298 #6809]  INFO -- : worker=1 spawning...
+I, [2012-04-18T11:40:57.665896 #6812]  INFO -- : worker=0 spawned pid=6812
+I, [2012-04-18T11:40:57.666879 #6812]  INFO -- : Refreshing Gem list
+I, [2012-04-18T11:40:57.666934 #6809]  INFO -- : worker=2 spawning...
+I, [2012-04-18T11:40:57.668693 #6815]  INFO -- : worker=1 spawned pid=6815
+I, [2012-04-18T11:40:57.669509 #6815]  INFO -- : Refreshing Gem list
+I, [2012-04-18T11:40:57.669749 #6809]  INFO -- : worker=3 spawning...
+I, [2012-04-18T11:40:57.672780 #6818]  INFO -- : worker=2 spawned pid=6818
+I, [2012-04-18T11:40:57.672824 #6809]  INFO -- : master process ready
+I, [2012-04-18T11:40:57.673463 #6818]  INFO -- : Refreshing Gem list
+I, [2012-04-18T11:40:57.680666 #6821]  INFO -- : worker=3 spawned pid=6821
+I, [2012-04-18T11:40:57.691358 #6821]  INFO -- : Refreshing Gem list
+I, [2012-04-18T11:41:13.934232 #6812]  INFO -- : worker=0 ready
+I, [2012-04-18T11:41:13.934953 #6818]  INFO -- : worker=2 ready
+I, [2012-04-18T11:41:14.118270 #6821]  INFO -- : worker=3 ready
+I, [2012-04-18T11:41:14.128310 #6815]  INFO -- : worker=1 ready
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334710311727&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /sessions/new] miss
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334710382875&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /products.js?nodeid=267] miss
+cache: [GET /categories.json?_search=false&nd=1334710395657&rows=10000&page=1&sidx=&sord=asc&nodeid=267&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=267] miss
+cache: [GET /products.js?nodeid=279] miss
+cache: [GET /products.js?nodeid=2228] miss
+cache: [POST /compares?product_id=6153] invalidate, pass
+cache: [POST /compares?product_id=6154] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/9] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/8] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334710544670&rows=10000&page=1&sidx=&sord=asc] miss
+I, [2012-04-18T11:56:22.656098 #6809]  INFO -- : reaped #<Process::Status: pid 6815 exit 0> worker=1
+I, [2012-04-18T11:56:22.656590 #6809]  INFO -- : reaped #<Process::Status: pid 6818 exit 0> worker=2
+I, [2012-04-18T11:56:22.656997 #6809]  INFO -- : reaped #<Process::Status: pid 6821 exit 0> worker=3
+I, [2012-04-18T11:56:22.757609 #6809]  INFO -- : reaped #<Process::Status: pid 6812 exit 0> worker=0
+I, [2012-04-18T11:56:22.758159 #6809]  INFO -- : master complete
+I, [2012-04-18T12:00:35.287765 #2324]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-18T12:00:35.320664 #2324]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-18T12:00:35.344906 #2324]  INFO -- : worker=0 spawning...
+I, [2012-04-18T12:00:35.346269 #2324]  INFO -- : worker=1 spawning...
+I, [2012-04-18T12:00:35.347445 #2327]  INFO -- : worker=0 spawned pid=2327
+I, [2012-04-18T12:00:35.347780 #2324]  INFO -- : worker=2 spawning...
+I, [2012-04-18T12:00:35.348015 #2327]  INFO -- : Refreshing Gem list
+I, [2012-04-18T12:00:35.349608 #2324]  INFO -- : worker=3 spawning...
+I, [2012-04-18T12:00:35.349424 #2330]  INFO -- : worker=1 spawned pid=2330
+I, [2012-04-18T12:00:35.350194 #2330]  INFO -- : Refreshing Gem list
+I, [2012-04-18T12:00:35.351421 #2333]  INFO -- : worker=2 spawned pid=2333
+I, [2012-04-18T12:00:35.351756 #2324]  INFO -- : master process ready
+I, [2012-04-18T12:00:35.352193 #2333]  INFO -- : Refreshing Gem list
+I, [2012-04-18T12:00:35.353246 #2336]  INFO -- : worker=3 spawned pid=2336
+I, [2012-04-18T12:00:35.353929 #2336]  INFO -- : Refreshing Gem list
+I, [2012-04-18T12:01:01.681941 #2336]  INFO -- : worker=3 ready
+I, [2012-04-18T12:01:01.734725 #2330]  INFO -- : worker=1 ready
+I, [2012-04-18T12:01:01.936426 #2327]  INFO -- : worker=0 ready
+I, [2012-04-18T12:01:01.947724 #2333]  INFO -- : worker=2 ready
+cache: [GET /] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334710871113&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /products.js?nodeid=619] miss
+cache: [GET /categories.json?_search=false&nd=1334710911700&rows=10000&page=1&sidx=&sord=asc&nodeid=619&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=619] miss
+cache: [GET /categories.json?_search=false&nd=1334710912661&rows=10000&page=1&sidx=&sord=asc&nodeid=293&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=293] miss
+cache: [GET /products.js?nodeid=173634] miss
+cache: [POST /product_carts?product_id=18926] invalidate, pass
+cache: [POST /product_carts?product_id=18926] invalidate, pass
+cache: [POST /product_carts?product_id=18926] invalidate, pass
+cache: [GET /carts/3685] miss
+cache: [GET /carts/3685] miss
+cache: [GET /carts/3685] miss
+cache: [GET /carts/3685] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334712249803&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334712592412&rows=10000&page=1&sidx=&sord=asc&nodeid=267&parentid=null&n_level=0] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /products.js?nodeid=268] miss
+cache: [GET /products.js?nodeid=268&sort_col=price&sort_dir=asc] miss
+cache: [GET /products.js?nodeid=268&sort_col=price&sort_dir=desc] miss
+cache: [POST /compares?product_id=6203] invalidate, pass
+cache: [POST /compares?product_id=6206] invalidate, pass
+cache: [POST /compares?product_id=6207] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/2] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/1] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334712745048&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [POST /compares?product_id=6029] invalidate, pass
+cache: [POST /compares?product_id=6030] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/5] invalidate, pass
+cache: [GET /compares] miss
+cache: [POST /compares/4] invalidate, pass
+cache: [GET /compares] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334713234652&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [POST /product_carts?product_id=6029] invalidate, pass
+cache: [GET /carts/3696] miss
+cache: [GET /sessions/new] miss
+cache: [POST /sessions] invalidate, pass
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334713260448&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /carts/3696] miss
+cache: [POST /orders] invalidate, pass
+cache: [GET /orders/3696?notice=Order+was+successfully+created.] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334713286790&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [POST /compares?product_id=6032] invalidate, pass
+cache: [POST /product_carts?product_id=6032] invalidate, pass
+cache: [GET /carts/3552] miss
+cache: [POST /product_carts?product_id=6029] invalidate, pass
+cache: [GET /carts/3552] miss
+cache: [POST /product_carts?product_id=6029] invalidate, pass
+cache: [GET /carts/3552] miss
+cache: [POST /product_carts?product_id=6029] invalidate, pass
+cache: [GET /carts/3552] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /carts/3552] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334713338649&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334713469972&rows=10000&page=1&sidx=&sord=asc&nodeid=58058&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=58058] miss
+cache: [GET /products/6426] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714143347&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /admin/products] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714683628&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /sessions/new] miss
+cache: [POST /sessions] invalidate, pass
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714692215&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /admin/products] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /admin/categories.json?_search=false&nd=1334714705696&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /admin/products/6029] miss
+cache: [GET /admin/images/new?product_id=6029] miss
+cache: [POST /admin/images] invalidate, pass
+cache: [GET /admin/products/6029?notice=Image+was+successfully+created.] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714772045&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /products/6029] miss
+cache: [GET /images/17868] miss
+cache: [GET /products/6029] miss
+cache: [GET /images/14765] miss
+cache: [GET /admin/users/28] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714854306&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /products.js?nodeid=173634] miss
+cache: [GET /categories.json?_search=false&nd=1334714867590&rows=10000&page=1&sidx=&sord=asc&nodeid=293&parentid=null&n_level=0] miss
+cache: [GET /products.js?nodeid=293] miss
+cache: [GET /products.js?nodeid=267] miss
+cache: [GET /products.js?nodeid=293] miss
+cache: [GET /products.js?nodeid=173634] miss
+cache: [GET /products/18926] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714917535&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=price&sort_dir=asc] miss
+cache: [GET /categories.json?_search=false&nd=1334714978143&rows=10000&page=1&sidx=name&sord=desc&nodeid=619&parentid=null&n_level=0] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334714981990&rows=10000&page=1&sidx=name&sord=desc&nodeid=10172&parentid=619&n_level=1] miss
+cache: [GET /products.js?nodeid=10172] miss
+cache: [GET /categories.json?_search=false&nd=1334715014903&rows=10000&page=1&sidx=name&sord=desc&nodeid=41448&parentid=10172&n_level=2] miss
+cache: [GET /products.js?nodeid=41448] miss
+cache: [POST /compares?product_id=12824] invalidate, pass
+cache: [POST /compares?product_id=12829] invalidate, pass
+cache: [POST /compares?product_id=12830] invalidate, pass
+cache: [POST /product_carts?product_id=12824] invalidate, pass
+cache: [POST /product_carts?product_id=12824] invalidate, pass
+cache: [GET /carts/3727] miss
+cache: [POST /product_carts?product_id=12824] invalidate, pass
+cache: [GET /carts/3727] miss
+cache: [GET /carts/3727] miss
+cache: [GET /carts/3727] miss
+cache: [GET /products] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334715056092&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [POST /product_carts?product_id=6029] invalidate, pass
+cache: [GET /carts/3727] miss
+cache: [POST /product_carts?product_id=6030] invalidate, pass
+cache: [GET /carts/3727] miss
+cache: [POST /product_carts?product_id=6031] invalidate, pass
+cache: [GET /carts/3727] miss
+I, [2012-04-18T13:15:03.280842 #2324]  INFO -- : reaped #<Process::Status: pid 2330 exit 0> worker=1
+I, [2012-04-18T13:15:03.381627 #2324]  INFO -- : reaped #<Process::Status: pid 2327 exit 0> worker=0
+I, [2012-04-18T13:15:03.383145 #2324]  INFO -- : reaped #<Process::Status: pid 2333 exit 0> worker=2
+I, [2012-04-18T13:15:03.383737 #2324]  INFO -- : reaped #<Process::Status: pid 2336 exit 0> worker=3
+I, [2012-04-18T13:15:03.384364 #2324]  INFO -- : master complete
+I, [2012-04-18T13:15:06.888070 #2721]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-18T13:15:06.889313 #2721]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-18T13:15:06.891816 #2721]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-18T13:15:06.893591 #2721]  INFO -- : worker=0 spawning...
+I, [2012-04-18T13:15:06.895884 #2721]  INFO -- : worker=1 spawning...
+I, [2012-04-18T13:15:06.897648 #2724]  INFO -- : worker=0 spawned pid=2724
+I, [2012-04-18T13:15:06.897868 #2721]  INFO -- : worker=2 spawning...
+I, [2012-04-18T13:15:06.898640 #2724]  INFO -- : Refreshing Gem list
+I, [2012-04-18T13:15:06.900047 #2727]  INFO -- : worker=1 spawned pid=2727
+I, [2012-04-18T13:15:06.900231 #2721]  INFO -- : worker=3 spawning...
+I, [2012-04-18T13:15:06.901029 #2727]  INFO -- : Refreshing Gem list
+I, [2012-04-18T13:15:06.911737 #2721]  INFO -- : master process ready
+I, [2012-04-18T13:15:06.914447 #2730]  INFO -- : worker=2 spawned pid=2730
+I, [2012-04-18T13:15:06.914856 #2732]  INFO -- : worker=3 spawned pid=2732
+I, [2012-04-18T13:15:06.915621 #2732]  INFO -- : Refreshing Gem list
+I, [2012-04-18T13:15:06.915598 #2730]  INFO -- : Refreshing Gem list
+I, [2012-04-18T13:15:24.873283 #2724]  INFO -- : worker=0 ready
+I, [2012-04-18T13:15:25.104866 #2732]  INFO -- : worker=3 ready
+I, [2012-04-18T13:15:25.893128 #2727]  INFO -- : worker=1 ready
+I, [2012-04-18T13:15:26.527414 #2730]  INFO -- : worker=2 ready
+cache: [GET /products] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /categories.json?_search=false&nd=1334715328079&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334715393406&rows=10000&page=1&sidx=&sord=asc&nodeid=625&parentid=null&n_level=0] miss
+D, [2012-04-18T13:20:25.448359 #2721] DEBUG -- : waiting 16.0s after suspend/hibernation
+D, [2012-04-18T16:40:15.835627 #2721] DEBUG -- : waiting 16.0s after suspend/hibernation
+cache: [GET /products] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /categories.json?_search=false&nd=1334727640271&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+I, [2012-04-18T16:40:58.972459 #2721]  INFO -- : reaped #<Process::Status: pid 2724 exit 0> worker=0
+I, [2012-04-18T16:40:58.972888 #2721]  INFO -- : reaped #<Process::Status: pid 2727 exit 0> worker=1
+I, [2012-04-18T16:40:58.973343 #2721]  INFO -- : reaped #<Process::Status: pid 2730 exit 0> worker=2
+I, [2012-04-18T16:40:58.973695 #2721]  INFO -- : reaped #<Process::Status: pid 2732 exit 0> worker=3
+I, [2012-04-18T16:40:58.974148 #2721]  INFO -- : master complete
+I, [2012-04-18T16:41:02.300535 #4449]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-18T16:41:02.301777 #4449]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-18T16:41:02.303620 #4449]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-18T16:41:02.305595 #4449]  INFO -- : worker=0 spawning...
+I, [2012-04-18T16:41:02.307419 #4449]  INFO -- : worker=1 spawning...
+I, [2012-04-18T16:41:02.309211 #4452]  INFO -- : worker=0 spawned pid=4452
+I, [2012-04-18T16:41:02.309321 #4449]  INFO -- : worker=2 spawning...
+I, [2012-04-18T16:41:02.310096 #4452]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:41:02.310994 #4455]  INFO -- : worker=1 spawned pid=4455
+I, [2012-04-18T16:41:02.311889 #4455]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:41:02.311876 #4449]  INFO -- : worker=3 spawning...
+I, [2012-04-18T16:41:02.314794 #4458]  INFO -- : worker=2 spawned pid=4458
+I, [2012-04-18T16:41:02.315505 #4458]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:41:02.326835 #4449]  INFO -- : master process ready
+I, [2012-04-18T16:41:02.328134 #4461]  INFO -- : worker=3 spawned pid=4461
+I, [2012-04-18T16:41:02.328846 #4461]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:41:19.260719 #4461]  INFO -- : worker=3 ready
+I, [2012-04-18T16:41:19.487301 #4452]  INFO -- : worker=0 ready
+I, [2012-04-18T16:41:19.555719 #4458]  INFO -- : worker=2 ready
+I, [2012-04-18T16:41:20.773534 #4455]  INFO -- : worker=1 ready
+cache: [GET /products] miss
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334727682023&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+I, [2012-04-18T16:42:00.100676 #4449]  INFO -- : reaped #<Process::Status: pid 4452 exit 0> worker=0
+I, [2012-04-18T16:42:00.101068 #4449]  INFO -- : reaped #<Process::Status: pid 4455 exit 0> worker=1
+I, [2012-04-18T16:42:00.101348 #4449]  INFO -- : reaped #<Process::Status: pid 4458 exit 0> worker=2
+I, [2012-04-18T16:42:00.101591 #4449]  INFO -- : reaped #<Process::Status: pid 4461 exit 0> worker=3
+I, [2012-04-18T16:42:00.101912 #4449]  INFO -- : master complete
+I, [2012-04-18T16:42:56.161940 #4713]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-18T16:42:56.163235 #4713]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-18T16:42:56.165297 #4713]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-18T16:42:56.167192 #4713]  INFO -- : worker=0 spawning...
+I, [2012-04-18T16:42:56.169074 #4713]  INFO -- : worker=1 spawning...
+I, [2012-04-18T16:42:56.170529 #4716]  INFO -- : worker=0 spawned pid=4716
+I, [2012-04-18T16:42:56.171548 #4716]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:42:56.171723 #4713]  INFO -- : worker=2 spawning...
+I, [2012-04-18T16:42:56.173570 #4719]  INFO -- : worker=1 spawned pid=4719
+I, [2012-04-18T16:42:56.174410 #4719]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:42:56.175120 #4713]  INFO -- : worker=3 spawning...
+I, [2012-04-18T16:42:56.178089 #4713]  INFO -- : master process ready
+I, [2012-04-18T16:42:56.187021 #4722]  INFO -- : worker=2 spawned pid=4722
+I, [2012-04-18T16:42:56.187721 #4722]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:42:56.190904 #4724]  INFO -- : worker=3 spawned pid=4724
+I, [2012-04-18T16:42:56.191626 #4724]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:43:12.308576 #4724]  INFO -- : worker=3 ready
+I, [2012-04-18T16:43:12.691749 #4719]  INFO -- : worker=1 ready
+I, [2012-04-18T16:43:12.726661 #4716]  INFO -- : worker=0 ready
+I, [2012-04-18T16:43:13.033460 #4722]  INFO -- : worker=2 ready
+cache: [GET /products] miss
+cache: [GET /assets/application-4e75ebc096dc41e4e445204388670353.css] fresh
+cache: [GET /assets/application-f1c8fc23d8410d45b03dd9e1cd064290.js] fresh
+cache: [GET /assets/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png] miss
+cache: [GET /assets/images/ui-bg_highlight-hard_50_dddddd_1x100.png] miss
+cache: [GET /assets/images/ui-bg_glass_65_ffffff_1x400.png] miss
+cache: [GET /categories.json?_search=false&nd=1334727799840&rows=10000&page=1&sidx=&sord=asc] miss
+cache: [GET /assets/images/ui-icons_666666_256x240.png] miss
+cache: [GET /assets/images/ui-bg_flat_75_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_ff0084_256x240.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=asc] miss
+cache: [GET /products.js?sort_col=description&sort_dir=desc] miss
+cache: [GET /assets/images/ui-bg_highlight-soft_25_0073ea_1x100.png] miss
+cache: [GET /assets/images/ui-icons_ffffff_256x240.png] miss
+cache: [GET /categories.json?_search=false&nd=1334728250342&rows=10000&page=1&sidx=&sord=asc&nodeid=267&parentid=null&n_level=0] miss
+cache: [GET /assets/images/ui-bg_flat_55_ffffff_40x100.png] miss
+cache: [GET /assets/images/ui-icons_0073ea_256x240.png] miss
+cache: [GET /products.js?nodeid=280] miss
+cache: [GET /products.js?nodeid=45110] miss
+cache: [GET /products.js?nodeid=45110&page=2] miss
+cache: [GET /products.js?nodeid=45110&page=3] miss
+I, [2012-04-18T16:54:50.275889 #4713]  INFO -- : reaped #<Process::Status: pid 4716 exit 0> worker=0
+I, [2012-04-18T16:54:50.276237 #4713]  INFO -- : reaped #<Process::Status: pid 4719 exit 0> worker=1
+I, [2012-04-18T16:54:50.276504 #4713]  INFO -- : reaped #<Process::Status: pid 4722 exit 0> worker=2
+I, [2012-04-18T16:54:50.276751 #4713]  INFO -- : reaped #<Process::Status: pid 4724 exit 0> worker=3
+I, [2012-04-18T16:54:50.277109 #4713]  INFO -- : master complete
+I, [2012-04-18T16:55:00.296380 #4794]  INFO -- : unlinking existing socket=/tmp/unicorn.todo.sock
+I, [2012-04-18T16:55:00.297556 #4794]  INFO -- : listening on addr=/tmp/unicorn.todo.sock fd=5
+I, [2012-04-18T16:55:00.299432 #4794]  INFO -- : listening on addr=0.0.0.0:3000 fd=7
+I, [2012-04-18T16:55:00.301304 #4794]  INFO -- : worker=0 spawning...
+I, [2012-04-18T16:55:00.303211 #4794]  INFO -- : worker=1 spawning...
+I, [2012-04-18T16:55:00.304543 #4797]  INFO -- : worker=0 spawned pid=4797
+I, [2012-04-18T16:55:00.305475 #4797]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:55:00.305498 #4794]  INFO -- : worker=2 spawning...
+I, [2012-04-18T16:55:00.307346 #4800]  INFO -- : worker=1 spawned pid=4800
+I, [2012-04-18T16:55:00.307924 #4794]  INFO -- : worker=3 spawning...
+I, [2012-04-18T16:55:00.308282 #4800]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:55:00.310756 #4794]  INFO -- : master process ready
+I, [2012-04-18T16:55:00.323181 #4803]  INFO -- : worker=2 spawned pid=4803
+I, [2012-04-18T16:55:00.324054 #4803]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:55:00.326938 #4805]  INFO -- : worker=3 spawned pid=4805
+I, [2012-04-18T16:55:00.328034 #4805]  INFO -- : Refreshing Gem list
+I, [2012-04-18T16:55:11.859762 #4797]  INFO -- : worker=0 ready
+I, [2012-04-18T16:55:11.882840 #4805]  INFO -- : worker=3 ready
+I, [2012-04-18T16:55:12.210635 #4800]  INFO -- : worker=1 ready
+I, [2012-04-18T16:55:12.754811 #4803]  INFO -- : worker=2 ready
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /products HTTP/1.0" 200 - 9.6763
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /admin/images.css?body=1 HTTP/1.0" 200 - 0.0673
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /admin/orders.css?body=1 HTTP/1.0" 200 - 0.0269
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /admin/products.css?body=1 HTTP/1.0" 200 - 0.0308
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /admin/users.css?body=1 HTTP/1.0" 200 - 0.0279
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 200 181242 0.0581
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /carts.css?body=1 HTTP/1.0" 200 - 0.0273
+127.0.0.1 - - [18/Apr/2012 16:55:21] "GET /categories.css?body=1 HTTP/1.0" 200 - 0.0266
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /compares.css?body=1 HTTP/1.0" 200 - 0.0287
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 200 33319 0.0319
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /images.css?body=1 HTTP/1.0" 200 - 0.0305
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /orders.css?body=1 HTTP/1.0" 200 - 0.0385
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /paypal_notifications.css?body=1 HTTP/1.0" 200 - 0.0270
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /product_carts.css?body=1 HTTP/1.0" 200 - 0.2166
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /products.css?body=1 HTTP/1.0" 200 - 0.0300
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 200 11842 0.0356
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /users.css?body=1 HTTP/1.0" 200 - 0.0401
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /jquery.js?body=1 HTTP/1.0" 200 248236 0.0817
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /jquery_ujs.js?body=1 HTTP/1.0" 200 15335 0.0335
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 200 1869 0.0353
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 200 2446 0.0335
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 200 5541 0.0401
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 200 2560 0.0337
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 200 3671 0.0370
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 200 3309 0.0396
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 200 7376 0.0354
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 200 2871 0.0349
+127.0.0.1 - - [18/Apr/2012 16:55:22] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 200 2738 0.0369
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 200 3914 0.0340
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 200 4571 0.0388
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 200 6708 0.0370
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 200 12 0.2566
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /admin/application.js?body=1 HTTP/1.0" 200 32 0.0360
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /admin/categories.js?body=1 HTTP/1.0" 200 32 0.0405
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /admin/images.js?body=1 HTTP/1.0" 200 32 0.0586
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /admin/orders.js?body=1 HTTP/1.0" 200 32 0.0254
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /admin/products.js?body=1 HTTP/1.0" 200 32 0.0273
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /admin/users.js?body=1 HTTP/1.0" 200 32 0.0616
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /bootstrap.js?body=1 HTTP/1.0" 200 165 0.0301
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /carts.js?body=1 HTTP/1.0" 200 32 0.0244
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /categories.js?body=1 HTTP/1.0" 200 32 0.0250
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /compares.js?body=1 HTTP/1.0" 200 32 0.0310
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 200 3927 0.0496
+127.0.0.1 - - [18/Apr/2012 16:55:23] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 200 251738 0.0664
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 200 418974 0.1349
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /images.js?body=1 HTTP/1.0" 200 32 0.0281
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /orders.js?body=1 HTTP/1.0" 200 32 0.2841
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /paypal_notifications.js?body=1 HTTP/1.0" 200 32 0.0425
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /product_carts.js?body=1 HTTP/1.0" 200 32 0.0525
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /products.js?body=1 HTTP/1.0" 200 32 0.0458
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /products_grid.js?body=1 HTTP/1.0" 200 - 0.0631
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /sessions.js?body=1 HTTP/1.0" 200 32 0.0443
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 200 2518 0.0265
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /users.js?body=1 HTTP/1.0" 200 32 0.0289
+127.0.0.1 - - [18/Apr/2012 16:55:24] "GET /application.js?body=1 HTTP/1.0" 200 860 0.2592
+127.0.0.1 - - [18/Apr/2012 16:55:27] "GET /admin/application.css?body=1 HTTP/1.0" 200 - 5.6221
+127.0.0.1 - - [18/Apr/2012 16:55:27] "GET /application.css?body=1 HTTP/1.0" 200 781 5.7292
+127.0.0.1 - - [18/Apr/2012 16:55:27] "GET /admin/categories.css?body=1 HTTP/1.0" 200 - 5.7917
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-bg_flat_75_ffffff_40x100.png HTTP/1.0" 200 178 0.0561
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png HTTP/1.0" 200 90 0.0599
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-bg_highlight-hard_50_dddddd_1x100.png HTTP/1.0" 200 94 0.0590
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-bg_glass_65_ffffff_1x400.png HTTP/1.0" 200 105 0.0657
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-icons_ff0084_256x240.png HTTP/1.0" 200 5355 0.0541
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-icons_0073ea_256x240.png HTTP/1.0" 200 4369 0.0664
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /custom-theme/images/ui-icons_666666_256x240.png HTTP/1.0" 200 4369 0.0569
+127.0.0.1 - - [18/Apr/2012 16:55:28] "GET /categories.json?_search=false&nd=1334728528153&rows=10000&page=1&sidx=&sord=asc HTTP/1.0" 200 - 0.1409
+127.0.0.1 - - [18/Apr/2012 16:56:11] "GET /custom-theme/images/ui-icons_ffffff_256x240.png HTTP/1.0" 200 4369 0.0472
+127.0.0.1 - - [18/Apr/2012 16:56:11] "GET /custom-theme/images/ui-bg_highlight-soft_25_0073ea_1x100.png HTTP/1.0" 200 118 0.0534
+127.0.0.1 - - [18/Apr/2012 16:56:12] "GET /categories.json?_search=false&nd=1334728572811&rows=10000&page=1&sidx=&sord=asc&nodeid=267&parentid=null&n_level=0 HTTP/1.0" 200 - 0.0647
+127.0.0.1 - - [18/Apr/2012 16:56:14] "GET /custom-theme/images/ui-bg_flat_55_ffffff_40x100.png HTTP/1.0" 200 178 0.0467
+127.0.0.1 - - [18/Apr/2012 16:56:16] "GET /products.js?nodeid=268 HTTP/1.0" 304 - 1.7051
+127.0.0.1 - - [18/Apr/2012 16:56:20] "GET /products.js?nodeid=268&sort_col=description&sort_dir=asc HTTP/1.0" 200 - 0.3086
+127.0.0.1 - - [18/Apr/2012 16:56:23] "GET /products.js?nodeid=268&sort_col=description&sort_dir=desc HTTP/1.0" 200 - 1.8124
+127.0.0.1 - - [18/Apr/2012 16:56:24] "GET /products.js?nodeid=268&sort_col=description&sort_dir=asc HTTP/1.0" 304 - 0.1386
+127.0.0.1 - - [18/Apr/2012 16:56:25] "GET /products.js?nodeid=268&sort_col=description&sort_dir=desc HTTP/1.0" 304 - 0.1384
+127.0.0.1 - - [18/Apr/2012 16:56:25] "GET /products.js?nodeid=268&sort_col=description&sort_dir=asc HTTP/1.0" 304 - 0.1314
+127.0.0.1 - - [18/Apr/2012 16:56:26] "GET /products.js?nodeid=268&sort_col=description&sort_dir=desc HTTP/1.0" 304 - 0.1957
+127.0.0.1 - - [18/Apr/2012 16:56:28] "GET /products.js?nodeid=268&sort_col=description&sort_dir=asc HTTP/1.0" 304 - 1.6733
+127.0.0.1 - - [18/Apr/2012 16:56:29] "GET /products.js?nodeid=268&sort_col=description&sort_dir=desc HTTP/1.0" 304 - 0.1368
+127.0.0.1 - - [18/Apr/2012 16:56:30] "GET /products.js?nodeid=268&sort_col=description&sort_dir=asc HTTP/1.0" 304 - 0.1954
+127.0.0.1 - - [18/Apr/2012 16:56:31] "GET /products.js?nodeid=268&sort_col=price&sort_dir=asc HTTP/1.0" 304 - 0.2395
+127.0.0.1 - - [18/Apr/2012 16:56:32] "GET /products.js?nodeid=268&sort_col=price&sort_dir=desc HTTP/1.0" 304 - 0.3301
+127.0.0.1 - - [18/Apr/2012 16:56:33] "GET /products.js?nodeid=268&sort_col=price&sort_dir=asc HTTP/1.0" 304 - 0.1382
+127.0.0.1 - - [18/Apr/2012 16:56:34] "GET /products.js?nodeid=268&sort_col=price&sort_dir=desc HTTP/1.0" 304 - 0.1361
+127.0.0.1 - - [18/Apr/2012 16:56:35] "GET /products.js?nodeid=268&sort_col=price&sort_dir=asc HTTP/1.0" 304 - 0.1383
+127.0.0.1 - - [18/Apr/2012 16:56:35] "GET /products.js?nodeid=268&sort_col=price&sort_dir=desc HTTP/1.0" 304 - 0.2128
+127.0.0.1 - - [18/Apr/2012 16:56:36] "GET /products.js?nodeid=268&sort_col=price&sort_dir=asc HTTP/1.0" 304 - 0.1412
+127.0.0.1 - - [18/Apr/2012 16:56:47] "GET /products.js?nodeid=2228 HTTP/1.0" 200 - 0.2574
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /compares HTTP/1.0" 200 - 0.5705
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0336
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0561
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0466
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0305
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0283
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0383
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0634
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0325
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0290
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /application.css?body=1 HTTP/1.0" 304 - 0.1494
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0308
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0167
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0424
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0163
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0446
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0263
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0502
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0271
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0352
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0304
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0334
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0346
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0366
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0549
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0287
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0360
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0400
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0330
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0343
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0618
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0346
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0385
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0358
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0252
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.0254
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0246
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0386
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0266
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0258
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0427
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0234
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0267
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0254
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0353
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0314
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0314
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0297
+127.0.0.1 - - [18/Apr/2012 16:56:51] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0421
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0305
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0288
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.2235
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0328
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0293
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0358
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0388
+127.0.0.1 - - [18/Apr/2012 16:56:52] "GET /application.js?body=1 HTTP/1.0" 304 - 0.2386
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /products HTTP/1.0" 304 - 0.4760
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /products HTTP/1.0" 304 - 0.9632
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0341
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0374
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0173
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0526
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0168
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0165
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0629
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0538
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0318
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0347
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0453
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.1505
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0168
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0189
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0492
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0190
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0167
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0526
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0388
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0521
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0165
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0409
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0608
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0315
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0400
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0350
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0376
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0341
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0312
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0265
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.2568
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.1228
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0196
+127.0.0.1 - - [18/Apr/2012 16:56:56] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0376
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0194
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0308
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0252
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0175
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.2831
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0220
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0431
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0231
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0328
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.1868
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0175
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0251
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0396
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0214
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0188
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0316
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0354
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0706
+127.0.0.1 - - [18/Apr/2012 16:56:57] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0509
+127.0.0.1 - - [18/Apr/2012 16:56:58] "GET /categories.json?_search=false&nd=1334728617766&rows=10000&page=1&sidx=&sord=asc HTTP/1.0" 200 - 0.1022
+127.0.0.1 - - [18/Apr/2012 16:56:59] "POST /compares?product_id=6029 HTTP/1.0" 200 - 0.2280
+127.0.0.1 - - [18/Apr/2012 16:57:01] "POST /compares?product_id=6030 HTTP/1.0" 200 - 0.2700
+127.0.0.1 - - [18/Apr/2012 16:57:02] "POST /compares?product_id=6031 HTTP/1.0" 200 - 0.2561
+127.0.0.1 - - [18/Apr/2012 16:57:04] "POST /compares?product_id=6032 HTTP/1.0" 200 - 0.1091
+127.0.0.1 - - [18/Apr/2012 16:57:09] "GET /compares HTTP/1.0" 200 - 0.2843
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0319
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0420
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0200
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0505
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0204
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0192
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0557
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0415
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0231
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /application.css?body=1 HTTP/1.0" 304 - 0.1250
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0208
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0200
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0206
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0199
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0625
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0287
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0508
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0311
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0209
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0212
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0198
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0678
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0188
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0361
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0649
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0205
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0188
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0620
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0646
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.0314
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0207
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0431
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.0272
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0207
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0240
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0188
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0178
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0194
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0580
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0207
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0260
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.1770
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0223
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0259
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0356
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0203
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0662
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0272
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0199
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0213
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0258
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0426
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0637
+127.0.0.1 - - [18/Apr/2012 16:57:10] "GET /products.js?body=1 HTTP/1.0" 304 - 0.1400
+127.0.0.1 - - [18/Apr/2012 16:57:13] "DELETE /compares/10 HTTP/1.0" 302 - 0.1088
+127.0.0.1 - - [18/Apr/2012 16:57:13] "GET /compares HTTP/1.0" 200 - 0.2945
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0170
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0289
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0421
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0422
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0294
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0239
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0415
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0187
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0592
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0209
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0187
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0185
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0545
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0200
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0585
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0268
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0206
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0425
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0329
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0175
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0394
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0178
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0202
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0375
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0717
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0177
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.0290
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0481
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.0173
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0449
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0258
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0178
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0198
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0560
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0213
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0185
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0613
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0235
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0250
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0442
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0178
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0581
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0263
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0178
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0434
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0258
+127.0.0.1 - - [18/Apr/2012 16:57:14] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0405
+127.0.0.1 - - [18/Apr/2012 16:57:16] "DELETE /compares/11 HTTP/1.0" 302 - 0.0908
+127.0.0.1 - - [18/Apr/2012 16:57:16] "GET /compares HTTP/1.0" 200 - 0.3087
+127.0.0.1 - - [18/Apr/2012 16:57:16] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0199
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0274
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0197
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0219
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0197
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0682
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0198
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0231
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0422
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0277
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0197
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0170
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0204
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0273
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0602
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0210
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0186
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0334
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0425
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0188
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0256
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0170
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /application.css?body=1 HTTP/1.0" 304 - 0.2501
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0415
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0422
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0330
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0172
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0210
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0191
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0653
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0601
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0263
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0304
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.0565
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.0532
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0211
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0247
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0348
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0192
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0211
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0392
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0503
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0346
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0193
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0198
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0444
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0260
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0535
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0191
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0271
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.1627
+127.0.0.1 - - [18/Apr/2012 16:57:17] "GET /application.js?body=1 HTTP/1.0" 304 - 0.2892
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /compares HTTP/1.0" 304 - 0.6102
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0415
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0401
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0640
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0215
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0888
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0538
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0200
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0288
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0186
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0280
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0672
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0190
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0193
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0342
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0182
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0265
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0202
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0410
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0172
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0177
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0512
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0394
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0196
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0308
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0210
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0213
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0185
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0173
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0196
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.0249
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0196
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0163
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0713
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0189
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0275
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0267
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0163
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0250
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0722
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0291
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0185
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.1328
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0216
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0297
+127.0.0.1 - - [18/Apr/2012 16:57:34] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0564
+127.0.0.1 - - [18/Apr/2012 16:57:35] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0301
+127.0.0.1 - - [18/Apr/2012 16:57:35] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 16:57:35] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0301
+127.0.0.1 - - [18/Apr/2012 16:57:35] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0276
+127.0.0.1 - - [18/Apr/2012 16:57:35] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0358
+127.0.0.1 - - [18/Apr/2012 16:59:01] "GET /compares HTTP/1.0" 304 - 0.9969
+127.0.0.1 - - [18/Apr/2012 16:59:01] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0330
+127.0.0.1 - - [18/Apr/2012 16:59:01] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0423
+127.0.0.1 - - [18/Apr/2012 16:59:01] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0170
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0522
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0550
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0209
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0381
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0312
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0193
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0177
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0284
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0415
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0165
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0488
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0294
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0549
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.1751
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0401
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0678
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0224
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0362
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0215
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0229
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0459
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0172
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0291
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.0390
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.0173
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0606
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0168
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0193
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0272
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0383
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0350
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0300
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0313
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0199
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0388
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0251
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0393
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0171
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0454
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0296
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0182
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0444
+127.0.0.1 - - [18/Apr/2012 16:59:02] "GET /images.js?body=1 HTTP/1.0" 304 - 0.1405
+127.0.0.1 - - [18/Apr/2012 16:59:05] "GET /products HTTP/1.0" 500 13142 0.1441
+127.0.0.1 - - [18/Apr/2012 16:59:30] "GET /products HTTP/1.0" 500 13697 0.3211
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /products HTTP/1.0" 200 - 1.0902
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/application.css?body=1 HTTP/1.0" 304 - 0.0387
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/categories.css?body=1 HTTP/1.0" 304 - 0.0408
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/orders.css?body=1 HTTP/1.0" 304 - 0.0210
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /application.css?body=1 HTTP/1.0" 304 - 0.0646
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/products.css?body=1 HTTP/1.0" 304 - 0.0261
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/images.css?body=1 HTTP/1.0" 304 - 0.0598
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/users.css?body=1 HTTP/1.0" 304 - 0.0187
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /bootstrap_and_overrides.css?body=1 HTTP/1.0" 304 - 0.0188
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /carts.css?body=1 HTTP/1.0" 304 - 0.0238
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /compares.css?body=1 HTTP/1.0" 304 - 0.0191
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /categories.css?body=1 HTTP/1.0" 304 - 0.0263
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /images.css?body=1 HTTP/1.0" 304 - 0.0171
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /orders.css?body=1 HTTP/1.0" 304 - 0.0191
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /paypal_notifications.css?body=1 HTTP/1.0" 304 - 0.0198
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /product_carts.css?body=1 HTTP/1.0" 304 - 0.0171
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /products.css?body=1 HTTP/1.0" 304 - 0.0184
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /ui.jqgrid.css?body=1 HTTP/1.0" 304 - 0.0194
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /users.css?body=1 HTTP/1.0" 304 - 0.0160
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /jquery.js?body=1 HTTP/1.0" 304 - 0.0197
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /custom-theme/jquery-ui-1.8.18.custom.css?body=1 HTTP/1.0" 304 - 0.0791
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /jquery_ujs.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-transition.js?body=1 HTTP/1.0" 304 - 0.0206
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-modal.js?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-dropdown.js?body=1 HTTP/1.0" 304 - 0.0178
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-scrollspy.js?body=1 HTTP/1.0" 304 - 0.0196
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-tab.js?body=1 HTTP/1.0" 304 - 0.0168
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-tooltip.js?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-button.js?body=1 HTTP/1.0" 304 - 0.0176
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-popover.js?body=1 HTTP/1.0" 304 - 0.0216
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-collapse.js?body=1 HTTP/1.0" 304 - 0.0182
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-carousel.js?body=1 HTTP/1.0" 304 - 0.0170
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap/bootstrap-typeahead.js?body=1 HTTP/1.0" 304 - 0.0197
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/application.js?body=1 HTTP/1.0" 304 - 0.0175
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /twitter/bootstrap.js?body=1 HTTP/1.0" 304 - 0.0265
+127.0.0.1 - - [18/Apr/2012 17:00:31] "GET /admin/categories.js?body=1 HTTP/1.0" 304 - 0.0203
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /admin/images.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /admin/orders.js?body=1 HTTP/1.0" 304 - 0.0185
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /admin/products.js?body=1 HTTP/1.0" 304 - 0.0205
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /admin/users.js?body=1 HTTP/1.0" 304 - 0.0185
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /bootstrap.js?body=1 HTTP/1.0" 304 - 0.0186
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /carts.js?body=1 HTTP/1.0" 304 - 0.0199
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /categories.js?body=1 HTTP/1.0" 304 - 0.0180
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /twitter/bootstrap/bootstrap-alert.js?body=1 HTTP/1.0" 304 - 0.1445
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /compares.js?body=1 HTTP/1.0" 304 - 0.0195
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /grid/i18n/grid.locale-en.js?body=1 HTTP/1.0" 304 - 0.0203
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /orders.js?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /grid/jquery.jqGrid.src.js?body=1 HTTP/1.0" 304 - 0.0370
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /paypal_notifications.js?body=1 HTTP/1.0" 304 - 0.0165
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /images.js?body=1 HTTP/1.0" 304 - 0.0207
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /product_carts.js?body=1 HTTP/1.0" 304 - 0.0174
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /products.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /products_grid.js?body=1 HTTP/1.0" 304 - 0.0192
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /sessions.js?body=1 HTTP/1.0" 304 - 0.0173
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /tree_grid_categories.js?body=1 HTTP/1.0" 304 - 0.0181
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /grid/jquery.jqGrid.min.js?body=1 HTTP/1.0" 304 - 0.0810
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /users.js?body=1 HTTP/1.0" 304 - 0.0189
+127.0.0.1 - - [18/Apr/2012 17:00:32] "GET /application.js?body=1 HTTP/1.0" 304 - 0.0562
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png HTTP/1.0" 304 - 0.0222
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-icons_0073ea_256x240.png HTTP/1.0" 304 - 0.0307
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-bg_flat_75_ffffff_40x100.png HTTP/1.0" 304 - 0.0380
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-bg_highlight-hard_50_dddddd_1x100.png HTTP/1.0" 304 - 0.0377
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-icons_ff0084_256x240.png HTTP/1.0" 304 - 0.0179
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-icons_666666_256x240.png HTTP/1.0" 304 - 0.0225
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-bg_glass_65_ffffff_1x400.png HTTP/1.0" 304 - 0.0331
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /categories.json?_search=false&nd=1334728832841&rows=10000&page=1&sidx=&sord=asc HTTP/1.0" 200 - 0.3606
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-bg_highlight-soft_25_0073ea_1x100.png HTTP/1.0" 304 - 0.0219
+127.0.0.1 - - [18/Apr/2012 17:00:33] "GET /custom-theme/images/ui-icons_ffffff_256x240.png HTTP/1.0" 304 - 0.0229
+I, [2012-04-18T17:14:48.486705 #4794]  INFO -- : reaped #<Process::Status: pid 4800 exit 0> worker=1
+I, [2012-04-18T17:14:48.487159 #4794]  INFO -- : reaped #<Process::Status: pid 4803 exit 0> worker=2
+I, [2012-04-18T17:14:48.487613 #4794]  INFO -- : reaped #<Process::Status: pid 4805 exit 0> worker=3
+I, [2012-04-18T17:14:48.688363 #4794]  INFO -- : reaped #<Process::Status: pid 4797 exit 0> worker=0
+I, [2012-04-18T17:14:48.688792 #4794]  INFO -- : master complete

@@ -1,17 +1,28 @@
 <h1>Cart</h1>
 
-<table class="table table-striped">
+
+<table class="table table-striped table-bordered">
+  <tr>
+    <th>Description</th>
+    <th>Qty</th>
+    <th>Unit price</th>
+  </tr>
   <% @cart.product_carts.each do |item| %>
     <tr>
-      <td><%= item.quantity %> &times;</td>
       <td><%= item.product.description %></td>
-      <td class="item_price"><%= number_to_currency item.total_price %></td>
+      <td><%= item.quantity %> &times;</td>
+      <td class="item_price"><%= number_to_currency item.price %></td>
     </tr>
   <% end %>
   <tr class="total_line">
-    <td colspan="2">Total</td>
+    <td colspan="2">Total price:</td>
     <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
   </tr>
-
 </table>
-<%= link_to 'Empty Cart', @cart, :method => :delete, :class => 'btn btn-danger', :confirm => "Are ou sure?" %>
+<% if @cart.purchased_at.nil? %>
+  <div class="form-actions">
+    <%= link_to 'Empty Cart', @cart, :method => :delete, :class => 'btn btn-danger', :confirm => "Are ou sure?" %>
+    <%= link_to "Checkout with PayPal", @cart.paypal_url(products_url, paypal_notifications_url), :class => 'btn btn-primary' %>
+    <%= link_to "Checkout", orders_path, :method => :post, :class => 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,5 @@
+<% if product.is_in_compares(current_user) %>
+  <%= link_to 'Remove from Compare', compare_path(product.compare(current_user)), :method => :delete, :remote => true, :class => 'btn btn-mini' %>
+<% else %>
+  <%= link_to 'Add to Compare', compares_path(product_id: product.id), :method => :post, :remote => true, :class => 'btn btn-mini' %>
+<% end -%>

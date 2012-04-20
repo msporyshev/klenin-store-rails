@@ -4,16 +4,104 @@
 		"selected_items":
 		[
 			[
-				"if",
-				"iframe"
+				"f",
+				"ft	form_tag"
 			],
 			[
-				"contr",
-				"control-label"
+				"admin",
+				"admin_image_path"
+			],
+			[
+				"compare",
+				"compare_buttons"
+			],
+			[
+				"product",
+				"product_id"
+			],
+			[
+				"ta",
+				"tas	task :task_name => [:dependent, :tasks] do .. end"
+			],
+			[
+				"i",
+				"ist	image_submit_tag"
 			],
 			[
 				"do",
 				"do"
+			],
+			[
+				"gr",
+				"group"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"redire",
+				"redirect_to"
+			],
+			[
+				"if",
+				"if	if … end"
+			],
+			[
+				"upload",
+				"uploaded_io"
+			],
+			[
+				"w",
+				"w	attr_writer .."
+			],
+			[
+				"total",
+				"total_price"
+			],
+			[
+				"resource",
+				"resources"
+			],
+			[
+				"d",
+				"defds	def_delegators .."
+			],
+			[
+				"to_",
+				"to_i"
+			],
+			[
+				"cur",
+				"current_user"
+			],
+			[
+				"curren",
+				"current_user"
+			],
+			[
+				"curre",
+				"current_user"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"generate_",
+				"generate_secure_id"
+			],
+			[
+				"curr",
+				"current_cart"
+			],
+			[
+				"authentica",
+				"authenticate_with_sid"
+			],
+			[
+				"contr",
+				"control-label"
 			],
 			[
 				"se",
@@ -116,26 +204,42 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/layouts/application.html.erb",
+			"file": "app/models/product.rb",
 			"settings":
 			{
-				"buffer_size": 1450,
+				"buffer_size": 769,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/sessions_controller.rb",
+			"file": "app/uploaders/image_uploader.rb",
 			"settings":
 			{
-				"buffer_size": 543,
+				"buffer_size": 1712,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/application_controller.rb",
+			"file": "app/controllers/admin/products_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1455,
+				"buffer_size": 3653,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin/images_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2092,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/categories_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2215,
 				"line_ending": "Unix"
 			}
 		},
@@ -143,40 +247,79 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 2087,
+				"buffer_size": 2306,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/user.rb",
+			"file": "app/views/admin/products/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 1343,
+				"buffer_size": 1291,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/sessions/new.html.erb",
+			"file": "app/views/admin/images/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 646,
-				"line_ending": "Unix",
-				"name": "<h1>Log In</h1>"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/bootstrap_and_overrides.css.less",
-			"settings":
-			{
-				"buffer_size": 665,
+				"buffer_size": 786,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/users/_form.html.erb",
+			"file": "app/views/admin/products/_products.html.erb",
 			"settings":
 			{
-				"buffer_size": 1552,
+				"buffer_size": 1148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 950,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/controllers/users_controller_spec.rb",
+			"settings":
+			{
+				"buffer_size": 56,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/controllers/admin/users_controller_spec.rb",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/spec_helper.rb",
+			"settings":
+			{
+				"buffer_size": 1199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/carts_helper.rb",
+			"settings":
+			{
+				"buffer_size": 171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/products/_products.html.erb",
+			"settings":
+			{
+				"buffer_size": 1168,
 				"line_ending": "Unix"
 			}
 		}
@@ -188,16 +331,16 @@
 		"selected_items":
 		[
 			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
 				"pac",
 				"Package Control: Remove Package"
 			],
 			[
 				"Package Control: ",
 				"Package Control: Discover Packages"
-			],
-			[
-				"pack",
-				"Package Control: Install Package"
 			]
 		],
 		"width": 516.0
@@ -217,44 +360,124 @@
 	},
 	"file_history":
 	[
+		"/home/max/study/projects/rails_apps/store/spec/helpers/users_helper_spec.rb",
+		"/home/max/study/projects/rails_apps/store/spec/models/model_spec.rb",
+		"/home/max/study/projects/rails_apps/store/tmp/pids/unicorn.pid",
+		"/home/max/study/projects/rails_apps/store/app/helpers/carts_helper.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/image.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120415020407_create_images.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/products/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/images/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/products/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/images_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/products/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/categories/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120415005445_create_images.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120415010542_create_product_images.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/product_images.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/sessions_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/users_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/user.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/application_controller.rb",
+		"/home/max/study/projects/rails_apps/store/config/nginx.conf",
+		"/home/max/study/projects/rails_apps/store/Gemfile",
+		"/home/max/study/projects/rails_apps/store/app/models/product.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/compare.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/compares_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/compares/compare_buttons.js.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/compares/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/products/_products.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/products/_compare_buttons.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/products_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_navbar_admin.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/application.js",
+		"/home/max/study/projects/rails_apps/store/app/views/products/compare_buttons.js.erb",
+		"/home/max/study/projects/rails_apps/store/app/helpers/products_helper.rb",
+		"/home/max/study/projects/rails_apps/store/config/environments/development.rb",
+		"/home/max/study/projects/rails_apps/store/log/production.log",
+		"/home/max/study/projects/rails_apps/store/config/unicorn.rb",
+		"/home/max/study/projects/rails_apps/store/unicorn/unicorn.log",
+		"/home/max/study/projects/rails_apps/store/config/environments/production.rb",
+		"/home/max/study/projects/rails_apps/store/unicorn/unicorn_err.log",
+		"/home/max/study/projects/rails_apps/store/public/index.html",
+		"/home/max/study/projects/rails_apps/store/public/products.js",
+		"/home/max/study/projects/rails_apps/store/public/products.html",
+		"/home/max/study/projects/rails_apps/store/config/database.yml",
+		"/home/max/study/projects/rails_apps/store/config/application.rb",
+		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/application.css",
+		"/home/max/study/projects/rails_apps/store/app/views/layouts/application.html.erb",
+		"/home/max/study/projects/rails_apps/store/config/environment.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/carts_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/orders_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/orders/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/orders_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/product_carts_controller.rb",
+		"/home/max/study/projects/rails_apps/store/db/schema.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/cart.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/product_cart.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/orders/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/carts/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/orders/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/carts/_cart.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/models/paypal_notification.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120410072738_remove_cart_id_from_users.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120401062316_create_product_carts.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120401054054_create_carts.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/order.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/category.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/products/_products.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/products_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/application_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/categories_controller.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120403075541_create_compares.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/product_carts/_cart.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/product_carts/show.js.erb",
+		"/home/max/study/projects/rails_apps/store/config/routes.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_cart.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_navbar_guest.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_navbar_user.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/product_carts/cart.js.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/categories_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/orders/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/orders/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120403010305_add_purchased_to_carts.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120403031616_create_paypal_notifications.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/paypal_notifications_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/users_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/users/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120402234101_create_orders.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120330075000_create_users.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/session.rb",
+		"/home/max/study/projects/rails_apps/store/config/initializers/session_store.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/sessions/new.html.erb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120401104314_create_orders.rb",
+		"/home/max/study/projects/rails_apps/store/test/fixtures/sessions.yml",
+		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/home/max/study/projects/rails_apps/store/app/views/product_carts/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/carts/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120401050152_create_sessions.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/sessions.rb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120401045755_create_sessions.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_navbar_guest",
 		"/home/max/study/projects/rails_apps/store/app/views/layouts/_navbar_admin.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/layouts/_navbar_user.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/layouts/_navbar_user",
-		"/home/max/study/projects/rails_apps/store/app/controllers/admin/categories_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/admin/users_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/admin/products_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/layouts/admin.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/products/show.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/products/_products.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/layouts/application.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/layouts/admin/application.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/products/_products.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/products/_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/users/_form.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/users/_form.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/products/edit.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/products/index.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/products/index.js.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/products/new.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/products/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/users/index.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/users/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120330110522_add_role_to_users.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/sessions/new.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/users/show.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/models/user.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/users/index.html.erb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120330075000_create_users.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/users_controller.rb",
-		"/home/max/study/projects/rails_apps/store/config/routes.rb",
 		"/home/max/study/projects/rails_apps/store/app/helpers/sessions_helper.rb",
 		"/home/max/study/projects/rails_apps/store/app/helpers/application_helper.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/categories_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/products_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/tree_grid_categories.js",
-		"/home/max/study/projects/rails_apps/store/app/models/product.rb",
-		"/home/max/study/projects/rails_apps/store/app/models/category.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/application_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/categories/_categories_list.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/products/index.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/categories_grid_options.js",
@@ -264,79 +487,7 @@
 		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/scaffolds.css.scss",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120318102232_add_image_url_to_products.rb",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120318091338_insert_path_to_each_category.rb",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/application.js",
-		"/home/max/study/projects/rails_apps/store/app/views/layouts/application.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/application.css",
-		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/custom-theme/jquery-ui-1.8.18.custom.css",
-		"/home/max/study/projects/rails_apps/store/Gemfile",
-		"/home/max/study/projects/rails_apps/store/app/views/products/index.js.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/index.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/helpers/categories_helper.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/edit.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/_products.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/new.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/show.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/products/edit.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/products/new.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/css/custom-theme/images/ui-bg_flat_55_ffffff_40x100.png",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/products_grid.js",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/grid.js",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/grid/i18n/grid.locale-pt.js",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/grid/i18n/grid.locale-no.js",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/grid/i18n/grid.locale-it.js",
-		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/grid/i18n/grid.locale-bg1251.js",
-		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/bootstrap_and_overrides.css.less",
-		"/home/max/study/projects/rails_apps/store/README.rdoc",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120314102030_create_categories.rb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120314101946_create_products.rb",
-		"/home/max/study/projects/rails_apps/store/config/database.yml",
-		"/home/max/study/projects/rails_apps/klenin_store/config/klenin-store-rails.sublime-project",
-		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/products_controller.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120313070737_create_products.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/_users.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/index.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/assets/javascripts/application.js",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/layouts/application.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/application_controller.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/users_controller.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/helpers/application_helper.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/index.js.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/categories_controller.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/assets/javascripts/tree_grid_products.js",
-		"/home/max/study/projects/rails_apps/klenin_store/app/models/user.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/_form.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/index.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/models/product.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/assets/javascripts/grid.js",
-		"/home/max/study/projects/rails_apps/klenin_store/config/routes.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/models/category.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/show.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/categories/new.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120313070736_create_categories.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/products/new.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120309075552_create_products.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/helpers/sessions_helper.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120311060022_create_categories.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/controllers/sessions_controller.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/config/application.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120310045409_create_warehouses.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120309072023_create_categories.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/Gemfile",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/home/index.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/config/database.yml",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/show.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/db/migrate/20120307082148_create_users.rb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/edit.html.erb",
-		"/home/max/study/projects/rails_apps/klenin_store/app/views/users/new.html.erb",
-		"/home/max/study/projects/rails_apps/store/config/application.rb",
-		"/home/max/study/projects/rails_apps/store/lol.rb",
-		"/home/max/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/max/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-		"/home/max/study/projects/rails_apps/store/db/migrate/bla.rb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120301071408_create_users.rb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120301065816_create_users.rb",
-		"/home/max/study/projects/ruby/untitled"
+		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/custom-theme/jquery-ui-1.8.18.custom.css"
 	],
 	"find":
 	{
@@ -355,6 +506,59 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"50",
+			"painting",
+			"/images",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"Category",
+			"categories",
+			"Compare",
+			"compare",
+			"product",
+			"compare_path",
+			"product_id",
+			"compares_path",
+			"width",
+			"200",
+			"id",
+			"product.",
+			"product",
+			"/td",
+			"th>",
+			"th",
+			"cart",
+			"value: ",
+			"f.",
+			"nginx_test",
+			"product",
+			"Category",
+			"category",
+			"i>",
+			"user",
+			"&rsquo;",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"Category",
+			"category",
+			"f.",
+			"session",
+			"user",
+			"User",
+			"user",
+			"line_item",
 			"email",
 			"/product",
 			" product",
@@ -445,51 +649,51 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 14,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/layouts/application.html.erb",
+					"file": "app/models/product.rb",
 					"settings":
 					{
-						"buffer_size": 1450,
+						"buffer_size": 769,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								698,
-								698
+								95,
+								95
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 136.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/sessions_controller.rb",
+					"file": "app/uploaders/image_uploader.rb",
 					"settings":
 					{
-						"buffer_size": 543,
+						"buffer_size": 1712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								350,
-								350
+								1317,
+								1317
 							]
 						],
 						"settings":
@@ -499,25 +703,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 319.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/controllers/application_controller.rb",
+					"file": "app/controllers/admin/products_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1455,
+						"buffer_size": 3653,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								275,
-								275
+								3653,
+								3653
 							]
 						],
 						"settings":
@@ -527,25 +731,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1577.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "config/routes.rb",
+					"file": "app/controllers/admin/images_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2087,
+						"buffer_size": 2092,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								183,
-								183
+								0,
+								0
 							]
 						],
 						"settings":
@@ -562,18 +766,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/models/user.rb",
+					"file": "app/controllers/categories_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1343,
+						"buffer_size": 2215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								507,
-								507
+								0,
+								2215
 							]
 						],
 						"settings":
@@ -583,31 +787,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 263.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/sessions/new.html.erb",
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 646,
+						"buffer_size": 2306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								511,
+								511
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<h1>Log In</h1>",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -617,23 +822,25 @@
 				},
 				{
 					"buffer": 6,
-					"file": "app/assets/stylesheets/bootstrap_and_overrides.css.less",
+					"file": "app/views/admin/products/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 665,
+						"buffer_size": 1291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								61,
-								61
+								285,
+								285
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -643,18 +850,206 @@
 				},
 				{
 					"buffer": 7,
-					"file": "app/views/users/_form.html.erb",
+					"file": "app/views/admin/images/_form.html.erb",
 					"settings":
 					{
-						"buffer_size": 1552,
+						"buffer_size": 786,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								208,
-								236
+								635,
+								635
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/admin/products/_products.html.erb",
+					"settings":
+					{
+						"buffer_size": 1148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								787,
+								787
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 157.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "spec/controllers/users_controller_spec.rb",
+					"settings":
+					{
+						"buffer_size": 56,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "spec/controllers/admin/users_controller_spec.rb",
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "spec/spec_helper.rb",
+					"settings":
+					{
+						"buffer_size": 1199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/helpers/carts_helper.rb",
+					"settings":
+					{
+						"buffer_size": 171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/views/products/_products.html.erb",
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								505
 							]
 						],
 						"settings":
@@ -714,40 +1109,240 @@
 		"selected_items":
 		[
 			[
-				"user",
-				"app/models/user.rb"
+				"spec",
+				"spec/spec_helper.rb"
 			],
 			[
-				"users",
-				"app/controllers/users_controller.rb"
+				"admin/spec",
+				"spec/controllers/admin/users_controller_spec.rb"
 			],
 			[
-				"route",
-				"config/routes.rb"
+				"gem",
+				"Gemfile"
+			],
+			[
+				"uni",
+				"tmp/pids/unicorn.pid"
+			],
+			[
+				"image",
+				"app/models/image.rb"
 			],
 			[
 				"rou",
 				"config/routes.rb"
 			],
 			[
-				"appl",
-				"app/controllers/application_controller.rb"
-			],
-			[
-				"se",
-				"app/controllers/sessions_controller.rb"
+				"images",
+				"app/controllers/images_controller.rb"
 			],
 			[
 				"cate",
-				"app/models/category.rb"
+				"app/controllers/categories_controller.rb"
+			],
+			[
+				"/views/admin/pro",
+				"app/views/admin/products/_form.html.erb"
+			],
+			[
+				"views/admin/",
+				"app/views/admin/categories/_form.html.erb"
+			],
+			[
+				"admin/pr",
+				"app/controllers/admin/products_controller.rb"
 			],
 			[
 				"pro",
 				"app/models/product.rb"
 			],
 			[
-				"pr",
+				"create_image",
+				"db/migrate/20120415010542_create_product_images.rb"
+			],
+			[
+				"create",
+				"db/migrate/20120415005445_create_images.rb"
+			],
+			[
+				"nginx",
+				"config/nginx.conf"
+			],
+			[
+				"appl",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"sess",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"compare_",
+				"app/views/compares/compare_buttons.js.erb"
+			],
+			[
+				"products",
+				"app/controllers/products_controller.rb"
+			],
+			[
+				"he",
+				"app/helpers/products_helper.rb"
+			],
+			[
+				"prod",
 				"app/models/product.rb"
+			],
+			[
+				"compares_",
+				"app/controllers/compares_controller.rb"
+			],
+			[
+				"compa",
+				"app/models/compare.rb"
+			],
+			[
+				"product",
+				"app/models/product.rb"
+			],
+			[
+				"develop",
+				"config/environments/development.rb"
+			],
+			[
+				"unicorn",
+				"unicorn/unicorn_err.log"
+			],
+			[
+				"inde",
+				"public/index.html"
+			],
+			[
+				"da",
+				"config/database.yml"
+			],
+			[
+				"env",
+				"config/environment.rb"
+			],
+			[
+				"or",
+				"app/controllers/orders_controller.rb"
+			],
+			[
+				"carts",
+				"app/controllers/carts_controller.rb"
+			],
+			[
+				"",
+				"db/schema.rb"
+			],
+			[
+				"cart",
+				"app/controllers/carts_controller.rb"
+			],
+			[
+				"prd",
+				"app/models/product_cart.rb"
+			],
+			[
+				"product_cart",
+				"app/controllers/product_carts_controller.rb"
+			],
+			[
+				"produc",
+				"app/models/product_cart.rb"
+			],
+			[
+				"order",
+				"app/controllers/orders_controller.rb"
+			],
+			[
+				"shema",
+				"db/schema.rb"
+			],
+			[
+				"comares",
+				"app/controllers/compares_controller.rb"
+			],
+			[
+				"pa",
+				"app/models/paypal_notification.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"paypa",
+				"app/models/paypal_notification.rb"
+			],
+			[
+				"comap",
+				"app/controllers/admin/application_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"cart.htm",
+				"app/views/application/_cart.html.erb"
+			],
+			[
+				"product_ca",
+				"app/controllers/product_carts_controller.rb"
+			],
+			[
+				"routs",
+				"config/routes.rb"
+			],
+			[
+				"sessio",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"add",
+				"db/migrate/20120403010305_add_purchased_to_carts.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"pr",
+				"config/environments/production.rb"
+			],
+			[
+				"de",
+				"config/environments/development.rb"
+			],
+			[
+				"cre",
+				"db/migrate/20120401104314_create_orders.rb"
+			],
+			[
+				"product_",
+				"app/models/product_cart.rb"
+			],
+			[
+				"_nav",
+				"app/views/application/_navbar_user.html.erb"
+			],
+			[
+				"se",
+				"app/models/session.rb"
+			],
+			[
+				"_na",
+				"app/views/application/_navbar_admin.html.erb"
 			],
 			[
 				"ca",
@@ -762,16 +1357,8 @@
 				"app/assets/stylesheets/scaffolds.css.scss"
 			],
 			[
-				"add",
-				"db/migrate/20120318102232_add_image_url_to_products.rb"
-			],
-			[
 				"jquer",
 				"app/assets/stylesheets/custom-theme/jquery-ui-1.8.18.custom.css"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"applica",
@@ -806,20 +1393,12 @@
 				"app/assets/javascripts/tree_grid_categories.js"
 			],
 			[
-				"prod",
-				"app/controllers/products_controller.rb"
-			],
-			[
 				"grid.js",
 				"app/assets/javascripts/grid.js"
 			],
 			[
 				"grid.",
 				"app/assets/javascripts/grid/i18n/grid.locale-no.js"
-			],
-			[
-				"ge",
-				"Gemfile"
 			],
 			[
 				"read",
@@ -834,28 +1413,8 @@
 				"app/assets/javascripts/tree_grid_products.js"
 			],
 			[
-				"create",
-				"db/migrate/20120313070736_create_categories.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
-			],
-			[
 				"create_pr",
 				"db/migrate/20120309075552_create_products.rb"
-			],
-			[
-				"sessio",
-				"app/helpers/sessions_helper.rb"
-			],
-			[
-				"sess",
-				"app/controllers/sessions_controller.rb"
-			],
-			[
-				"da",
-				"config/database.yml"
 			],
 			[
 				"lol",
@@ -876,6 +1435,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 196.0,
+	"side_bar_width": 243.0,
 	"status_bar_visible": true
 }
