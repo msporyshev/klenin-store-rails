@@ -1,4 +1,5 @@
 class Product < ActiveRecord::Base
+
   validates :description, presence: true
 
   belongs_to :category
@@ -7,9 +8,9 @@ class Product < ActiveRecord::Base
   has_many :compares, :dependent => :destroy
 
   after_create lambda { |product|
-      product.path = product.category.nil? ? "#{product.id}" : product.category.path + "#{product.id}"
-      product.save!
-      }
+    product.path = product.category.nil? ? "#{product.id}" : product.category.path + "#{product.id}"
+    product.save!
+  }
 
   before_destroy :ensure_not_referenced_by_any_product_cart
 

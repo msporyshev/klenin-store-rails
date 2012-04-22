@@ -1,0 +1,21 @@
+<h2>Report</h2>
+
+<table class="table table-striped table-bordered" id="report">
+  <thead>
+    <th>
+      <% @report.first_header.each do |header| %>
+        <td><%= header.to_s %></td>
+      <% end %>
+    </th>
+  </thead>
+  <tbody>
+    <% @report.second_header.each do |s_header| %>
+      <tr>
+        <td><%= s_header.to_s %></td>
+        <% @report.first_header.each do |f_header| %>
+          <td><%= print_report_cell(@report.body[f_header][s_header]) %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

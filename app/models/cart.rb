@@ -46,4 +46,29 @@ class Cart < ActiveRecord::Base
     product_carts.to_a.sum {|item| item.quantity}
   end
 
+  def self.get_report_info(params = {})
+    orders = Cart.includes(:user, {:product_carts => {:product => :category}}).
+      joins(:user, {:product_carts => {:product => :category}}).
+      where("carts.purchased_at IS NOT NULL").
+      all
+    reports = []
+    orders.each do |order|
+      report = {}
+      report[:user] = order.user.login
+      report[:total_price] = order.total_price
+      report[:products] = []
+      order.product_carts.each do |e|
+        item = {}
+        item[:unit_price] = e.price
+        item[:quantity] = e.quantity
+        item[:category] = e.product.category.name
+        report[:products].push item
+      end
+      report[:total_quantity] = order.total_quantity
+      report[:purchased_at] = order.purchased_at
+      reports.push report
+    end
+    return reports
+  end
+
 end
