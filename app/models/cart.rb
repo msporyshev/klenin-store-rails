@@ -46,29 +46,44 @@ class Cart < ActiveRecord::Base
     product_carts.to_a.sum {|item| item.quantity}
   end
 
-  def self.get_report_info(params = {})
-    orders = Cart.includes(:user, {:product_carts => {:product => :category}}).
-      joins(:user, {:product_carts => {:product => :category}}).
-      where("carts.purchased_at IS NOT NULL").
-      all
-    reports = []
-    orders.each do |order|
-      report = {}
-      report[:user] = order.user.login
-      report[:total_price] = order.total_price
-      report[:products] = []
-      order.product_carts.each do |e|
-        item = {}
-        item[:unit_price] = e.price
-        item[:quantity] = e.quantity
-        item[:category] = e.product.category.name
-        report[:products].push item
-      end
-      report[:total_quantity] = order.total_quantity
-      report[:purchased_at] = order.purchased_at
-      reports.push report
-    end
-    return reports
+  REAL_ROWS_COLS_N_VALS_NAMES = {
+    :user => "users.login",
+    :category => "categories.name",
+    :purchased_at => "carts.purchased_at",
+    :quantity => "SUM(product_carts.quantity)",
+    :price => "SUM(product_carts.price)",
+    :both => "SUM(product_carts.quantity), SUM(product_carts.price)"
+  }
+
+  def self.get_report_info(rows, columns, values)
+    rows = REAL_ROWS_COLS_N_VALS_NAMES[rows]
+    columns = REAL_ROWS_COLS_N_VALS_NAMES[columns]
+    values = REAL_ROWS_COLS_N_VALS_NAMES[values]
+
+    return [] if rows.blank? and columns.blank?
+
+    query =<<SQL
+SELECT
+  #{select_or_group_query_partial(rows, columns, values)}
+
+FROM carts INNER JOIN users ON users.id = carts.user_id
+  INNER JOIN product_carts ON product_carts.cart_id = carts.id
+  INNER JOIN products ON product_carts.product_id = products.id
+  INNER JOIN categories ON categories.id = products.category_id
+WHERE carts.purchased_at IS NOT NULL
+GROUP BY #{select_or_group_query_partial(rows, columns)}
+SQL
+    reports = Cart.connection.execute(query)
   end
+
+  private
+
+    def self.select_or_group_query_partial(*args)
+      result = ""
+      args.each do |arg|
+        result += "#{arg}," if !arg.blank?
+      end
+      result.chop
+    end
 
 end

@@ -1,112 +1,93 @@
 class Admin::ReportsController < ApplicationController
 
-  Report = Struct.new(:first_header, :second_header, :body)
+  Report = Struct.new(:header, :body)
 
   def initialize
     super
 
-    @set_headers_procs = {
-      :user => lambda { |header_type| set_users_header_to_reports(header_type) },
-      :total_price => lambda { |header_type| set_total_prices_header_to_reports(header_type) },
-      :purchased_at => lambda { |header_type| set_dates_header_to_reports(header_type) },
-      :category => lambda { |header_type| set_categories_header_to_reports(header_type) }
+    @get_cell_value = {
+      "quantity" => lambda { |report| get_quantity_cell_val(report) },
+      "price" => lambda { |report| get_price_cell_val(report) },
+      "both" => lambda { |report| get_quantity_and_price_cell_val(report) },
+      "" => lambda { |report| [] }
     }
 
-    @report = Report.new([], [], {})
+    @report_fields = [
+      ["User", :user],
+      ["Category", :category],
+      ["Purchase Date", :purchased_at]
+    ]
+
+    @report_value_types = [
+      ["Total Quantity", :quantity],
+      ["Total Price", :price],
+      ["Both", :both]
+    ]
+
+    @report = Report.new([[], []], {})
 
   end
 
-  def show
-    init_report(:category, :user)
+  def index
+    rows_field = !params[:rows_field].blank? ? params[:rows_field].to_sym : nil
+    columns_field = !params[:columns_field].blank? ? params[:columns_field].to_sym : nil
+    value_type = !params[:value_type].blank? ? params[:value_type].to_sym : nil
+
+    init_report(rows_field, columns_field, value_type)
   end
 
   private
 
-    def set_users_header_to_reports(header_type)
+    def set_header_to_report(header_type)
       @raw_reports.each { |report|
-        @report.__send__(header_type).
-          push report[:user].to_s if !@used[header_type][report[:user].to_s]
-        @used[header_type][report[:user].to_s] = true
-      }
-    end
-
-    def set_total_prices_header_to_reports(header_type)
-      @raw_reports.each { |report|
-        if !@used[header_type][report[:total_price].to_s]
-          @report.__send__(header_type).push report[:total_price].to_s
-          @used[header_type][report[:user].to_s] = true
+        if !@used[header_type][report[header_type].to_s]
+          @report.header[header_type].push report[header_type].to_s
+          @used[header_type][report[header_type].to_s] = true
         end
       }
     end
 
-    def set_dates_header_to_reports(header_type)
-      @raw_reports.each { |report|
-        if !@used[header_type][report[:purchased_at].to_s]
-          @report.__send__(header_type).push report[:purchased_at].to_s
-          @used[header_type][report[:purchased_at].to_s] = true
-        end
-      }
+    COLUMNS_HEADER = 1
+    ROWS_HEADER = 0
+
+    def get_quantity_cell_val(report)
+      [{:label => "Quantity", :value => report.last}]
     end
 
-    def set_categories_header_to_reports(header_type)
-      @raw_reports.each do |report|
-        report[:products].each do |product|
-          if !@used[header_type][product[:category].to_s]
-            @report.__send__(header_type).push product[:category].to_s
-            @used[header_type][product[:category].to_s] = true
-          end
-        end
+    def get_price_cell_val(report)
+      [{:label => "Price", :value => report[-1]}]
+    end
+
+    def get_quantity_and_price_cell_val(report)
+      [{:label => "Quantity", :value => report[-2]}, {:label => "Price", :value => report[-1]}]
+    end
+
+    def init_report(rows_field, columns_field, value_type)
+      @used = []
+      @used[COLUMNS_HEADER] = {}
+      @used[ROWS_HEADER] = {}
+
+      @raw_reports = Cart.get_report_info(rows_field, columns_field, value_type)
+
+      set_header_to_report(ROWS_HEADER)
+      if rows_field and columns_field
+        set_header_to_report(COLUMNS_HEADER)
+      else
+        @report.header[COLUMNS_HEADER] << ""
+        columns_value = ""
       end
-    end
-
-    def init_report_cell_values(header1, header2)
-      first_coord = nil
-      second_coord = nil
-      @raw_reports.each do |report|
-        cell = {};
-        first_coord = report[header1].to_s
-        second_coord = report[header2].to_s
-        report.each do |key, val|
-          if key != header1 and key != header2
-            if val.is_a? Array
-              val.each do |elem|
-                cell[key] = {}
-                elem.each { |k, v|
-                  if k == header1
-                    first_coord = v.to_s
-                  elsif k == header2
-                    second_coord = v.to_s
-                  else
-                    cell[key][k] = v
-                  end
-                }
-              end
-            else
-              cell[key] = val
-            end
-          end
-        end
-        @report.body[first_coord][second_coord].push cell
-      end
-    end
-
-    def init_report(first_coord = :users, second_coord = :categories)
-      @raw_reports = Cart.get_report_info
-      @used = {}
-      @used[:first_header] = {}
-      @used[:second_header] = {}
-      @set_headers_procs[first_coord].call(:first_header)
-      @set_headers_procs[second_coord].call(:second_header)
       @used = nil
 
-      @report.first_header.each do |first|
+      @report.header[ROWS_HEADER].each do |first|
         @report.body[first] = {}
-        @report.second_header.each do |second|
+        @report.header[COLUMNS_HEADER].each do |second|
           @report.body[first][second] = []
         end
       end
-
-      init_report_cell_values(first_coord, second_coord)
+      @raw_reports.each do |report|
+        @report.body[report[ROWS_HEADER].to_s][columns_value || report[COLUMNS_HEADER].to_s] =
+          @get_cell_value[value_type.to_s].call(report)
+      end
     end
 
 end
