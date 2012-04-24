@@ -34,6 +34,12 @@ class Admin::ReportsController < ApplicationController
     value_type = !params[:value_type].blank? ? params[:value_type].to_sym : nil
 
     init_report(rows_field, columns_field, value_type)
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
+
   end
 
   private

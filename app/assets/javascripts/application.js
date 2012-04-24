@@ -25,4 +25,9 @@ $(function () {
     );
     return false;
   });
+
+  $("#rows-select, #columns-select, #values-select").change(function() {
+    $("form").submit()
+  });
+
 });
