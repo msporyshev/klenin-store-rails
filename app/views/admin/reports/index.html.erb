@@ -1,10 +1,17 @@
 <h2>Report</h2>
 
-<%= form_tag admin_reports_path, :remote => true, :method => "get" , :class => "form-horizontal" do %>
+<%= form_tag admin_reports_path, :remote => true, :method => "get" , :class => "form-horizontal", :id => "report-ajax" do %>
   <%= select_tag :rows_field, options_for_select(@report_fields), :prompt => "Select Rows Type", :id=>"rows-select" %>
   <%= select_tag :columns_field, options_for_select(@report_fields), :prompt => "Select Columns Type",  :id=>"columns-select"  %>
   <%= select_tag :value_type, options_for_select(@report_value_types), :prompt => "Select Value Type",  :id=>"values-select" %>
-  <%= submit_tag "Show", class: "btn" %>
+  <!-- <%= submit_tag "Download", class: "btn" %> -->
+<% end %>
+
+<%= form_tag admin_reports_download_path, :method => "post" , :class => "form-horizontal", :id => "report-ajax" do %>
+  <%= select_tag :rows_field, options_for_select(@report_fields), :prompt => "Select Rows Type", :id=>"rows-select" %>
+  <%= select_tag :columns_field, options_for_select(@report_fields), :prompt => "Select Columns Type",  :id=>"columns-select"  %>
+  <%= select_tag :value_type, options_for_select(@report_value_types), :prompt => "Select Value Type",  :id=>"values-select" %>
+  <%= submit_tag "Download", class: "btn" %>
 <% end %>
 
 <div id="reports">

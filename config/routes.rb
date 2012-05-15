@@ -1,18 +1,17 @@
 Store::Application.routes.draw do
 
-  resources :images
-
-  resources :compares
+  resources :images,
+    :compares,
+    :orders,
+    :product_carts,
+    :carts,
+    :users,
+    :categories,
+    :products
 
   controller :paypal_notifications do
     post "paypal_notifications" => :create
   end
-
-  resources :orders
-
-  resources :product_carts
-
-  resources :carts
 
   controller :sessions do
     get "sessions/new" => :new
@@ -20,13 +19,11 @@ Store::Application.routes.draw do
     delete "sessions" => :destroy
   end
 
-  resources :users
-
-  resources :categories
-
-  resources :products
-
   namespace :admin do
+    controller :reports do
+      post "reports/download" => :download
+    end
+
     resources :users, :categories, :products, :orders, :images, :reports
   end
 

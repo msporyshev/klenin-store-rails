@@ -1,3 +1,5 @@
+require "socket"
+
 class Admin::ReportsController < ApplicationController
 
   Report = Struct.new(:header, :body)
@@ -36,10 +38,49 @@ class Admin::ReportsController < ApplicationController
     init_report(rows_field, columns_field, value_type)
 
     respond_to do |format|
+
       format.html
       format.js
+      format.pdf do
+        # html = render_to_string("index.html.erb")
+        # File.open(Rails.root.join("public/reports/index.html"), "w") { |file| file << html }
+        render(
+          :pdf => "report.pdf",
+          :template => "/admin/reports/report.html.erb")
+      end
     end
 
+  end
+
+  include Socket::Constants
+
+  def show
+    @file_name = params[:id].to_s + ".pdf"
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
+  def download
+    rows_field = !params[:rows_field].blank? ? params[:rows_field].to_s : "NULL"
+    columns_field = !params[:columns_field].blank? ? params[:columns_field].to_s : "NULL"
+    value_type = !params[:value_type].blank? ? params[:value_type].to_s : "NULL"
+
+    socket = Socket.new( AF_INET, SOCK_STREAM, 0 )
+    sockaddr = Socket.pack_sockaddr_in( 30000, 'localhost' )
+    socket.connect( sockaddr )
+
+    socket.puts(rows_field)
+    socket.puts(columns_field)
+    socket.puts(value_type)
+
+    file_name = socket.gets
+    file_name = File.basename(file_name.chomp, ".pdf")
+
+    respond_to do |format|
+      format.html { redirect_to admin_report_path(file_name) }
+    end
   end
 
   private
