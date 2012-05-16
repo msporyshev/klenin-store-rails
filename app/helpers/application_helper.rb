@@ -10,7 +10,15 @@ module ApplicationHelper
     render "global_search_form", {search_url: url, form_method: method, hide_submit: hide_submit}
   end
 
-  def global_search_form_fields(hide_submit = false)
-    render "global_search_form_fields", hide_submit: hide_submit
+  def global_search_form_fields()
+    render "global_search_form_fields"
+  end
+
+  def products_search_form(url, method, hide_submit = false)
+    render "products_search_form", {search_url: url, form_method: method, hide_submit: hide_submit}
+  end
+
+  def products_search_form_fields()
+    render "products_search_form_fields"
   end
 end

@@ -23,3 +23,6 @@ test.rb
 *.gif
 
 *.pdf
+
+*.sublime-project
+*.sublime-workspace
