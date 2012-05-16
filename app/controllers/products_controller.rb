@@ -13,7 +13,6 @@ class ProductsController < ApplicationController
       paginate(:per_page => params[:rows] || 10, :page => params[:page]).
       where("products.path LIKE ?", "#{@category.nil? ? nil : @category.path}%")
 
-
     respond_to do |format|
       format.html # index.html.erb
       format.js { render partial: "products", :content_type => "text/html"}

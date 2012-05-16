@@ -62,6 +62,10 @@ class User < ActiveRecord::Base
     (user && user.expires_at > Time.now.utc) ? user : nil
   end
 
+  def User.all_registered
+    User.where("name IS NOT NULL")
+  end
+
   private
 
     def User.set_session_params(user)

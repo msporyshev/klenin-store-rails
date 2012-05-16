@@ -41,13 +41,6 @@ class Admin::ReportsController < ApplicationController
 
       format.html
       format.js
-      format.pdf do
-        # html = render_to_string("index.html.erb")
-        # File.open(Rails.root.join("public/reports/index.html"), "w") { |file| file << html }
-        render(
-          :pdf => "report.pdf",
-          :template => "/admin/reports/report.html.erb")
-      end
     end
 
   end
@@ -63,6 +56,11 @@ class Admin::ReportsController < ApplicationController
   end
 
   def download
+    if params[:rows_field].blank? and params[:columns_field].blank? and params[:value_type].blank?
+      redirect_to admin_reports_path
+      return
+    end
+
     rows_field = !params[:rows_field].blank? ? params[:rows_field].to_s : "NULL"
     columns_field = !params[:columns_field].blank? ? params[:columns_field].to_s : "NULL"
     value_type = !params[:value_type].blank? ? params[:value_type].to_s : "NULL"
@@ -74,6 +72,7 @@ class Admin::ReportsController < ApplicationController
     socket.puts(rows_field)
     socket.puts(columns_field)
     socket.puts(value_type)
+    socket.puts(params[:search].to_json)
 
     file_name = socket.gets
     file_name = File.basename(file_name.chomp, ".pdf")
