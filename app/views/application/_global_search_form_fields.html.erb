@@ -1,0 +1,35 @@
+
+  <div class="span4">
+    <div class="control-group">
+      <%= label_tag "Product", nil, class: "control-label" %>
+      <div class="controls">
+        <%= text_field_tag "search[product_key_word]" %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= label_tag "User", nil, class: "control-label" %>
+      <div class="controls">
+        <%= select_tag "search[user_ids]", options_for_select(User.all_registered.collect { |u| [u.login, u.id] }), {multiple: true}  %>
+      </div>
+    </div>
+  </div>
+  <div class="span7">
+    <div class="control-group">
+      <%= label_tag "Price range", nil, class: "control-label" %>
+      <div class="controls">
+        <%= number_field_tag "search[price_range_from]", nil,{min: 0, step: 0.01} %>
+        <%= number_field_tag "search[price_range_to]", nil, {min: 0, step: 0.01} %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= label_tag "Category", nil, class: "control-label" %>
+      <div class="controls">
+        <%= select_tag "search[category_ids]", options_for_select(Category.root_categories.collect { |c| [c.name, c.id] }), {multiple: true}  %>
+      </div>
+    </div>
+  </div>
+  <% if !hide_submit %>
+    <div class="form-actions span12">
+      <%= submit_tag "Search", name: nil, class: "btn", id: "global-search-submit-btn" %>
+    </div>
+  <% end -%>

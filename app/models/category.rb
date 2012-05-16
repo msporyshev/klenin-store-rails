@@ -9,4 +9,8 @@ class Category < ActiveRecord::Base
       category.path = category.category.nil? ? "#{category.id}." : category.category.path + "#{category.id}."
       category.save!
       }
+
+  def self.root_categories
+    Category.where(:category_id => nil)
+  end
 end

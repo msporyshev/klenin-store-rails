@@ -27,7 +27,7 @@ $(function () {
   });
 
   $("#rows-select, #columns-select, #values-select").change(function() {
-    $("#report-ajax").submit()
+    $("#report-ajax-form").submit()
   });
 
 });

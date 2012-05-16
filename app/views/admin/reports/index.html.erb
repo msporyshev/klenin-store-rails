@@ -1,19 +1,29 @@
 <h2>Report</h2>
+<div class="span12">
+  <!--<%= form_tag admin_reports_path, :remote => true, :method => "get" , :class => "form-horizontal", :id => "report-ajax-form" do %>
+    <%= select_tag :rows_field, options_for_select(@report_fields), :prompt => "Select Rows Type", :id=>"rows-select" %>
+    <%= select_tag :columns_field, options_for_select(@report_fields), :prompt => "Select Columns Type",  :id=>"columns-select"  %>
+    <%= select_tag :value_type, options_for_select(@report_value_types), :prompt => "Select Value Type",  :id=>"values-select" %>
+    <%= submit_tag "Download", class: "btn" %>
+  <% end %> -->
 
-<%= form_tag admin_reports_path, :remote => true, :method => "get" , :class => "form-horizontal", :id => "report-ajax" do %>
-  <%= select_tag :rows_field, options_for_select(@report_fields), :prompt => "Select Rows Type", :id=>"rows-select" %>
-  <%= select_tag :columns_field, options_for_select(@report_fields), :prompt => "Select Columns Type",  :id=>"columns-select"  %>
-  <%= select_tag :value_type, options_for_select(@report_value_types), :prompt => "Select Value Type",  :id=>"values-select" %>
-  <!-- <%= submit_tag "Download", class: "btn" %> -->
-<% end %>
+  <%= form_tag admin_reports_download_path, :method => "post" , :class => "form-horizontal", :id => "report-ajax" do %>
 
-<%= form_tag admin_reports_download_path, :method => "post" , :class => "form-horizontal", :id => "report-ajax" do %>
-  <%= select_tag :rows_field, options_for_select(@report_fields), :prompt => "Select Rows Type", :id=>"rows-select" %>
-  <%= select_tag :columns_field, options_for_select(@report_fields), :prompt => "Select Columns Type",  :id=>"columns-select"  %>
-  <%= select_tag :value_type, options_for_select(@report_value_types), :prompt => "Select Value Type",  :id=>"values-select" %>
-  <%= submit_tag "Download", class: "btn" %>
-<% end %>
+    <%= global_search_form_fields(true) %>
 
-<div id="reports">
-  <%= render "reports" %>
+    <div class="span12">
+      <div class="control-gruop">
+        <div class="controls">
+          <%= select_tag :rows_field, options_for_select(@report_fields), :prompt => "Select Rows Type", :id=>"rows-select" %>
+          <%= select_tag :columns_field, options_for_select(@report_fields), :prompt => "Select Columns Type",  :id=>"columns-select"  %>
+          <%= select_tag :value_type, options_for_select(@report_value_types), :prompt => "Select Value Type",  :id=>"values-select" %>
+          <%= submit_tag "Download", class: "btn", id: "download-report-btn" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
+  <!-- <div id="reports" class="span12">
+    <%= render "reports" %>
+  </div> -->
 </div>

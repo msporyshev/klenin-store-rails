@@ -8,3 +8,9 @@ jQuery ->
     "sScrollX": "100%",
     "bScrollCollapse": true
   })
+
+  # $("#download-report-btn").click( ->
+  #   var form = $("#global-search-form")
+  #   for elem in form.elements
+  #     # body...
+  # )

@@ -1,3 +1,5 @@
+require Rails.root.to_s + "/app/lib/search.rb"
+
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
