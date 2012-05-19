@@ -32,3 +32,17 @@ th .desc {
 .compares-table td {
   width: 200px;
 }
+
+div .modal {
+  width: 800px;
+}
+
+.comment-text {
+  padding: 10px 5px 10px 0px;
+  border-top: 1px dashed #999;
+  border-bottom: 1px dashed #999;
+}
+
+/*.comment-elements {
+  margin-left: 0px + 100px;
+}*/

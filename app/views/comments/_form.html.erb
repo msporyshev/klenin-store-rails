@@ -1,0 +1,37 @@
+
+<%= form_for(@comment, remote: true) do |f| %>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">&times;</button>
+    <h3>Comment</h3>
+  </div>
+  <div class="modal-body">
+      <% if @comment.errors.any? %>
+        <div id="error_explanation" class="alert alert-error alert-block">
+          <h2 class="alert-heading">
+            <%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:
+          </h2>
+
+          <ul>
+          <% @comment.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <%= f.hidden_field :product_id %>
+      <%= f.hidden_field :comment_id %>
+      <%= f.hidden_field :user_id %>
+
+      <div class="control-group">
+        <%= f.label :comment, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_area(:text, size: "20x6", class: "span8" ) %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-actions modal-footer">
+      <%= f.submit nil, class: 'btn btn-primary', id: "comment-submit-btn" %>
+    </div>
+  <% end %>

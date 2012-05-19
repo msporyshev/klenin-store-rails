@@ -1,0 +1,14 @@
+<div class="form-actions span12">
+  <% @root_comments.each do |comment| %>
+    <%= comments(comment) %>
+  <% end -%>
+
+  <div class="modal hide fade" id="comment-form">
+  </div>
+
+  <% if !current_user.name.blank? %>
+    <div class="span12">
+      <%= link_to "comment", nil, class: "btn", id: "comment-btn" %>
+    </div>
+  <% end %>
+</div>

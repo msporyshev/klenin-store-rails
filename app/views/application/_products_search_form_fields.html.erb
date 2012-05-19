@@ -16,10 +16,11 @@
 
 <div class="span7">
   <div class="control-group">
-    <%= label_tag "Price range", nil, class: "control-label" %>
-    <div class="controls">
-      <%= number_field_tag "search[price_range_from]", nil,{min: 0, step: 0.01} %>
-      <%= number_field_tag "search[price_range_to]", nil, {min: 0, step: 0.01} %>
+    <%= label_tag "Price from", nil, class: "control-label" %>
+    <div class="controls form-inline">
+      <%= number_field_tag "search[price_range_from]", nil,{min: 0, step: 0.01, class: "span2"} %>
+      <%= label_tag "to" %>
+      <%= number_field_tag "search[price_range_to]", nil, {min: 0, step: 0.01, class: "span2" } %>
     </div>
   </div>
 </div>

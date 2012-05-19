@@ -5,6 +5,7 @@ class Product < ActiveRecord::Base
   belongs_to :category
   has_many :images
   has_many :product_carts
+  has_many :comments
   has_many :compares, :dependent => :destroy
 
   after_create lambda { |product|

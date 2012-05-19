@@ -1,0 +1,24 @@
+<h1>Comment</h1>
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Text</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @comments.each do |comment| %>
+      <tr>
+        <td>
+          <%= text_area_tag "bla", comment.text, size: "20x6", disabled: "disabled", class: "span6" %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_comment_path(comment), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', comment_path(comment), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New', new_comment_path, :class => 'btn btn-primary' %>

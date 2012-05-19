@@ -1,6 +1,6 @@
 require "socket"
 
-class Admin::ReportsController < ApplicationController
+class Admin::ReportsController < Admin::ApplicationController
 
   Report = Struct.new(:header, :body)
 
@@ -78,7 +78,15 @@ class Admin::ReportsController < ApplicationController
     file_name = File.basename(file_name.chomp, ".pdf")
 
     respond_to do |format|
-      format.html { redirect_to admin_report_path(file_name) }
+      if File.exist?(Rails.root + "/public/reports/" + file_name + ".pdf")
+        format.html { redirect_to admin_report_path(file_name), notice: "Report successfully created" }
+      else
+        format.html do
+          redirect_to( admin_reports_path,
+            notice: "Report is not reqdy yet, try reload this page later."
+          )
+        end
+      end
     end
   end
 

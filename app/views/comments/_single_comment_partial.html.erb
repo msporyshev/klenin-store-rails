@@ -1,0 +1,29 @@
+
+<%= content_tag(:div, class: "comment-elements", id: comment.id.to_s) do %>
+  <div class="row">
+    <div class="span12">
+
+      <%= link_to comment.user.login, user_path(comment.user), class: "span3" %>
+      <%= label_tag "posted at: #{comment.created_at.strftime("%c")}", nil, class: "span7" %>
+
+      <%= hidden_field_tag 'parent_id', comment.comment_id %>
+
+      <% if comment.user == current_user %>
+        <div class="row">
+          <%= link_to "edit", nil, class: "", id: "edit-comment-btn" %>
+          |
+          <%= link_to "remove", comment_path(comment), method: "delete", remote: true, class: "" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <%= simple_format comment.text, class: "comment-text span11" %>
+  <% if comment.user != current_user and !current_user.name.blank? %>
+    <div class="span12">
+      [<%= link_to "reply", "#", id: "reply-btn" %>]
+    </div>
+  <% end %>
+
+<% end %>
+<hr class="comment-div span11" />

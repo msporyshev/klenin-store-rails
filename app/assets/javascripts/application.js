@@ -20,9 +20,12 @@
 
 $(function () {
   $("#table_products th a, #table_products .pagination a").live('click', function() {
-    $.get (this.href.replace("products?", "products.js?"), function(data) {
+    $.get (
+      this.href.replace("products?", "products.js?"),
+      function(data) {
         $("#table_products").html(data);
-      }, "text html"
+      },
+      "text html"
     );
     return false;
   });
@@ -30,5 +33,21 @@ $(function () {
   $("#rows-select, #columns-select, #values-select").change(function() {
     $("#report-ajax-form").submit()
   });
+
+  // $("div").each(
+  //   function(index) {
+  //     if ($(this).attr("class") !== "comment-elements")
+  //       return true
+
+  //     parent_id = $(this).find("input[name=parent_id]").val()
+
+  //     if (parent_id.length == 0)
+  //       return true
+
+  //     margin = $("#" + parent_id).css("marginLeft") + "+ 100"
+  //     // this.css("marginLeft", margin)
+  //     alert(margin)
+  //     // $(this).attr("class", "blabla")
+  // });
 
 });

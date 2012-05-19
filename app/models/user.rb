@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  SESSION_TIME_MIN = 20.to_i
+  SESSION_TIME_MIN = 100.to_i
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
 
   has_many :compares, :dependent => :destroy
   has_many :carts
+  has_many :comments
 
   attr_accessor :password_confirmation
   attr_reader :password

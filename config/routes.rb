@@ -1,5 +1,11 @@
 Store::Application.routes.draw do
 
+  resources :comments
+
+  controller :comments do
+    get "comments/new/:product_id" => :new, :as => :comments_new
+  end
+
   resources :images,
     :compares,
     :orders,

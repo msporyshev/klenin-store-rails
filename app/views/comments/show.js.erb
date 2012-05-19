@@ -1,0 +1,16 @@
+$("#product-comments").html("<%= j render("cur_product_comments_alter") %>");
+    REPLY_COMMENT_MARGIN = "30px"
+
+    $(".comment-elements").each(
+      function(index) {
+        if ($(this).attr("class") !== "comment-elements")
+          return ;
+
+        parent_id = $(this).find("input[name=parent_id]").val();
+
+        if (parent_id.length == 0)
+          return ;
+
+        $(this).css("marginLeft", $("#" + parent_id).css("marginLeft"));
+        $(this).css("marginLeft", "+=" + REPLY_COMMENT_MARGIN);
+    });
