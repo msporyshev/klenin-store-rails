@@ -1,27 +1,36 @@
-<h1>User</h1>
+<div class="span3">
+  <h1>User</h1>
 
-<p>
-  <b>Login</b><br>
-  <%= @user.login %>
-</p>
+  <p>
+    <b>Login</b><br>
+    <%= @user.login %>
+  </p>
 
-<p>
-  <b>Name</b><br>
-  <%= @user.name %>
-</p>
+  <p>
+    <b>Name</b><br>
+    <%= @user.name %>
+  </p>
 
-<p>
-  <b>Email</b><br>
-  <%= @user.email %>
-</p>
+  <p>
+    <b>Email</b><br>
+    <%= @user.email %>
+  </p>
 
-<p>
-  <b>Burthday</b><br>
-  <%= @user.burthday %>
-</p>
+  <p>
+    <b>Address</b><br>
+    <%= @user.address %>
+  </p>
 
-<div class="form-actions">
-  <%= link_to 'Back', users_path, :class => 'btn'  %>
-  <%= link_to 'Edit', edit_user_path(@user), :class => 'btn' %>
-  <%= link_to 'Delete', user_path(@user), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+  <p>
+    <b>Burthday</b><br>
+    <%= @user.burthday %>
+  </p>
+
+  <div class="form-actions">
+    <%= link_to 'Back', users_path, :class => 'btn'  %>
+    <%= link_to 'Edit', edit_user_path(@user), :class => 'btn' %>
+  </div>
+</div>
+<div class="span9">
+  <%= gmaps4rails(@user_map_json) %>
 </div>

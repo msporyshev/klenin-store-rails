@@ -1,6 +1,4 @@
 module ApplicationHelper
-  @@tree = ""
-
   def sortable(column, title = nil)
     title ||= column.titleize
     css_class = (column == sort_column) ? "cur #{sort_direction}" : nil
@@ -22,6 +20,14 @@ module ApplicationHelper
 
   def products_search_form_fields()
     render "products_search_form_fields"
+  end
+
+  def users_search_form(url, method, hide_submit = false)
+    render "users_search_form", {search_url: url, form_method: method, hide_submit: hide_submit}
+  end
+
+  def users_search_form_fields()
+    render "users_search_form_fields"
   end
 
   def comments(cur_comment)

@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
 
+    @user_map_json = @user.to_gmaps4rails
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user }

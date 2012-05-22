@@ -1,0 +1,16 @@
+<%= users_search_form admin_geo_index_path, "get" %>
+
+<div class="span9">
+  <%= gmaps(
+    "markers" => {
+      "map_options" => {"auto_adjust" => true},
+      "data" => @json,
+      "options" => {
+        "list_container" => "markers_list",
+        "randomize" => true,
+        "max_random_distance" => "2"
+      }
+    }
+  ) %>
+</div>
+<ul id="markers_list">  </ul>

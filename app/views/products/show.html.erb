@@ -24,6 +24,17 @@
     <%= number_to_currency @product.price %>
   </p>
 
+  <% if @product.rating %>
+    <div id="product-rating">
+      <%= render "ratings/cur_product_rating" %>
+    </div>
+  <% end -%>
+  <% if !current_user.name.blank? %>
+    <div id="rating-form">
+      <%= render "ratings/form" %>
+    </div>
+  <% end -%>
+
 </div>
 
 <div id="product-comments" class="span12">

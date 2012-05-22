@@ -1,0 +1,7 @@
+
+<div class="control-group">
+  <%= label_tag "User login", nil, class: "control-label" %>
+  <div class="controls">
+    <%= select_tag "search[user_ids]", options_for_select(User.all_registered.collect { |u| [u.login, u.id] }), {multiple: true}  %>
+  </div>
+</div>

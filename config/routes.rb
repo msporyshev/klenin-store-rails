@@ -1,5 +1,7 @@
 Store::Application.routes.draw do
 
+  resources :ratings
+
   resources :comments
 
   controller :comments do
@@ -30,7 +32,7 @@ Store::Application.routes.draw do
       post "reports/download" => :download
     end
 
-    resources :users, :categories, :products, :orders, :images, :reports
+    resources :users, :categories, :products, :orders, :images, :reports, :geo
   end
 
   # The priority is based upon order of creation:

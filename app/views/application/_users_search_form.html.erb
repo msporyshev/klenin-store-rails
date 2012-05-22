@@ -1,0 +1,11 @@
+<%= form_tag search_url, method: form_method, class: "form-horizontal", id: "users-search-form" do %>
+
+  <%= render "users_search_form_fields" %>
+
+  <% if !hide_submit %>
+    <div class="form-actions span12">
+      <%= submit_tag "Search", name: nil, class: "btn", id: "users-search-submit-btn" %>
+    </div>
+  <% end -%>
+
+<% end -%>

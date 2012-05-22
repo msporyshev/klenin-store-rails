@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
   has_many :compares, :dependent => :destroy
   has_many :carts
   has_many :comments
+  has_many :ratings
 
   attr_accessor :password_confirmation
   attr_reader :password
@@ -65,6 +66,12 @@ class User < ActiveRecord::Base
 
   def User.all_registered
     User.where("name IS NOT NULL")
+  end
+
+  acts_as_gmappable
+
+  def gmaps4rails_address
+    address
   end
 
   private

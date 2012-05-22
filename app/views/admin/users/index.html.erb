@@ -5,6 +5,7 @@
       <th>Login</th>
       <th>Name</th>
       <th>Email</th>
+      <th>Address</th>
       <th>Burthday</th>
       <th>Role</th>
       <th>Actions</th>
@@ -16,6 +17,7 @@
         <td><%= link_to user.login, admin_user_path(user) %></td>
         <td><%= user.name %></td>
         <td><%= user.email %></td>
+        <td><%= user.address %></td>
         <td><%= user.burthday %></td>
         <td><%= user.role %></td>
         <td>

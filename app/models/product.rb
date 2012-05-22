@@ -3,10 +3,11 @@ class Product < ActiveRecord::Base
   validates :description, presence: true
 
   belongs_to :category
-  has_many :images
+  has_many :images, :dependent => :destroy
   has_many :product_carts
-  has_many :comments
+  has_many :comments, :dependent => :destroy
   has_many :compares, :dependent => :destroy
+  has_many :ratings, :dependent => :destroy
 
   after_create lambda { |product|
     product.path = product.category.nil? ? "#{product.id}" : product.category.path + "#{product.id}"
