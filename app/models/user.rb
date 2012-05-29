@@ -1,3 +1,7 @@
+require "net/http"
+require "uri"
+require "json"
+
 class User < ActiveRecord::Base
 
   SESSION_TIME_MIN = 100.to_i
@@ -20,6 +24,14 @@ class User < ActiveRecord::Base
   has_many :carts
   has_many :comments
   has_many :ratings
+
+  before_save do |user|
+    return if user.address.blank?
+
+    geocode_data = gmaps_get_geocode(user.address).first
+    user.latitude = geocode_data[:lat]
+    user.longitude = geocode_data[:lng]
+  end
 
   attr_accessor :password_confirmation
   attr_reader :password
@@ -68,6 +80,10 @@ class User < ActiveRecord::Base
     User.where("name IS NOT NULL")
   end
 
+  # def User.all_with_orders
+  #   User.include("orders")
+  # end
+
   acts_as_gmappable
 
   def gmaps4rails_address
@@ -88,6 +104,51 @@ class User < ActiveRecord::Base
 
     def generate_salt
       self.object_id.to_s + rand(255).to_s
+    end
+
+    def gmaps_get_geocode(address)
+      geocode_url = "http://maps.googleapis.com/maps/api/geocode/json?language=en&address="
+      output_opt = "&sensor=false"
+
+      url = URI.escape(geocode_url + address + output_opt)
+
+      response = gmaps_geocode_response(url)
+      result = response_result(response, url)
+      result
+    end
+
+    def response_result(response, request)
+      if response.is_a?(Net::HTTPSuccess)
+        result = JSON.parse(response.body)
+
+        if result["status"] == "OK"
+          array_data = []
+          result["results"].each do |result|
+            array_data << {
+                       :lat => result["geometry"]["location"]["lat"],
+                       :lng => result["geometry"]["location"]["lng"],
+                       :matched_address => result["formatted_address"],
+                       :bounds => result["geometry"]["bounds"],
+                       :full_data => result
+                      }
+          end
+
+          return array_data
+        else
+          raise "The address you enterd seems invalid, status was: #{result["status"]}.
+          Request was: #{request}"
+        end
+
+      else
+        raise "The request sent to google was invalid (not http success): #{request}.
+        Response was: #{response}"
+      end
+    end
+
+    def gmaps_geocode_response(url)
+      url = URI.parse(url)
+      http = Gmaps4rails.http_agent
+      Net::HTTP.get_response(url)
     end
 
 end

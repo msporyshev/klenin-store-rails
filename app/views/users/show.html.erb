@@ -32,5 +32,16 @@
   </div>
 </div>
 <div class="span9">
-  <%= gmaps4rails(@user_map_json) %>
+  <%= gmaps(
+    "markers" => {
+      "map_options" => {"auto_adjust" => true},
+      "data" => @user_map_json,
+      "options" => {
+        "list_container" => "markers_list",
+        "randomize" => true,
+        "max_random_distance" => "10"
+      }
+    }
+  ) %>
 </div>
+<ul class="unstyled" id="markers_list">  </ul>

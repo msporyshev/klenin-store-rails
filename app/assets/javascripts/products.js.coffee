@@ -47,7 +47,7 @@ jQuery ->
       false
   )
 
-  $("#reply-btn").live(
+  $("#reply-btn, #comment-btn").live(
     "click"
     () ->
       parent_id = $(findFirstParentElemByClass(this, "comment-elements")).attr("id")
@@ -66,21 +66,6 @@ jQuery ->
       false
   )
 
-  $("#comment-btn").live(
-    "click"
-    () ->
-      $.get(
-        window.location.protocol + "//" + window.location.host + "/comments/new/" + product_id + ".js"
-        (data) ->
-          $("#comment-form").html(data)
-          $("#comment-form").modal({
-            backdrop: true
-          })
-        "text html"
-      )
-      false
-  )
-
   $("#edit-comment-btn").live(
     "click"
     () ->
@@ -96,6 +81,5 @@ jQuery ->
       )
       false
   )
-
 
   false

@@ -1,3 +1,5 @@
 <ul class="unstyled">
-    <li><%= link_to @file_name.to_s, root_url + "reports/" + @file_name %></li>
+  <% unless @file_name.nil? %>
+    <li><%= link_to(@file_name, root_url + "reports/" + @file_name) %></li>
+  <% end -%>
 </ul>

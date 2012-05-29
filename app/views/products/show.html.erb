@@ -2,13 +2,14 @@
   <h2>Product</h2>
   <div class="thumbnails">
     <%  @product.images.each do |image| %>
-      <div class="thumbnail span4">
-        <%= link_to image_tag(image.image_path_url.to_s), image_path(image) %>
+      <div class="thumbnail span3">
+        <%= link_to image_tag(image.image_path_url(:thumb).to_s), admin_image_path(image) %>
         <h5>Description</h5>
         <%= image.name.to_s %>
       </div>
     <% end %>
   </div>
+
   <p>
     <h5>Description</h5>
     <%= @product.description %>

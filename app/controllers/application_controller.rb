@@ -3,10 +3,23 @@ require Rails.root.to_s + "/app/lib/search.rb"
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  STORE_NAME = "mystore"
+
+  STORE_ADRESS = "76 Ninth Ave, New York, NY"
+
   helper_method :current_user
   helper_method :current_cart
 
   protected
+
+
+    def init_markers(user, marker)
+      marker.infowindow render_to_string(
+        :partial => "/admin/users/user_short_info",
+        :locals => { :user => user}
+      )
+      marker.sidebar "<span class=\"foo\">#{user.login}</span>"
+    end
 
     def current_user=(user)
       @current_user = user

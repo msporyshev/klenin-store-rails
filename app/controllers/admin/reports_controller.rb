@@ -49,6 +49,10 @@ class Admin::ReportsController < Admin::ApplicationController
 
   def show
     @file_name = params[:id].to_s + ".pdf"
+    unless File.exist?(Rails.root + "public/reports/" + @file_name)
+      flash[:notice] = "This report is not ready yet. Try reload this page later."
+      @file_name = nil
+    end
 
     respond_to do |format|
       format.html
@@ -78,15 +82,7 @@ class Admin::ReportsController < Admin::ApplicationController
     file_name = File.basename(file_name.chomp, ".pdf")
 
     respond_to do |format|
-      if File.exist?(Rails.root + "/public/reports/" + file_name + ".pdf")
-        format.html { redirect_to admin_report_path(file_name), notice: "Report successfully created" }
-      else
-        format.html do
-          redirect_to( admin_reports_path,
-            notice: "Report is not reqdy yet, try reload this page later."
-          )
-        end
-      end
+      format.html { redirect_to admin_report_path(file_name) }
     end
   end
 
@@ -104,16 +100,16 @@ class Admin::ReportsController < Admin::ApplicationController
     COLUMNS_HEADER = 1
     ROWS_HEADER = 0
 
-    def get_quantity_cell_val(report)
-      [{:label => "Quantity", :value => report.last}]
+    def get_quantity_cell_val(cur_report_row)
+      [{:label => "Quantity", :value => cur_report_row.last}]
     end
 
-    def get_price_cell_val(report)
-      [{:label => "Price", :value => report[-1]}]
+    def get_price_cell_val(cur_report_row)
+      [{:label => "Price", :value => cur_report_row[-1]}]
     end
 
-    def get_quantity_and_price_cell_val(report)
-      [{:label => "Quantity", :value => report[-2]}, {:label => "Price", :value => report[-1]}]
+    def get_quantity_and_price_cell_val(cur_report_row)
+      [{:label => "Quantity", :value => cur_report_row[-2]}, {:label => "Price", :value => cur_report_row[-1]}]
     end
 
     def init_report(rows_field, columns_field, value_type)

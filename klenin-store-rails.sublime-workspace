@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"geocode",
+				"geocode_data"
+			],
+			[
+				"get",
+				"gmaps_get_geocode"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"response",
+				"response_result"
+			],
+			[
+				"gmaps",
+				"gmaps_geocode_response"
+			],
+			[
 				"Sec",
 				"SECONDS_IN_DAY"
 			],
@@ -54,10 +74,6 @@
 			[
 				"f",
 				"font	font: size font"
-			],
-			[
-				"do",
-				"do"
 			],
 			[
 				"admin",
@@ -158,10 +174,6 @@
 			[
 				"sec",
 				"second_coord"
-			],
-			[
-				"get",
-				"get_report_cell_value"
 			],
 			[
 				"h",
@@ -360,50 +372,66 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/ratings/show.js.erb",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 116,
+				"buffer_size": 4126,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/ratings_controller.rb",
+			"file": "app/models/rating.rb",
 			"settings":
 			{
-				"buffer_size": 1555,
+				"buffer_size": 731,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/products/show.html.erb",
+			"file": "db/schema.rb",
 			"settings":
 			{
-				"buffer_size": 863,
+				"buffer_size": 2885,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/ratings/_form.html.erb",
+			"file": "app/helpers/admin/geo_helper.rb",
 			"settings":
 			{
-				"buffer_size": 230,
+				"buffer_size": 132,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/ratings/_cur_product_rating.html.erb",
+			"file": "app/views/admin/geo/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 55,
+				"buffer_size": 382,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/categories/_form.html.erb",
+			"file": "app/views/users/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 834,
+				"buffer_size": 840,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin/geo_controller.rb",
+			"settings":
+			{
+				"buffer_size": 446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1083,
 				"line_ending": "Unix"
 			}
 		}
@@ -411,9 +439,17 @@
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 103.0,
 		"selected_items":
 		[
+			[
+				"beau",
+				"BeautifyRuby"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			],
 			[
 				"ter",
 				"Preferences: Terminal Key Bindings – Default"
@@ -443,10 +479,6 @@
 				"Snippet: #!/usr/bin/env ruby -wKU"
 			],
 			[
-				"pac",
-				"Package Control: Install Package"
-			],
-			[
 				"packa",
 				"Package Control: Remove Package"
 			]
@@ -468,56 +500,80 @@
 	},
 	"file_history":
 	[
-		"/home/max/study/projects/rails_apps/store/app/controllers/comments_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/carts/show.js.erb",
 		"/home/max/study/projects/rails_apps/store/app/models/product.rb",
-		"/home/max/study/projects/rails_apps/store/app/models/rating.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/products/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/products.js.coffee",
+		"/home/max/study/projects/rails_apps/store/app/views/comments/show.js.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/comments_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/reports_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/gmaps4rails/gmaps4rails.base.js.coffee",
+		"/home/max/study/projects/rails_apps/store/app/controllers/application_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/comments/_cur_product_comments_alter.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/comments/_single_comment_partial.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/users_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/helpers/application_helper.rb",
+		"/home/max/study/projects/rails_apps/store/app/models/user.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/reports/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/users/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/admin/geo_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/geo/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_global_search_form_fields.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/products/show.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/users/_user_short_info.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_users_search_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/users/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_users_search_form_fields.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/layouts/application.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/application/_products_search_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/db/migrate/20120522085642_add_latitude_longitude_gmaps_to_users.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/admin/users/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/categories/index.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/users/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/sessions_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/users/edit.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/admin/geo.js.coffee",
+		"/home/max/study/projects/rails_apps/store/Gemfile",
+		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/gmaps4rails.css",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/yandex-maps/y_maps_api_2.js",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/yandex-maps/maps.js",
+		"/home/max/study/projects/rails_apps/store/tmp/test.html",
+		"/home/max/study/projects/rails_apps/store/config/routes.rb",
+		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/yandex-maps/y_maps_api_2",
+		"/home/max/study/projects/rails_apps/store/app/models/rating.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/ratings/_cur_product_rating.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/controllers/ratings_controller.rb",
+		"/home/max/study/projects/rails_apps/store/app/views/ratings/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/categories/_form.html.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/ratings/show.js.erb",
+		"/home/max/study/projects/rails_apps/store/app/views/carts/show.js.erb",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120520014432_add_rating_to_products.rb",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120520012606_create_ratings.rb",
-		"/home/max/study/projects/rails_apps/store/app/models/user.rb",
 		"/home/max/study/projects/rails_apps/store/db/schema.rb",
 		"/home/max/study/projects/rails_apps/store/app/models/comment.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/comments/show.js.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/comments/_single_comment_partial.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/helpers/application_helper.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/comments/_cur_product_comments_alter.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/comments/_cur_product_comments.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/application.js",
 		"/home/max/study/projects/rails_apps/store/app/assets/stylesheets/application.css",
 		"/home/max/study/projects/rails_apps/store/app/views/comments/_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/products/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120516115349_create_comments.rb",
-		"/home/max/study/projects/rails_apps/store/config/routes.rb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/admin/reports.js.coffee",
 		"/home/max/study/projects/rails_apps/store/app/views/products/index.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/admin/products.js.coffee",
 		"/home/max/study/projects/rails_apps/store/app/controllers/products_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/assets/javascripts/comments.js.coffee",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/users/index.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/users/_form.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/comments/index.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/comments/show.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/admin/reports_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/application/_products_search_form_fields.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/application/_global_search_form.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/products/_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/layouts/application.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/controllers/admin/products_controller.rb",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120403075541_create_compares.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/application/_products_search_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/reports/index.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/application_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/application/_global_search_form_fields.html.erb",
-		"/home/max/study/projects/rails_apps/store/Gemfile",
 		"/home/max/study/projects/rails_apps/store/.gitignore",
 		"/home/max/study/projects/rails_apps/store/app/models/product_cart.rb",
 		"/home/max/study/projects/rails_apps/store/app/lib/search.rb",
 		"/home/max/study/projects/rails_apps/store/app/models/category.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/reports/_reports.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/categories/_form.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/controllers/admin/users_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/users_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/application/_search_form",
 		"/home/max/study/projects/rails_apps/store/app/controllers/searches_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/reports/show.html.erb",
@@ -547,7 +603,6 @@
 		"/home/max/study/projects/rails_apps/store/spec/requests/users_spec.rb",
 		"/home/max/study/projects/rails_apps/store/spec/controllers/users_controller_spec.rb",
 		"/home/max/study/projects/rails_apps/store/spec/controllers/admin/users_controller_spec.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/sessions_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/views/products/_compare_buttons.html.erb",
 		"/home/max/study/projects/rails_apps/store/log/production.log",
 		"/home/max/study/projects/rails_apps/store/db/migrate/20120417064643_add_email_uniqueness_index.rb",
@@ -559,7 +614,6 @@
 		"/home/max/study/projects/rails_apps/store/app/views/admin/images/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/images/edit.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/admin/images/new.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/products/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/views/images/show.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/controllers/images_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/uploaders/image_uploader.rb",
@@ -573,29 +627,7 @@
 		"/home/max/study/projects/rails_apps/store/app/views/admin/images/_form.html.erb",
 		"/home/max/study/projects/rails_apps/store/app/controllers/categories_controller.rb",
 		"/home/max/study/projects/rails_apps/store/app/controllers/admin/images_controller.rb",
-		"/home/max/study/projects/rails_apps/store/spec/helpers/users_helper_spec.rb",
-		"/home/max/study/projects/rails_apps/store/spec/models/model_spec.rb",
-		"/home/max/study/projects/rails_apps/store/app/models/image.rb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120415020407_create_images.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/products/_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/admin/categories/_form.html.erb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120415005445_create_images.rb",
-		"/home/max/study/projects/rails_apps/store/db/migrate/20120415010542_create_product_images.rb",
-		"/home/max/study/projects/rails_apps/store/app/models/product_images.rb",
-		"/home/max/study/projects/rails_apps/store/config/nginx.conf",
-		"/home/max/study/projects/rails_apps/store/app/models/compare.rb",
-		"/home/max/study/projects/rails_apps/store/app/controllers/compares_controller.rb",
-		"/home/max/study/projects/rails_apps/store/app/views/compares/compare_buttons.js.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/compares/index.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/application/_navbar_admin.html.erb",
-		"/home/max/study/projects/rails_apps/store/app/views/products/compare_buttons.js.erb",
-		"/home/max/study/projects/rails_apps/store/app/helpers/products_helper.rb",
-		"/home/max/study/projects/rails_apps/store/config/environments/development.rb",
-		"/home/max/study/projects/rails_apps/store/config/environments/production.rb",
-		"/home/max/study/projects/rails_apps/store/public/index.html",
-		"/home/max/study/projects/rails_apps/store/public/products.js",
-		"/home/max/study/projects/rails_apps/store/public/products.html",
-		"/home/max/study/projects/rails_apps/store/config/database.yml"
+		"/home/max/study/projects/rails_apps/store/spec/helpers/users_helper_spec.rb"
 	],
 	"find":
 	{
@@ -614,6 +646,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"array",
+			"parse",
+			"product",
+			" :",
+			":",
+			"number_field",
 			"p>",
 			"p",
 			"Comment",
@@ -735,13 +773,7 @@
 			"email",
 			"matching_user",
 			"attr",
-			"hash",
-			"attr",
-			"no_password_confirmation",
-			"attr",
-			"name",
-			"name_",
-			"#э"
+			"hash"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -763,28 +795,58 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/ratings/show.js.erb",
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 116,
+						"buffer_size": 4126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2913,
+								2913
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1741.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models/rating.rb",
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -793,19 +855,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/controllers/ratings_controller.rb",
+					"buffer": 2,
+					"file": "db/schema.rb",
 					"settings":
 					{
-						"buffer_size": 1555,
+						"buffer_size": 2885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								2885,
+								2885
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1057.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/helpers/admin/geo_helper.rb",
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
 							]
 						],
 						"settings":
@@ -819,19 +909,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/views/products/show.html.erb",
+					"buffer": 4,
+					"file": "app/views/admin/geo/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 863,
+						"buffer_size": 382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								743,
-								743
+								335,
+								335
 							]
 						],
 						"settings":
@@ -841,58 +931,6 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 234.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/ratings/_form.html.erb",
-					"settings":
-					{
-						"buffer_size": 230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								216,
-								216
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/ratings/_cur_product_rating.html.erb",
-					"settings":
-					{
-						"buffer_size": 55,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								55
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -900,10 +938,38 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/categories/_form.html.erb",
+					"file": "app/views/users/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 834,
+						"buffer_size": 840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								633,
+								633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 157.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/admin/geo_controller.rb",
+					"settings":
+					{
+						"buffer_size": 446,
 						"regions":
 						{
 						},
@@ -911,12 +977,40 @@
 						[
 							[
 								0,
-								14
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -971,6 +1065,142 @@
 		"selected_items":
 		[
 			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"geo",
+				"app/controllers/admin/geo_controller.rb"
+			],
+			[
+				"users/",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"rating",
+				"app/models/rating.rb"
+			],
+			[
+				"prod",
+				"app/models/product.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"goo",
+				"app/assets/javascripts/gmaps4rails/gmaps4rails.googlemaps.js.coffee"
+			],
+			[
+				"products/show",
+				"app/views/products/show.html.erb"
+			],
+			[
+				"products.js",
+				"app/assets/javascripts/products.js.coffee"
+			],
+			[
+				"comments/show",
+				"app/views/comments/show.js.erb"
+			],
+			[
+				"comm",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"report",
+				"app/controllers/admin/reports_controller.rb"
+			],
+			[
+				"reports/",
+				"app/views/admin/reports/index.html.erb"
+			],
+			[
+				"reports",
+				"app/controllers/admin/reports_controller.rb"
+			],
+			[
+				"users/s",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"admin/products/",
+				"app/views/admin/products/show.html.erb"
+			],
+			[
+				"comments/",
+				"app/views/comments/_single_comment_partial.html.erb"
+			],
+			[
+				"application",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"appli",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"usershort",
+				"app/views/admin/users/_user_short_info.html.erb"
+			],
+			[
+				"users/show",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"users/inde",
+				"app/views/users/index.html.erb"
+			],
+			[
+				"appl",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"inde",
+				"app/views/categories/index.html.erb"
+			],
+			[
+				"sessio",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"applhtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"addlat",
+				"db/migrate/20120522085642_add_latitude_longitude_gmaps_to_users.rb"
+			],
+			[
+				"gma",
+				"app/assets/stylesheets/gmaps4rails.css"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"test",
+				"tmp/test.html"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"layouts/",
+				"app/views/layouts/application.html.erb"
+			],
+			[
 				"for",
 				"app/views/categories/_form.html.erb"
 			],
@@ -983,16 +1213,8 @@
 				"app/assets/javascripts/products.js.coffee"
 			],
 			[
-				"products/show",
-				"app/views/products/show.html.erb"
-			],
-			[
 				"comments_c",
 				"app/controllers/comments_controller.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"add",
@@ -1001,10 +1223,6 @@
 			[
 				"create",
 				"db/migrate/20120520012606_create_ratings.rb"
-			],
-			[
-				"sche",
-				"db/schema.rb"
 			],
 			[
 				"addratu",
@@ -1017,10 +1235,6 @@
 			[
 				"craterati",
 				"db/migrate/20120520012606_create_ratings.rb"
-			],
-			[
-				"rating",
-				"app/models/rating.rb"
 			],
 			[
 				"produ",
@@ -1039,32 +1253,12 @@
 				"app/helpers/application_helper.rb"
 			],
 			[
-				"appl",
-				"app/assets/javascripts/application.js"
-			],
-			[
-				"comm",
-				"app/models/comment.rb"
-			],
-			[
 				"cre",
 				"db/migrate/20120516115349_create_comments.rb"
 			],
 			[
 				"css",
 				"app/assets/stylesheets/application.css"
-			],
-			[
-				"products.js",
-				"app/assets/javascripts/products.js.coffee"
-			],
-			[
-				"comments/",
-				"app/views/comments/_form.html.erb"
-			],
-			[
-				"route",
-				"config/routes.rb"
 			],
 			[
 				"products/sho",
@@ -1077,10 +1271,6 @@
 			[
 				"product.js",
 				"app/assets/javascripts/admin/products.js.coffee"
-			],
-			[
-				"report",
-				"app/assets/javascripts/admin/reports.js.coffee"
 			],
 			[
 				"product",
@@ -1101,10 +1291,6 @@
 			[
 				"admin/users/",
 				"app/views/admin/users/index.html.erb"
-			],
-			[
-				"users/",
-				"app/views/users/_form.html.erb"
 			],
 			[
 				"_form",
@@ -1145,14 +1331,6 @@
 			[
 				"sch",
 				"db/schema.rb"
-			],
-			[
-				"appli",
-				"app/assets/javascripts/application.js"
-			],
-			[
-				"reports",
-				"app/assets/javascripts/admin/reports.js.coffee"
 			],
 			[
 				"_reports",
@@ -1215,10 +1393,6 @@
 				"app/models/session.rb"
 			],
 			[
-				"test",
-				"test.rb"
-			],
-			[
 				"repor",
 				"app/assets/javascripts/admin/reports.js.coffee"
 			],
@@ -1233,10 +1407,6 @@
 			[
 				"_pr",
 				"app/views/products/_products.html.erb"
-			],
-			[
-				"reports/",
-				"app/views/admin/reports/show.html.erb"
 			],
 			[
 				"erb",
@@ -1257,10 +1427,6 @@
 			[
 				"categ",
 				"app/models/category.rb"
-			],
-			[
-				"prod",
-				"app/models/product.rb"
 			],
 			[
 				".",
@@ -1285,10 +1451,6 @@
 			[
 				"spec",
 				"spec/spec_helper.rb"
-			],
-			[
-				"users",
-				"app/controllers/users_controller.rb"
 			],
 			[
 				"request",
@@ -1411,76 +1573,8 @@
 				"unicorn/unicorn_err.log"
 			],
 			[
-				"inde",
-				"public/index.html"
-			],
-			[
 				"da",
 				"config/database.yml"
-			],
-			[
-				"env",
-				"config/environment.rb"
-			],
-			[
-				"or",
-				"app/controllers/orders_controller.rb"
-			],
-			[
-				"carts",
-				"app/controllers/carts_controller.rb"
-			],
-			[
-				"prd",
-				"app/models/product_cart.rb"
-			],
-			[
-				"produc",
-				"app/models/product_cart.rb"
-			],
-			[
-				"order",
-				"app/controllers/orders_controller.rb"
-			],
-			[
-				"shema",
-				"db/schema.rb"
-			],
-			[
-				"comares",
-				"app/controllers/compares_controller.rb"
-			],
-			[
-				"pa",
-				"app/models/paypal_notification.rb"
-			],
-			[
-				"ge",
-				"Gemfile"
-			],
-			[
-				"paypa",
-				"app/models/paypal_notification.rb"
-			],
-			[
-				"comap",
-				"app/controllers/admin/application_controller.rb"
-			],
-			[
-				"cart.htm",
-				"app/views/application/_cart.html.erb"
-			],
-			[
-				"routs",
-				"config/routes.rb"
-			],
-			[
-				"sessio",
-				"app/controllers/sessions_controller.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			]
 		],
 		"width": 0.0

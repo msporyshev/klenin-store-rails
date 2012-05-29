@@ -8,7 +8,7 @@
 
       <%= hidden_field_tag 'parent_id', comment.comment_id %>
 
-      <% if comment.user == current_user %>
+      <% if comment.user == current_user || current_user.role == "admin" %>
         <div class="row">
           <%= link_to "edit", nil, class: "", id: "edit-comment-btn" %>
           |

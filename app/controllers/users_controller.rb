@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
 
-    @user_map_json = @user.to_gmaps4rails
+    @user_map_json = User.where("id = ? or login = ?", params[:id], STORE_NAME).to_gmaps4rails do |user, marker|
+      init_markers(user, marker)
+    end
 
     respond_to do |format|
       format.html # show.html.erb
