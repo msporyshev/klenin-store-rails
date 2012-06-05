@@ -28,7 +28,7 @@ class OrdersController < ApplicationController
   def create
     @order = current_cart
     respond_to do |format|
-      if @order.purchase
+      if @order.purchase(params[:address])
         format.html { redirect_to order_path @order, notice: 'Order was successfully created.' }
       else
         format.html { render action: "new" }

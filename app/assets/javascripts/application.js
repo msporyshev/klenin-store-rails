@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.datepicker
 //= require twitter/bootstrap
 //= require chosen-jquery
 //= require dataTables/jquery.dataTables
@@ -32,6 +33,10 @@ $(function () {
 
   $("#rows-select, #columns-select, #values-select").change(function() {
     $("#report-ajax-form").submit()
+  });
+
+  $(".date-field").datepicker({
+    dateFormat: "yy-mm-dd"
   });
 
   // $("div").each(

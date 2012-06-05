@@ -11,11 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120522085642) do
+ActiveRecord::Schema.define(:version => 20120605090315) do
 
   create_table "carts", :force => true do |t|
     t.integer  "user_id"
     t.datetime "purchased_at"
+    t.string   "address"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.boolean  "gmaps"
   end
 
   create_table "categories", :force => true do |t|

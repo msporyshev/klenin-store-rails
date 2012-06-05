@@ -1,27 +1,37 @@
 <h1>Cart</h1>
 
-<table class="table table-striped table-bordered">
-  <tr>
-    <th>Description</th>
-    <th>Qty</th>
-    <th>Unit price</th>
-  </tr>
-  <% @cart.product_carts.each do |item| %>
-    <tr>
-      <td><%= item.product.description %></td>
-      <td><%= item.quantity %> &times;</td>
-      <td class="item_price"><%= number_to_currency item.price %></td>
-    </tr>
-  <% end %>
-  <tr class="total_line">
-    <td colspan="2">Total price:</td>
-    <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
-  </tr>
-</table>
-<% if @cart.purchased_at.nil? %>
-  <div class="form-actions">
-    <%= link_to 'Empty Cart', @cart, :method => :delete, :class => 'btn btn-danger', :confirm => "Are ou sure?" %>
-    <%= link_to "Checkout with PayPal", @cart.paypal_url(products_url, paypal_notifications_url), :class => 'btn btn-primary' %>
-    <%= link_to "Checkout", orders_path, :method => :post, :class => 'btn btn-primary' %>
+<%= form_tag orders_path do  %>
+
+  <div class="control-group">
+    <%= label_tag "Enter your address", nil, :class => 'control-label' %>
+    <div class="controls">
+      <%= text_field_tag :address, nil, :class => 'text_field' %>
+    </div>
   </div>
-<% end %>
+
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>Description</th>
+      <th>Qty</th>
+      <th>Unit price</th>
+    </tr>
+    <% @cart.product_carts.each do |item| %>
+      <tr>
+        <td><%= item.product.description %></td>
+        <td><%= item.quantity %> &times;</td>
+        <td class="item_price"><%= number_to_currency item.price %></td>
+      </tr>
+    <% end %>
+    <tr class="total_line">
+      <td colspan="2">Total price:</td>
+      <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
+    </tr>
+  </table>
+  <% if @cart.purchased_at.nil? %>
+    <div class="form-actions">
+      <%= link_to 'Empty Cart', @cart, :method => :delete, :class => 'btn btn-danger', :confirm => "Are ou sure?" %>
+      <%= link_to "Checkout with PayPal", @cart.paypal_url(products_url, paypal_notifications_url), :class => 'btn btn-primary' %>
+      <%= submit_tag "Checkout", :class => 'btn btn-primary' %>
+    </div>
+  <% end %>
+<% end -%>

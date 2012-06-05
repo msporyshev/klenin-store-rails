@@ -1,8 +1,24 @@
-<%= render "products_search_form_fields" %>
-
-<div class="control-group span12">
-  <%= label_tag "User", nil, class: "control-label" %>
-  <div class="controls">
-    <%= select_tag "search[user_ids]", options_for_select(User.all_registered.collect { |u| [u.login, u.id] }), {multiple: true}  %>
+<div class="row">
+  <div class="control-group span4">
+    <%= label_tag "User", nil, class: "control-label" %>
+    <div class="controls">
+      <%= select_tag "search[user_ids]", options_for_select(User.all_registered.collect { |u| [u.login, u.id] }), {multiple: true}  %>
+    </div>
   </div>
+
+  <div class="span8">
+    <div class="control-group">
+      <%= label_tag "Date: ", nil, class: "control-label" %>
+      <div class="controls form-inline">
+        <%= label_tag "from" %>
+        <%= text_field_tag "search[date_from]", nil,{min: 0, step: 0.01, class: "date-field span2"} %>
+        <%= label_tag "to" %>
+        <%= text_field_tag "search[date_to]", nil, {min: 0, step: 0.01, class: "date-field span2" } %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <%= render "products_search_form_fields" %>
 </div>

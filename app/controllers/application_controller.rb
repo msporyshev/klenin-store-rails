@@ -12,8 +12,15 @@ class ApplicationController < ActionController::Base
 
   protected
 
+    def init_order_markers(order, marker)
+      marker.infowindow render_to_string(
+        :partial => "/orders/order_short_info",
+        :locals => { :order => order}
+      )
+      marker.sidebar "<span class=\"foo\">order ##{order.id}</span>"
+    end
 
-    def init_markers(user, marker)
+    def init_user_markers(user, marker)
       marker.infowindow render_to_string(
         :partial => "/admin/users/user_short_info",
         :locals => { :user => user}

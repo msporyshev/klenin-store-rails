@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     @user_map_json = User.where("id = ? or login = ?", params[:id], STORE_NAME).to_gmaps4rails do |user, marker|
-      init_markers(user, marker)
+      init_user_markers(user, marker)
     end
 
     respond_to do |format|

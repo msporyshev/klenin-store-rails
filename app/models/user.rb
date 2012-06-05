@@ -4,7 +4,7 @@ require "json"
 
 class User < ActiveRecord::Base
 
-  SESSION_TIME_MIN = 100.to_i
+  SESSION_TIME_MIN = 100000.to_i
 
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :ratings
 
-  before_save do |user|
+  before_validation do |user|
     return if user.address.blank?
 
     geocode_data = gmaps_get_geocode(user.address).first
@@ -135,7 +135,7 @@ class User < ActiveRecord::Base
 
           return array_data
         else
-          raise "The address you enterd seems invalid, status was: #{result["status"]}.
+          raise "The address you entered seems invalid, status was: #{result["status"]}.
           Request was: #{request}"
         end
 

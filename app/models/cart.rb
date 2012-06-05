@@ -23,8 +23,9 @@ class Cart < ActiveRecord::Base
     "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
-  def purchase
+  def purchase(address)
     self.purchased_at = Time.now
+    self.address = address
     self.save
   end
 
@@ -46,44 +47,91 @@ class Cart < ActiveRecord::Base
     product_carts.to_a.sum {|item| item.quantity}
   end
 
-  REAL_ROWS_COLS_N_VALS_NAMES = {
-    :user => "users.login",
-    :category => "categories.name",
-    :purchased_at => "carts.purchased_at",
-    :quantity => "SUM(product_carts.quantity)",
-    :price => "SUM(product_carts.price)",
-    :both => "SUM(product_carts.quantity), SUM(product_carts.price)"
-  }
+  def self.orders
+    where("carts.purchased_at IS NOT NULL")
+  end
 
-  def self.get_report_info(rows, columns, values)
-    rows = REAL_ROWS_COLS_N_VALS_NAMES[rows]
-    columns = REAL_ROWS_COLS_N_VALS_NAMES[columns]
-    values = REAL_ROWS_COLS_N_VALS_NAMES[values]
+  acts_as_gmappable
 
-    return [] if rows.blank? and columns.blank?
+  def gmaps4rails_address
+    address
+  end
 
-    query =<<SQL
-SELECT
-  #{select_or_group_query_partial(rows, columns, values)}
 
-FROM carts INNER JOIN users ON users.id = carts.user_id
-  INNER JOIN product_carts ON product_carts.cart_id = carts.id
-  INNER JOIN products ON product_carts.product_id = products.id
-  INNER JOIN categories ON categories.id = products.category_id
-WHERE carts.purchased_at IS NOT NULL
-GROUP BY #{select_or_group_query_partial(rows, columns)}
-SQL
-    reports = Cart.connection.execute(query)
+  def self.global_search(search_params)
+    search_params ||= {}
+
+    search_params[:date_from] = search_params[:date_from].blank? ? "0001-01-01" : search_params[:date_from]
+    search_params[:date_to] = search_params[:date_to].blank? ? "3000-01-01" : search_params[:date_to]
+
+    joins(:user, :product_carts => {:product => :category}).
+      where(search_query(search_params)).
+      where("carts.purchased_at >= ? and carts.purchased_at <= ?",
+        search_params[:date_from], search_params[:date_to])
+
+
+
   end
 
   private
 
-    def self.select_or_group_query_partial(*args)
-      result = ""
-      args.each do |arg|
-        result += "#{arg}," if !arg.blank?
+
+    FILTER_STR_TEMPLATES = {
+      product_key_word: "products.description LIKE \"%?%\" ",
+      user_ids: "users.id IN (?) ",
+      category_ids: "categories.path LIKE \"?.%\"",
+      price_range_from: "product_carts.price >= ?",
+      price_range_to: "product_carts.price <= ?"
+    }
+
+    def self.category_filter_part(key, category_ids)
+      filter = "( 1 = 0"
+      category_ids.each do |id|
+        cur_filter = FILTER_STR_TEMPLATES[:category_ids].clone
+
+        value = connection.quote_string(id)
+        cur_filter.gsub!(/\?/, value)
+
+        filter << " OR " << cur_filter
       end
-      result.chop
+
+      filter += ")"
+    end
+
+    def self.user_filter_part(key, user_ids)
+      filter_str = FILTER_STR_TEMPLATES[:user_ids].clone
+      value_str = ""
+      user_ids.each { |e| value_str << connection.quote_string(e) << "," }
+      value_str.chop!
+
+      filter_str.gsub!(/\?/, value_str)
+    end
+
+    def self.single_value_filter_part(key, val)
+      filter_str = FILTER_STR_TEMPLATES[key.to_sym].clone
+      value_str = connection.quote_string(val)
+      filter_str.gsub!(/\?/, value_str)
+    end
+
+    FILTER_STR_FUNC = {
+      product_key_word: method(:single_value_filter_part),
+      user_ids: method(:user_filter_part),
+      category_ids: method(:category_filter_part),
+      price_range_from: method(:single_value_filter_part),
+      price_range_to: method(:single_value_filter_part)
+    }
+
+    def self.search_query(params)
+      query_str = ""
+      params.each_pair do |key, val|
+        filter_str_func = FILTER_STR_FUNC[key.to_sym]
+
+        next if filter_str_func.nil? || val.is_a?(String) && val.empty? || val.nil?
+
+        query_str << filter_str_func.call(key, val) << " AND "
+      end
+
+      query_str << "1 = 1"
     end
 
 end

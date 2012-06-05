@@ -1,0 +1,14 @@
+<strong>User: </strong>
+<%= link_to order.user.login, admin_user_path(order.user) %>
+<br/>
+<strong>Address: </strong>
+<%= order.address %>
+<br/>
+<strong>Email: </strong>
+<%= order.user.email %>
+<br/>
+<strong>Purchase date:</strong>
+<%= order.purchased_at.strftime "%v" %>
+<br/>
+<%= link_to "Show", order_path(order) %>
+<br/>

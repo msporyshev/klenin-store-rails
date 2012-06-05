@@ -24,6 +24,10 @@ class Product < ActiveRecord::Base
     !compare(user).nil?
   end
 
+  def add_image(file_text)
+
+  end
+
   private
 
     def ensure_not_referenced_by_any_product_cart

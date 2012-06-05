@@ -18,7 +18,7 @@ class CartsController < ApplicationController
     @cart = Cart.new(params[:cart])
 
     respond_to do |format|
-      if @cart.save
+      if @cart.save(:validate => false)
         format.html { redirect_to @cart, notice: 'Cart was successfully created.' }
         format.json { render json: @cart, status: :created, location: @cart }
       else

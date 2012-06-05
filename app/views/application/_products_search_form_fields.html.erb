@@ -14,10 +14,11 @@
   </div>
 </div>
 
-<div class="span7">
+<div class="span8">
   <div class="control-group">
-    <%= label_tag "Price from", nil, class: "control-label" %>
+    <%= label_tag "Price:", nil, class: "control-label" %>
     <div class="controls form-inline">
+      <%= label_tag "from" %>
       <%= number_field_tag "search[price_range_from]", nil,{min: 0, step: 0.01, class: "span2"} %>
       <%= label_tag "to" %>
       <%= number_field_tag "search[price_range_to]", nil, {min: 0, step: 0.01, class: "span2" } %>
